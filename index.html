@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Conexión para el uso de bootstrap 5-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="slider.css">
+    <!--Font awesome para los íconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezrJjJvSm+fltvzBMTVfLue4IHMyT9DD+V3iMx4OMHX5ifBr9tdYBqsRdzPcAja" crossorigin="anonymous">
     <title>Document</title>
   </head>
   <body>
@@ -25,26 +28,34 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+          
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#Home" class="nav-link mt-1">Sobre nosotros</a>
+              <a href="#Home" class="nav-link mt-2">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link mt-1">Capacitaciones</a>
+              <a href="#Capacitaciones" class="nav-link mt-2">Capacitaciones</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link mt-1">Contáctanos</a>
+              <a href="#Contáctanos" class="nav-link mt-2">Contáctanos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link mt-1"><span class="Facebook-icon"></span></a>
+              <a href="#" class="nav-link mt-1"><img src="facebook.svg" alt=""></span></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link mt-1"><span class="LinkedIn-icon"></span></a>
+              <a href="#" class="nav-link mt-1"><img src="linkedin.svg" alt=""></span></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link mt-1"><span class="World-icon"></span></a>
+            <li class="nav-item mt-2">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lenguaje
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/index_en.html">Inglés</a></li>
+                  <li><a class="dropdown-item" href="/index.html">Español</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -58,7 +69,7 @@
       </div>
     </div>
 
-    <!--Cabecera-->
+    <!--Sección Home-->
     <div id="Home" class="header">
       <div class="container-xl pt-5">
         <div class="row">
@@ -85,26 +96,38 @@
             </div>
           </div>
         </div>
+
+        <div>
+          <div class="container">
+            <div class="row g-5 py-5">
+              <div class="col-md-4">
+                <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                  ullam, ipsum temporibus qui dolor adipisci necessitatibus.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                  ullam, ipsum temporibus qui dolor adipisci necessitatibus.
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                  ullam, ipsum temporibus qui dolor adipisci necessitatibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       
       <!--Slider de lenguajes-->
-      <section class="Slider bg-light">
-        <div class="container">
-            <div class="row">
-                <h1 class="display-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                    quisquam.
-                  </h1>
-                  <p class="lead text-secondary py-4">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-                    quia dolore, culpa temporibus placeat iusto et est! Mollitia,
-                    error vero cumque odio et veniam fugit blanditiis nesciunt
-                    facilis. Animi, voluptatum!
-                  </p>
-            </div>
-        </div>
-      </section>
-
       <div class="row py-5">
         <div class="slider ">
             <div class="slide-track">
@@ -161,7 +184,7 @@
     </div>
   </div>
 
-  <!--Slider 2-->
+  <!--Slider 2--> 
   <div class="row pb-5">
     <div class="slider ">
         <div class="slide-track">
@@ -212,15 +235,40 @@
     </div>
     </div>
     </div>
-    <!--Features-->
-    <div id="features" class="py-2 bg-light">
+    <!--Sección Capacitaciones-->
+    <div id="Capacitaciones" class="py-2 bg-light pt-5">
+      <!--Tarjetas de cursos-->
       <div class="container">
         <div class="row g-5 py-5">
           <div class="col-md-4">
             <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
             <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tenetur maiores quo maxime esse officiis pariatur ab repellendus est voluptatibus molestias in, dignissimos mollitia dicta sunt tempora vero nemo neque debitis harum porro a? Earum mollitia autem maiores. Odit, ipsa earum distinctio nam nulla excepturi culpa libero a reprehenderit aperiam eius ipsum deleniti incidunt quod ducimus doloribus officiis consequatur, expedita ratione nostrum maiores facere suscipit eligendi odio? Ad voluptatum tempora odit quisquam? Minus commodi dolore eveniet tempore iusto a nostrum, debitis culpa, alias, autem sapiente officiis quas iste laudantium sit doloribus? Tempora debitis ratione vel repudiandae? Commodi qui officiis cupiditate.
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
+            <p class="text-muted">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
               ullam, ipsum temporibus qui dolor adipisci necessitatibus.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
+            <p class="text-muted">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+              ullam, ipsum temporibus qui dolor adipisci necessitatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!--Descripción de cursos-->
+      <div class="container">
+        <div class="row g-5 py-5">
+          <div class="col-md-4">
+            <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto placeat corrupti vero delectus natus iste, nisi a tenetur eaque consequatur. Sint similique eos perspiciatis laborum impedit laudantium illum quas repellat et neque autem praesentium, id maiores. Ut corrupti id facere quasi temporibus eligendi consequatur ad cupiditate impedit rem. Deserunt accusamus vero, neque aliquam voluptatum, cum, animi dolorem eum perspiciatis fugit architecto minus ducimus voluptatibus labore et cumque molestiae officia incidunt nostrum? Ducimus facere soluta commodi assumenda, doloremque voluptatibus placeat possimus eaque, libero maxime quo praesentium iure deleniti explicabo? Quia accusamus et sint sed! Quisquam beatae sit a ducimus minus, ex delectus officiis, harum et voluptates, distinctio debitis aspernatur repellat nam? Animi ea reiciendis, laboriosam cupiditate vel minus odit! Totam, natus?
             </p>
           </div>
           <div class="col-md-4">
@@ -240,25 +288,42 @@
         </div>
       </div>
     </div>
-    
-    <!--Testimonios-->
-    <section class="testimonial text-secondary p-5">
+
+    <!--Sección Contactanos-->
+    <section id="Contáctanos" class="text-secondary p-4 bg-light">
         <div class="container">
-          <p class="display-5 text-center">
+          <h1 class="display-5 text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sapiente
             non dicta magnam facere nulla.
+          </h1>
+          <p class="text-center lead pt-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum maiores sint ea ex nulla, dolore nihil consequuntur blanditiis soluta veritatis eius natus ad omnis accusantium laboriosam sapiente corrupti porro voluptatum!
           </p>
-          <p class="text-center lead pt-2">Testimonios</p>
+          <p class="text-center lead pt-2">
+            Gracias!
+          </p>
+        </div>
+        <div class="footer-items container mt-2">
+          <p class="text-center lead px-2">
+            <a href="#" class="nav-link mt-1"><img src="linkedin.svg" alt=""></a>
+          </p>
+          <p class="text-center lead px-2">
+            <a href="#" class="nav-link mt-1"><img src="facebook.svg" alt=""></a>
+          </p>
         </div>
       </section>
 
 
     <!--Footer-->
-    <div class="container p-3">
-        <p class="text-center small text-muted">Copyright &copy; Azonisse 2023</p>
+    <div class="container pt-5">
+        <p class="text-center small text-muted"><img src="AECODE.jpg" alt=""></p>
     </div>
+    <div class="container p-3">
+      <p class="text-center small text-muted">Copyright &copy; AECODE 2023</p>
+  </div>
 
-    
+
+    <!--Script para el uso de bootstrap 5-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -27,3 +27,19 @@
         transform: translateX(calc(-200px*7));
     }
 }
+
+.footer-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    list-style: none;
+  }
+
+  .nav-item {
+    list-style: none;
+    margin-right: 10px; /* Ajusta el espaciado entre los elementos según sea necesario */
+  }
+
+  .nav-link img {
+    width: 29px; /* Ajusta el tamaño de las imágenes según sea necesario */
+  }
