@@ -12,12 +12,17 @@
     />
     <!--Estilo de letra de google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Onest:wght@500&family=Plus+Jakarta+Sans:wght@200&family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="slider.css">
-    <!--Font awesome para los íconos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezrJjJvSm+fltvzBMTVfLue4IHMyT9DD+V3iMx4OMHX5ifBr9tdYBqsRdzPcAja" crossorigin="anonymous">
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <title>AECODE</title>
+    
+    <!--Enlace con el .js-->
+    <script src="scripts.js"></script>
   </head>
   <body>
     <!--Boton de whatsapp-->
@@ -69,7 +74,7 @@
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <div class="slide">
-                    <button class="btn btn-primary mi-boton">Registrate</button>
+                    <button onclick="mostrarFormulario()" class="btn btn-primary mi-boton">Registrate</button>
                 </div>
               </a>
             </li>
@@ -77,7 +82,7 @@
         </div>
       </div>
     </div>
-
+  
     <!--Sección Home-->
     <div id="Home" class="header">
       <div class="container-xl pt-5">
@@ -102,12 +107,80 @@
                 facilis. Animi, voluptatum!
               </p>
               <div class="text-center">
-                <button class="btn btn-outline-primary w-50">Más información</button>
+                <button onclick="mostrarFormulario()" class="btn btn-outline-primary w-50">¡Estoy interesado!</button>
               </div>
             </div>
           </div>
         </div>
+        <form name="submit-to-google-sheet" class="form-control text-center px-5 ">
+                <div class="">
+                  <button type="button" class="close btnText" onclick="cerrarFormulario()">
+                    X
+                  </button> 
+                </div>
+                <div class="">
+                  <h5 class="fw-bold display-6 py-3">¡Únete a la familia AECODE!</h5>
+                  <p class="text-muted text-secondary">
+                    Ingresa tu nombre y correo electrónico, para recibir información sobre nuestros cursos y mucho más!
+                  </p>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control" placeholder="Nombre" name="Nombre" id="Nombre">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Correo electrónico" name="Correo" id="Correo">
+                </div>
+                <div class="">
+                  <button type="submit" class="btn btn-primary px-4">Enviar información</button>
 
+                </div>
+                <div>
+                  <p class="small text-muted pt-3">
+                    Al enviar tus datos, aceptas recibir información sobre noticias, promociones, productos y servicios de AECODE.pe.
+                  </p>
+                </div>
+                <div>
+                  <p class="small text-muted">¡Bienvenido!</p>
+                </div>
+              </form>
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <!-- Formulario oculto por defecto -->
+            <div class="row g-5 py-5">
+              <form id="form" method="post" class="form-control text-center px-5">
+                <div class="">
+                  <button type="button" class="close btnText" onclick="cerrarFormulario()">
+                    X
+                  </button> 
+                </div>
+                <div class="">
+                  <h5 class="fw-bold display-6 py-3">¡Únete a la familia AECODE!</h5>
+                  <p class="text-muted text-secondary">
+                    Ingresa tu nombre y correo electrónico, para recibir información sobre nuestros cursos y mucho más!
+                  </p>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control input" placeholder="Nombre" name="Client Name">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control input" placeholder="Correo electrónico" name="Email" >
+                </div>
+                <div class="">
+                  <button type="submit" id="submit-button"class="btn btn-primary px-4">Enviar información</button>
+
+                </div>
+                <div>
+                  <p class="small text-muted pt-3">
+                    Al enviar tus datos, aceptas recibir información sobre noticias, promociones, productos y servicios de AECODE.pe.
+                  </p>
+                </div>
+                <div>
+                  <p class="small text-muted">¡Bienvenido!</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <div>
           <div class="container">
             <div class="row g-5 py-5">
@@ -275,55 +348,20 @@
     </div>
 
     <!--Sección Contactanos-->
-    <div id="Contáctanos" class="container py-3 pt-5">
-      <div class="container py-3 pt-4">
-        <div class="text-center">
-          <h5 class="fw-bold display-4 ">¡Únete a la familia AECODE!</h5>
-          <p class="text-muted text-secondary lead pt-2">
-            Ingresa tu nombre y correo electrónico, para recibir información sobre nuestros cursos y mucho más!
-          </p>
-          <form class="form-control" action="https://formsubmit.co/sthepen.genplus@gmail.com" method="POST" >
-            <div class="mb-3 mt-3">
-              <input type="text" class="form-control" placeholder="Nombre" name="name" id="name">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Correo electrónico" name="email" id="email">
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Asunto" name="subject" id="subject">
-            </div>
-            <div class="mb-3">
-              <input type="coments" class="form-control" placeholder="Comentarios" name="coments" id="coments">
-            </div>
-            <div class="">
-              <button type="submit" class="btn btn-primary px-4">Enviar información</button>
-              <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-              <input type="hidden" name="_captcha" value="false">
-            </div>
-            <div>
-              <p class="small text-muted pt-3">
-                Al enviar tus datos, aceptas recibir información sobre noticias, promociones, productos y servicios de AECODE.pe.
-              </p>
-            </div>
-            <div>
-              <p class="small text-muted">¡Bienvenido!</p>
-            </div>
-          </form>
-        </div>
-      </div>
+    <div id="Contáctanos" class="container p-5 pt-5">
+      
     </div>
 
-    <section class="p-4 bg-light">
+    <section class="p-5 bg-light">
         <div class="container">
           <h1 class="display-5 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sapiente
-            non dicta magnam facere nulla.
+            ¡Comparte la información con el mundo!
           </h1>
           <p class="text-center text-secondary lead pt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum maiores sint ea ex nulla, dolore nihil consequuntur blanditiis soluta veritatis eius natus ad omnis accusantium laboriosam sapiente corrupti porro voluptatum!
+            Si conoce a alguien que pueda estar interesado en nuestras capacitaciones, comparte la noticia con tus contactos y ayúdanos a llegar a una audiencia más amplia.
           </p>
           <p class="text-center text-secondary lead pt-2">
-            ¡Gracias!
+            Estamos en contacto
           </p>
         </div>
         <div class="footer-items container mt-2">
@@ -344,6 +382,82 @@
     <div class="container p-3">
       <p class="text-center small text-muted">Copyright &copy; AECODE 2023</p>
     </div>
+
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbwdd6JcjH_A2YeWML1woNBJYkStYKdnwI-M9HN1sRl5NuW_7qartpsquZ1IO-jOl4Waqg/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+    
 
 
     <!--Script para el uso de bootstrap 5-->
