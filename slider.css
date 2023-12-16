@@ -4,7 +4,7 @@
   src: url(Ruberoid/Ruberoid-Medium.otf);
 }
 
-h1, h5, .nav-link, .btnText, .mi-boton{
+h1, h3, h5, .nav-link, .btnText, .mi-boton{
   font-family: 'Ruberoid';
   
   /*font-family: 'Quicksand', sans-serif;*/
