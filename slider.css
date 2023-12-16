@@ -4,7 +4,7 @@
   src: url(Ruberoid/Ruberoid-Medium.otf);
 }
 
-h1, h5, .nav-link, .btnText{
+h1, h5, .nav-link, .btnText, .mi-boton{
   font-family: 'Ruberoid';
   
   /*font-family: 'Quicksand', sans-serif;*/
@@ -16,6 +16,63 @@ p, .btn{
   font-size: large;
 }
 
+.btnText {
+  font-weight: medium;
+  font-size: 15px;
+  display: flex;
+}
+
+.nav-link-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text {
+  margin-left: 5px;
+}
+
+.inline-text {
+  display: inline; /* Esto hace que el span sea en línea */
+  margin-left: 5px; /* Ajusta según sea necesario */
+}
+.iconoHeader {
+  font-size: 30px;
+}
+
+.iconos {
+  font-size: 20px;
+  margin-top: 35px;
+  margin-inline: 12px;
+  color: black;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 5px 10px rgb(0,0,0,.35);
+}
+
+.fa-facebook:hover {
+  background-color: RGB(59, 89, 152);
+  color: white;
+}
+
+.fa-linkedin:hover {
+  background-color: RGB(0, 119, 181);
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(to bottom, #d111d1, #eb0027);
+  color: white;
+}
+
+.fa-tiktok:hover {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  width: 30%;
+}
+
 /*Estilos del slider*/
 .slider {
     width: auto;
@@ -24,28 +81,63 @@ p, .btn{
     overflow: hidden;
 }
 
-.slider .slide-track {
-    display: flex;
-    animation: scroll 60s linear infinite ;
-    -webkit-animation: scroll 60s linear infinite;
-    width: 100%;
-}
-
 .slider .slide {
-    padding-right: 100px;
+  padding-right: 100px;
+}
+
+/* Estilos del slider 1 (de izquierda a derecha) */
+.slider1 {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider1 .slide-track {
+  display: flex;
+  animation: scroll1 60s linear infinite;
+  -webkit-animation: scroll1 60s linear infinite;
+  width: 100%;
+}
+
+@keyframes scroll1 {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+      -webkit-transform: translateX(calc(-80px*7));
+      transform: translateX(calc(-80px*7));
+  }
+}
+
+/* Estilos del slider 2 (de derecha a izquierda) */
+.slider2 {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider2 .slide-track {
+  display: flex;
+  animation: scroll2 60s linear infinite;
+  -webkit-animation: scroll2 60s linear infinite;
+  width: 100%;
+}
+
+@keyframes scroll2 {
+  0% {
+      -webkit-transform: translateX(calc(-80px*7));
+      transform: translateX(calc(-80px*7));
+  }
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
 }
 
 
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-200px*7));
-        transform: translateX(calc(-200px*7));
-    }
-}
 
 .footer-items {
     display: flex;
@@ -127,8 +219,12 @@ p, .btn{
   line-height: 20px;
   text-align: center;
   cursor: pointer;
-  border: none;
-  background-color: #ddd;
-  border-radius: 50%;
+  border: black;
+  background-color: white;
   outline: none;
+}
+
+.close:hover {
+  background-color: red;
+  color: white;
 }
