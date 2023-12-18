@@ -65,12 +65,12 @@
               <a href="#Contáctanos" class="nav-link mt-2"><strong>Contáctanos</strong></a>
             </li>
             <li class="nav-item mt-2">
-              <a href="/index_en.html" class="nav-link nav-link-icon"><i class="fa-solid iconoHeader fa-earth-americas"></i><span class="icon-text"><strong>es</strong></span></a>
+              <a href="/index_en.html" class="nav-link nav-link-icon"><i class="fa-solid iconoHeader fa-earth-americas"></i><span class="icon-text"><strong>ES</strong></span></a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <div class="slide">
-                    <button onclick="mostrarFormulario()" class="btn btn-primary .btnText" style="background-color: #4B0082; border: #4B0082;"><strong>Registrate</strong></button>
+                    <button onclick="mostrarFormulario()" class="btn btn-primary" style="background-color: #380489; border: #380489;">Registrate</button>
                 </div>
               </a>
             </li>
@@ -103,17 +103,17 @@
                 facilis. Animi, voluptatum!
               </p>
               <div class="text-center">
-                <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #4B0082; border: #4B0082;"><strong>¡Estoy interesado!</strong></button>
+                <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;">¡Estoy interesado!</button>
               </div>
             </div>
           </div>
         </div>
-        <div  iv id="miModal" class="modal">
+        <div id="miModal" class="modal">
           <div class="modal-content">
             <!-- Formulario oculto por defecto -->
-            <div class="row g-5 py-5">
-              <form id="form" method="post" class="form-control text-center px-5">
-                <div class="">
+            <div class="row g-5 py-4">
+              <form id="form" method="post" class="form-control text-center px-5 position-relative">
+                <div class="position-absolute top-0 end-0">
                   <button type="" class="close btnText" onclick="cerrarFormulario()">
                     X
                   </button> 
@@ -131,8 +131,41 @@
                   <input type="email" class="form-control input" placeholder="Correo electrónico" name="Email" >
                 </div>
                 <div class="">
-                  <button type="submit" id="submit-button"class="btn btn-primary px-4" style="background-color: #4B0082; border: #4B0082;"><strong>Enviar información</strong></button>
+                  <button type="submit" onclick="mostrarFormulario2()" id="submit-button"class="btn btn-primary px-4" style="background-color: #380489; border: #380489;"><strong>Enviar información</strong></button>
 
+                </div>
+                <div>
+                  <p class="small text-muted pt-3">
+                    Al enviar tus datos, aceptas recibir información sobre noticias, promociones, productos y servicios de AECODE.pe.
+                  </p>
+                </div>
+                <div>
+                  <p class="small text-muted">¡Bienvenido!</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="miModal2" class="modal2">
+          <div class="modal-content2">
+            <!-- Formulario oculto por defecto -->
+            <div class="row g-5 py-4">
+              <form id="form2" method="post" class="form-control text-center px-5 position-relative">
+                <div class="position-absolute top-0 end-0"> <!-- Ajusta la posición del contenedor del botón -->
+                  <button type="button" class="close2 btnText" onclick="cerrarFormulario2()">
+                    X
+                  </button>
+                </div>
+                <div class="">
+                  <h5 class="fw-bold display-6 py-3">¡Bienvenido a la familia AECODE!</h5>
+                  <p class="text-muted text-secondary">
+                    Estamos contentos de poder contar contigo, recibirás un correo con información sobre nuestros cursos y mucho más!
+                  </p>
+                </div>
+                <div class="">
+                  <a href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x" target="_blank" class="btn btn-primary px-4" style="background-color: #380489; border: #380489; color: white;">
+                    <strong>¡Únete a nuestro grupo de Whatsapp!</strong>
+                  </a>
                 </div>
                 <div>
                   <p class="small text-muted pt-3">
@@ -349,7 +382,7 @@
             <p class="text-muted">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tenetur maiores quo maxime esse officiis pariatur ab repellendus est voluptatibus molestias in, dignissimos mollitia dicta sunt tempora vero nemo neque debitis harum porro a? Earum mollitia autem maiores. Odit, ipsa earum distinctio nam nulla excepturi culpa libero a reprehenderit aperiam eius ipsum deleniti incidunt quod ducimus doloribus officiis consequatur, expedita ratione nostrum maiores facere suscipit eligendi odio? Ad voluptatum tempora odit quisquam? Minus commodi dolore eveniet tempore iusto a nostrum, debitis culpa, alias, autem sapiente officiis quas iste laudantium sit doloribus? Tempora debitis ratione vel repudiandae? Commodi qui officiis cupiditate.
               <div class="text-center">
-                <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #4B0082; border: #4B0082;"><strong>¡Estoy interesado!</strong></button>
+                <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;"><strong>¡Estoy interesado!</strong></button>
               </div>
             </div>
           
@@ -360,7 +393,7 @@
 
             </p>
             <div class="text-center">
-              <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #4B0082; border: #4B0082;"><strong>¡Estoy interesado!</strong></button>
+              <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;"><strong>¡Estoy interesado!</strong></button>
             </div>
           </div>
 
@@ -371,7 +404,7 @@
 
             </p>
             <div class="text-center">
-              <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #4B0082; border: #4B0082;"><strong>¡Estoy interesado!</strong></button>
+              <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;"><strong>¡Estoy interesado!</strong></button>
             </div>
           </div>
         </div>
@@ -420,6 +453,7 @@
         <p class="text-center small text-muted"><img src="/aecode-logo.png" class="logo" alt=""></p>
     </div>
     <div class="container p-3">
+      <p class="text-center small text-muted">Una división de GEN+</p>
       <p class="text-center small text-muted">Copyright &copy; AECODE 2023</p>
     </div>
     </section>

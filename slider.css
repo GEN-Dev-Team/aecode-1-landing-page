@@ -4,22 +4,20 @@
   src: url(Ruberoid/Ruberoid-Medium.otf);
 }
 
-h1, h3, h5, .nav-link, .btnText, .mi-boton{
+h1, h3, h5, .nav-link, .btn, .mi-boton{
   font-family: 'Ruberoid';
   
   /*font-family: 'Quicksand', sans-serif;*/
 }
 
-p, .btn{
+p{
   font-family: 'Plus Jakarta Sans';
   /*font-family: 'Mulish';*/
   font-size: large;
 }
 
-.btnText {
-  font-weight: medium;
-  font-size: 15px;
-  display: flex;
+.btn {
+  font-weight: 600;
 }
 
 .nav-link-icon {
@@ -186,7 +184,7 @@ p, .btn{
 }
 
 
-.modal {
+.modal, .modal2 {
   display: none;
   position: fixed;
   top: 40px;
@@ -200,7 +198,7 @@ p, .btn{
 }
 
 /* Estilo para el contenido del formulario */
-.modal-content {
+.modal-content, .modal-content2 {
   background-color: #fff;
   padding-right: 50px;
   padding-left: 50px;
@@ -209,7 +207,7 @@ p, .btn{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.close {
+.close, .close2 {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -224,7 +222,7 @@ p, .btn{
   outline: none;
 }
 
-.close:hover {
+.close:hover, .close2:hover {
   background-color: red;
   color: white;
 }
