@@ -25,6 +25,7 @@
 
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="carrusel.js"></script>
 
     <title>AECODE</title>
 
@@ -37,7 +38,7 @@
   <body>
     <!--Boton de whatsapp-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x" class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=51900121245" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float "></i>
     </a>
     <!-- Barra de navegación-->
@@ -84,7 +85,7 @@
       <div class="container-xl pt-5">
         <div class="row">
           <div class="col-md-6">
-            <div class="image-container pt-5 ">
+            <div class="image-container pt-5">
               <img src="/aprender.webp" alt="" class="img-fluid" />
             </div>
           </div>
@@ -97,13 +98,10 @@
                 quisquam.
               </h1>
               <p class="lead text-secondary pt-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-                quia dolore, culpa temporibus placeat iusto et est! Mollitia,
-                error vero cumque odio et veniam fugit blanditiis nesciunt
-                facilis. Animi, voluptatum!
+                La innovación es nuestro motor. Cursos que desafían lo convencional, preparando a líderes que transforman la ingeniería civil y estructural. Únete a la evolución en Aecode.
               </p>
               <div class="text-center">
-                <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;">¡Estoy interesado!</button>
+                <button onclick="mostrarFormulario()" class="btn btn-primary w-50"style="background-color: #380489; border: #380489;">¡Estoy interesado!</button>
               </div>
             </div>
           </div>
@@ -112,7 +110,7 @@
           <div class="modal-content">
             <!-- Formulario oculto por defecto -->
             <div class="row g-5 py-4">
-              <form id="form" method="post" class="form-control text-center px-5 position-relative">
+              <form id="form" method="post" class="form-control text-center px-5 position-relative" onsubmit="mostrarFormulario2(); return false;">
                 <div class="position-absolute top-0 end-0">
                   <button type="" class="close btnText" onclick="cerrarFormulario()">
                     X
@@ -125,14 +123,13 @@
                   </p>
                 </div>
                 <div class="mb-3 mt-3">
-                  <input type="text" class="form-control input" placeholder="Nombre" name="Client Name">
+                  <input type="text" required class="form-control input" placeholder="Nombre y apellido" name="Client Name">
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control input" placeholder="Correo electrónico" name="Email" >
+                  <input type="email" required class="form-control input" placeholder="Correo electrónico" name="Email" >
                 </div>
                 <div class="">
-                  <button type="submit" onclick="mostrarFormulario2()" id="submit-button"class="btn btn-primary px-4" style="background-color: #380489; border: #380489;"><strong>Enviar información</strong></button>
-
+                  <button type="submit" id="submit-button"class="btn btn-primary px-4" style="background-color: #380489; border: #380489;"><strong>Enviar información</strong></button>
                 </div>
                 <div>
                   <p class="small text-muted pt-3">
@@ -159,7 +156,7 @@
                 <div class="">
                   <h5 class="fw-bold display-6 py-3">¡Bienvenido a la familia AECODE!</h5>
                   <p class="text-muted text-secondary">
-                    Estamos contentos de poder contar contigo, recibirás un correo con información sobre nuestros cursos y mucho más!
+                    Estamos contentos de poder contar contigo, dentro de los siguiente 60 segundos recibirás un correo con información sobre nuestros cursos y mucho más!
                   </p>
                 </div>
                 <div class="">
@@ -179,34 +176,31 @@
             </div>
           </div>
         </div>
-        <div>
-          <div class="container">
-            <div class="row g-5 py-5">
-              <div class="col-md-4">
-                <h3 class="fw-bold">INNOVACIÓN</h3>
-                <p class="text-muted">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-                  ullam, ipsum temporibus qui dolor adipisci necessitatibus.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <h3 class="fw-bold">DIGITALIZACIÓN</h3>
-                <p class="text-muted">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-                  ullam, ipsum temporibus qui dolor adipisci necessitatibus.
-                </p>
-              </div>
-              <div class="col-md-4">
-                <h3 class="fw-bold">AUTOMATIZACIÓN</h3>
-                <p class="text-muted">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-                  ullam, ipsum temporibus qui dolor adipisci necessitatibus.
-                </p>
-              </div>
-            </div>
+      </div>
+      <div class="container text-center">
+        <div class="row g-5 py-5">
+          <div class="col-md-4">
+            <h3 class="fw-bold">INNOVACIÓN</h3>
+            <p class="text-muted">
+              Buscamos redefinir la ingeniería moderna en el sector AEC, estableciendo estándares optimizados y sostenibles para su futuro.
+            </p>
+            <img class="img-Palabras" src="/inn.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold">DIGITALIZACIÓN</h3>
+            <p class="text-muted">
+              Impulsamos la transformación digital en la Ingeniería y Construcción, redefiniendo estándares globales para el futuro del sector.
+            </p>
+            <img class="img-Palabras" src="/dig.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <h3 class="fw-bold">AUTOMATIZACIÓN</h3>
+            <p class="text-muted">
+              Transformamos los desafíos de ingeniería mediante soluciones óptimas, integrando la pasión y creatividad con tecnología avanzada.
+            </p>
+            <img class="img-Palabras" src="/auto.png" alt="">
           </div>
         </div>
-
       </div>
   <!--SLIDERS-->
     <section class="bg-light">
@@ -373,43 +367,92 @@
     </div>
     </section>
     <!--Sección Capacitaciones-->
-    <div id="Capacitaciones" class="py-2 pt-5">
-      <!--Tarjetas de cursos-->
-      <div class="container">
-        <div class="row g-5 py-5">
-          <div class="col-md-4 text-center">
-            <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tenetur maiores quo maxime esse officiis pariatur ab repellendus est voluptatibus molestias in, dignissimos mollitia dicta sunt tempora vero nemo neque debitis harum porro a? Earum mollitia autem maiores. Odit, ipsa earum distinctio nam nulla excepturi culpa libero a reprehenderit aperiam eius ipsum deleniti incidunt quod ducimus doloribus officiis consequatur, expedita ratione nostrum maiores facere suscipit eligendi odio? Ad voluptatum tempora odit quisquam? Minus commodi dolore eveniet tempore iusto a nostrum, debitis culpa, alias, autem sapiente officiis quas iste laudantium sit doloribus? Tempora debitis ratione vel repudiandae? Commodi qui officiis cupiditate.
-              <div class="text-center">
-                <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;"><strong>¡Estoy interesado!</strong></button>
-              </div>
+    <section id="Capacitaciones" class="">
+    <!--Tarjetas de cursos-->
+    <div id="carouselExampleControls" class="carousel slide text-center py-4">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <img src="/2.avif" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
             </div>
-          
-          <div class="col-md-4 text-center">
-            <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tenetur maiores quo maxime esse officiis pariatur ab repellendus est voluptatibus molestias in, dignissimos mollitia dicta sunt tempora vero nemo neque debitis harum porro a? Earum mollitia autem maiores. Odit, ipsa earum distinctio nam nulla excepturi culpa libero a reprehenderit aperiam eius ipsum deleniti incidunt quod ducimus doloribus officiis consequatur, expedita ratione nostrum maiores facere suscipit eligendi odio? Ad voluptatum tempora odit quisquam? Minus commodi dolore eveniet tempore iusto a nostrum, debitis culpa, alias, autem sapiente officiis quas iste laudantium sit doloribus? Tempora debitis ratione vel repudiandae? Commodi qui officiis cupiditate.
-
-            </p>
-            <div class="text-center">
-              <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;"><strong>¡Estoy interesado!</strong></button>
-            </div>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <h5 class="fw-bold">Lorem ipsum dolor sit amet.</h5>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tenetur maiores quo maxime esse officiis pariatur ab repellendus est voluptatibus molestias in, dignissimos mollitia dicta sunt tempora vero nemo neque debitis harum porro a? Earum mollitia autem maiores. Odit, ipsa earum distinctio nam nulla excepturi culpa libero a reprehenderit aperiam eius ipsum deleniti incidunt quod ducimus doloribus officiis consequatur, expedita ratione nostrum maiores facere suscipit eligendi odio? Ad voluptatum tempora odit quisquam? Minus commodi dolore eveniet tempore iusto a nostrum, debitis culpa, alias, autem sapiente officiis quas iste laudantium sit doloribus? Tempora debitis ratione vel repudiandae? Commodi qui officiis cupiditate.
-
-            </p>
-            <div class="text-center">
-              <button onclick="mostrarFormulario()" class="btn btn-primary w-50" style="background-color: #380489; border: #380489;"><strong>¡Estoy interesado!</strong></button>
-            </div>
-          </div>
         </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="/3.avif" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="/5.avif" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="carousel-item active">
+          <div class="card">
+            <img src="/2.avif" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title 4</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="/3.avif" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title 5</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="/5.avif" class="d-block w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title 6</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
+            </div>
+        </div>
+        </div>
+
+
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    </section>
 
     <!--Sección Contactanos-->
     <section class="bg-light">
@@ -432,16 +475,16 @@
         </div>
         <div class="footer-items container mt-2">
           <p class="text-center lead px-2">
-            <a href="https://www.facebook.com/BridgeInformationModeling?mibextid=LQQJ4d" target="_blank" class="nav-link mt-1"><i class="fab iconos fa-facebook"></i></a>
+            <a href="https://www.facebook.com/aeccode/?_rdc=1&_rdr" target="_blank" class="nav-link mt-1"><i class="fab iconos fa-facebook"></i></a>
           </p>
           <p class="text-center lead px-2">
             <a href="https://www.linkedin.com/company/aecodee/" target="_blank" class="nav-link mt-1"><i class="fab iconos fa-linkedin"></i></a>
           </p>
           <p class="text-center lead px-2">
-            <a href="#"  target="_blank" class="nav-link mt-1"><i class="fab iconos fa-instagram"></i></a>
+            <a href="https://www.instagram.com/aeccode.ai?igshid=OGQ5ZDc2ODk2ZA=="  target="_blank" class="nav-link mt-1"><i class="fab iconos fa-instagram"></i></a>
           </p>
           <p class="text-center lead px-2">
-            <a href="#" target="_blank" class="nav-link mt-1"><i class="fab iconos fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@aecode.ai" target="_blank" class="nav-link mt-1"><i class="fab iconos fa-tiktok"></i></a>
           </p>
         </div>
       </section>
@@ -532,8 +575,6 @@
           });
       });
     </script>
-    
-
 
     <!--Script para el uso de bootstrap 5-->
     <script
