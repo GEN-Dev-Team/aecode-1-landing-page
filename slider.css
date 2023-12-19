@@ -161,6 +161,10 @@ p{
     max-width: 40%;
     height: auto;
   }
+
+  .slide img {
+    width: 60px;
+  }
   
 
   /*Estilos para el botón de wssp*/
