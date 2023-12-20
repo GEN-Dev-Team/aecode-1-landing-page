@@ -163,7 +163,7 @@ p{
   }
 
   .slide img {
-    width: 60px;
+    width: 70px;
   }
   
 
@@ -268,4 +268,68 @@ p{
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+/*Animacion de la barra de navegación*/
+.navbar {
+  top: -100%;
+  animation: anim1 2s forwards 0s;
+}
+
+.navbar {
+  top: -100%;
+  animation: anim1 2s forwards 0s;
+}
+
+@keyframes anim1 {
+  from {
+    top: -100%;
+  }
+  to {
+    top:0%
+  }
+}
+
+/*Animacion de la imagen*/
+.image-container {
+  animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Animacion del botón de wssp y del texto del home*/
+.whatsapp, .text-container {
+  animation: slideInFromRight 3s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* Define la animación para el botón de WhatsApp */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.whatsapp, .titulos {
+  animation: slideUp 2s ease-in-out;
 }
