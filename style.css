@@ -3,6 +3,9 @@
   font-family: 'Ruberoid';
   src: url(Ruberoid/Ruberoid-Medium.otf);
 }
+body {
+  overflow-x: hidden;
+}
 
 h1, h3, h5, .nav-link, .btn, .mi-boton{
   font-family: 'Ruberoid';
@@ -221,6 +224,12 @@ p{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1200px) {
+  .modal-content, .modal-content2 {
+    width: 80%;
+  }
+}
+
 .close, .close2 {
   position: absolute;
   top: 5px;
@@ -332,4 +341,13 @@ p{
 
 .whatsapp, .titulos {
   animation: slideUp 2s ease-in-out;
+}
+
+.card .img-wrapper {
+  max-width: 96%;
+  height: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
 }
