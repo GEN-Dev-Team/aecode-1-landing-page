@@ -67,15 +67,13 @@
             <li class="nav-item">
               <a href="#Contáctanos" class="nav-link mt-2"><strong>Contáctanos</strong></a>
             </li>
-            <li class="nav-item mt-2">
+            <li class="nav-item mt-1">
               <a href="/index_en.html" class="nav-link nav-link-icon"><i class="fa-solid iconoHeader fa-earth-americas"></i><span class="icon-text"><strong>ES</strong></span></a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">
-                <div class="slide">
-                    <button onclick="mostrarFormulario()" class="btn btn-primary" style="background-color: #380489; border: #380489;">Registrate</button>
-                </div>
-              </a>
+            <li class="nav-item mt-2">
+              <div class="slide">
+                <button type="button" onclick="mostrarFormulario()" class="btn btn-primary" style="background-color: #380489; border: #380489;">Registrate</button>
+            </div>
             </li>
           </ul>
         </div>
@@ -212,8 +210,8 @@
               <div class="slide">
                 <img src="/Softwares/logo_trimbleconnect.png" alt="">
               </div>
-              <div class="slide mt-3">
-                <img src="/Softwares/logaster-2020-08-h-rhinoceros-logo-15.png" alt="">
+              <div class="slide mt-2">
+                <img style="width: 120px;" src="/Softwares/logaster-2020-08-h-rhinoceros-logo-15.png" alt="">
               </div>
               <div class="slide">
                 <img src="/Softwares/Karamba3d_logo_K2-07.png" alt="">
@@ -251,7 +249,7 @@
               <div class="slide">
                 <img src="/Softwares/logo_trimbleconnect.png" alt="">
               </div>
-              <div class="slide mt-3">
+              <div class="slide mt-2">
                 <img src="/Softwares/logaster-2020-08-h-rhinoceros-logo-15.png" alt="">
               </div>
               <div class="slide">
@@ -414,35 +412,11 @@
         </div>
         </div>
 
-
-
         <div class="carousel-item active">
           <div class="card">
             <img src="/Imagenes/2.avif" class="d-block w-100" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title 4</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="/Imagenes/3.avif" class="d-block w-100" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 5</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
-            </div>
-        </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <img src="/Imagenes/5.avif" class="d-block w-100" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 6</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
                 <a href="#" class="btn btn-primary"style="background-color: #380489; border: #380489;">¡Estoy interesado!</a>
@@ -586,6 +560,38 @@
           });
       });
     </script>
+  <!--Script para el desplegable-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Obtén el elemento del botón del menú desplegable
+    var navbarToggle = document.querySelector('.navbar-toggler');
+
+    // Obtén la lista de elementos del menú
+    var navbarNav = document.querySelector('#navbarNavDropdown');
+
+    // Agrega un evento al hacer clic en el botón
+    navbarToggle.addEventListener('click', function () {
+      // Verifica si la lista está desplegada
+      if (navbarNav.classList.contains('show')) {
+        // Si está desplegada, ciérrala
+        navbarNav.classList.remove('show');
+      }
+    });
+
+    // Agrega eventos a los elementos del menú para cerrar el menú cuando se hace clic en ellos
+    var navbarItems = document.querySelectorAll('.navbar-nav .nav-item');
+
+    navbarItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        // Verifica si la lista está desplegada
+        if (navbarNav.classList.contains('show')) {
+          // Si está desplegada, ciérrala
+          navbarNav.classList.remove('show');
+        }
+      });
+    });
+  });
+</script>
 
     <!--Script para el uso de bootstrap 5-->
     <script

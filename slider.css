@@ -221,6 +221,12 @@ p{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1200px) {
+  .modal-content, .modal-content2 {
+    width: 80%;
+  }
+}
+
 .close, .close2 {
   position: absolute;
   top: 5px;
@@ -332,4 +338,9 @@ p{
 
 .whatsapp, .titulos {
   animation: slideUp 2s ease-in-out;
+}
+
+
+.pausar-animaciones * {
+  animation-play-state: paused !important;
 }
