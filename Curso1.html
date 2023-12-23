@@ -18,111 +18,114 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Onest:wght@500&family=Plus+Jakarta+Sans:wght@200&family=Quicksand:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--Para los íconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Estilos-->
     <link rel="stylesheet" href="style.css" />
+
+    <!--Scripts-->
+    <script src="scripts.js"></script>
   </head>
-  <body
-    background="/Imagenes/fondo.avif"
-    style="
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    "
-  >
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="row text-center mt-5">
-                <a href="/index.html" class="btn btn-link">
-                    <i class="fas fa-arrow-left fa-2x" style="color: #380489;"></i>
-                </a>
-            </div>
-            <div class="row text-center display-4 mt-5">
-                <h1>
-                    <strong>Simulación 4D para la planificación y control de obras</strong>
-                </h1>
-            </div>
+  <body class="Curso1" background="Imagenes/Rectangle 1311.png" style="background-size: cover">
+    <!--CURSO1-->
+    <!--Cabecera-->
+    <div class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand fs-3 pb-2"
+          ><img src="/Imagenes/aecode-logo.png" alt="" class="img-fluid logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/index.html#Home" class="nav-link mt-2"
+                ><strong>Nosotros</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/index.html#Capacitaciones" class="nav-link mt-2"
+                ><strong>Capacitaciones</strong></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/index.html#Contáctanos" class="nav-link mt-2"
+                ><strong>Contáctanos</strong></a
+              >
+            </li>
+            <li class="nav-item mt-1">
+              <a href="/index_en.html" class="nav-link nav-link-icon"
+                ><i class="fa-solid iconoHeader fa-earth-americas"></i
+                ><span class="icon-text"><strong>ES</strong></span></a
+              >
+            </li>
+            <li class="nav-item mt-2">
+              <div class="slide">
+                <button
+                  type="button"
+                  onclick="mostrarFormulario()"
+                  class="btn btn-primary"
+                  style="background-color: #380489; border: #380489"
+                >
+                  Registrate
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
-        
+      </div>
+    </div>
+    <!--Botón de whatsapp-->
+    <div class="whatsapp1">
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      />
+      <a
+        href="https://api.whatsapp.com/send?phone=51900121245"
+        class="float"
+        target="_blank"
+      >
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    </div>
+    <div class="container py-5">
+      <!--Título del curso-->
+      <div class="row pt-5">
+        <h1
+          style="
+            color: #293477;
+            font-family: Ruberoid;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 45px;
+            margin-top: 80px;
+          "
+        >
+          <strong>PROGRAMACIÓN Y SIMULACIÓN <br />BIM 4D CON SYNCRO PRO</strong>
+        </h1>
+      </div>
 
-      <div class="row py-5">
-        <div class="col-md-6">
-          <h3>CAPITULO 01</h3>
-          <h5>- Introducción al contexto nacional BIM</h5>
-          <p>
-            - Plan BIM y proyecciones de implementación BIM <br />
-            - Exploración en TdR's con BIM de proyectos piloto
-          </p>
-          <h5>- BIM 4D: usos, beneficios y propósito</h5>
-          <p>
-            - BIM 4D para la planificación de la construcción <br />
-            - BIM 4D para la construcción
-          </p>
-          <h5>- Interoperabilidad que ofrece Synchro 4D Pro</h5>
-          <p>
-            - Revit PlugIn <br />
-            - MsProject <br />
-            - OpenBIM con Tekla
-          </p>
-          <h5>- Entendiendo y usos del espacio de trabajo</h5>
-          <p>
-            - Reconocimiento del espacio de trabajo <br />
-            - Configuración de pestañas y personalización <br />
-            - Librería y entrenamiento Bentley
-          </p>
-
-          <h3>CAPITULO 02</h3>
-          <h5>- Importar cronograma desde MsProject</h5>
-          <h5>- Sobre gráfico Gantt y cronograma en Synchro</h5>
-          <p>
-            - Formas de navegación <br />
-            - Configuración de columnas <br />
-            - Configuración de fechas y tipo de calendario
-          </p>
-          <h5>- Importar objetos 3D</h5>
-          <p>
-            - Trabajar con IFC <br />
-            - Trabajar con objetos 3D <br />
-            - Tipos de creación de recursos y su relación con las tareas
-          </p>
-          <h5>- Análisis de propiedades para los elementos 3D</h5>
-          <p>
-            - Propiedades de los recursos <br />
-            - Propiedades de al visualización 3D <br />
-            - Filtros 3D <br />
-            - Creación de grupos de recursos <br />
-            - Formas de elección
-          </p>
-
-          <h3>CAPITULO 03</h3>
-          <h5>- Ejemplo práctico de cronograma en base a objetos</h5>
-          <p>
-            - Creación de tareas <br />
-            - Asignación de recursos a las tareas <br />
-            - Appearance Profiles: Configuración y personalización <br />
-            - Subdivisión de objetos 3D <br />
-            - Verificación de lógica constructiva con simulaciones preliminares
-          </p>
-          <h5>- Emparejamiento automático de recursos con taréas</h5>
-          <p>- Criterios sobre la data importada</p>
-          <h5>- Importación de objetos 3D</h5>
-          <p>- Creación de "paths" y su configuración</p>
-
-          <h3>CAPITULO 04</h3>
-          <h5>- Mapeo de riesgos generales del proyecto</h5>
-          <h5>- Creación de riesgos y conexión con el cronograma</h5>
-          <h5>- Creación de baseline para control de obra</h5>
-          <h5>- Reportes de avance</h5>
-
-          <h3 class="mt-4">CAPITULO 05: ANIMACIÓN</h3>
-          <h5>- Creación de "ViewPoints"</h5>
-          <h5>- Configuración de la Animación</h5>
-          <h5>- Exportación y detalles de entrega</h5>
-        </div>
-        <!--Dentro de la 2da columna vamos a crear 3 filas y en la 2da fila crearemos 2 columnas-->
-        <div class="col-md-6">
+      <!--Cuerpo del curso-->
+      <div class="row py-4">
+        <!--Objetivo, dirigido a y beneficios del curso-->
+        <div class="col-md-6" style="padding-right: 70px">
           <div class="row">
-            <h3>Objetivo del curso:</h3>
+            <h3 class="mt-5">¿Qué aprenderás con el curso?</h3>
             <p>
               El curso tiene como objetivo enseñar técnicas elementales para
               realizar BIM 4D. Con la formación del curso el alumno tendrá los
@@ -130,39 +133,232 @@
               de infraestructura.
             </p>
 
-            <h3>Dirigido a:</h3>
+            <h3 class="pt-4">¿Qué beneficios tendré al llevar el curso?</h3>
             <p>
-              Ingenieros, bachilleres y estudiantes que busquen aprender
-              herramientas BIM para la gestión y planificación de proyectos.
-            </p>
-
-            <h3>Beneficios de llevar el curso con nosotros:</h3>
-            <p>
-              - Certificación Bentley "......" <br />
-              - Certificado de nuestro centro <br />
-              -Curricula basada en las necesidades actuales del estado Peruano y
-              el contexto internacional. <br />
-              - Carte de reconocimiento académico e insiginía de Bentley "....."
+              <i class="fa-solid fa-circle-check"></i> Certificación Bentley
               <br />
-              - Se brinda acceso al software de Synchro 4D Pro para uso
-              educativo.
+              <i class="fa-solid fa-circle-check"></i> Certificado de nuestro
+              centro académico <br />
+              <i class="fa-solid fa-circle-check"></i> Curricula basada en las
+              necesidades actuales del estado Peruano y el contexto
+              internacional. <br />
+              <i class="fa-solid fa-circle-check"></i> Carta de reconocimiento
+              académico e insiginía de Bentley
+              <br />
+              <i class="fa-solid fa-circle-check"></i> Se brinda acceso al
+              software de Synchro 4D Pro para uso educativo.
             </p>
           </div>
-
-          <div class="row my-5">
-            <div class="col-md-6">
-              <!-- Contenido de la primera columna en la fila 2 -->
-              <div>
-                <img src="/Imagenes/curso1img.png" alt="" />
-              </div>
+        </div>
+        <!--Imagen de referencia y módulos del curso-->
+        <div class="col-md-6">
+          <!--Imagen de referencia-->
+          <div class="Img-Referencia mb-5">
+            <img class="img-fluid" src="/Imagenes/Curso1Ejemplo.png" alt="" />
+          </div>
+        </div>
+        <!--Módulos del curso-->
+        <div class="row Modulos">
+          <div class="col-md-6">
+            <button
+              id="toggleModule01"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module01')"
+            >
+              <h4>Módulo 01</h4>
+              <i
+                id="arrowDown01"
+                class="fa-solid fa-caret-down"
+                style="animation: blink 1s infinite; margin-left: 328px;"
+              ></i>
+              <i
+                id="arrowUp01"
+                class="fa-solid fa-caret-up"
+                style="display: none; animation: blink 1s infinite;margin-left: 328px;"
+              ></i>
+            </button>
+            <div id="module01" class="module-content">
+              <p>- Introducción al contexto nacional BIM</p>
+              <p>- BIM 4D: usos, beneficios y propósito</p>
+              <p>- Interoperabilidad que ofrece Synchro 4D Pro</p>
+              <p>- Entendiendo y usos del espacio de trabajo</p>
+              
             </div>
-            <div class="col-md-6">
-              <!-- Contenido de la segunda columna en la fila 2 -->
-              <h1>MEDALLA AECODE</h1>
+            <hr style="width: 490px; margin-top: -2px;">
+            <button
+              id="toggleModule03"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module03')"
+            >
+              <h4>Módulo 03</h4>
+              <i id="arrowDown03" class="fa-solid fa-caret-down"></i>
+              <i
+                id="arrowUp03"
+                class="fa-solid fa-caret-up"
+                style="display: none"
+              ></i>
+            </button>
+            <div id="module03" class="module-content">
+              <p>- Ejemplo práctico de cronograma en base a objetos</p>
+              <p>- Emparejamiento automático de recursos con taréas</p>
+              <p>- Criterios sobre la data importada</p>
+              <p>- Importación de objetos 3D</p>
+            </div>
+            <hr style="width: 490px; margin-top: -2px;">
+            <button
+              id="toggleModule05"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module05')"
+            >
+              <h4>Módulo 05: Animación</h4>
+              <i
+                id="arrowDown05"
+                class="fa-solid fa-caret-down"
+                style="margin-left: 181px"
+              ></i>
+              <i
+                id="arrowUp05"
+                class="fa-solid fa-caret-up"
+                style="display: none; margin-left: 181px"
+              ></i>
+            </button>
+            <hr style="width: 490px; margin-top: -2px;">
+            <div id="module05" class="module-content">
+              <p>- Creación de "ViewPoints"</p>
+              <p>- Configuración de la Animación</p>
+              <p>- Exportación y detalles de entrega</p>
             </div>
           </div>
-
-          <div class="row"></div>
+          <div class="col-md-6">
+            <div style="margin-left: 115px;">
+              <button
+              id="toggleModule02"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module02')"
+            >
+              <h4>Módulo 02</h4>
+              <i id="arrowDown02" class="fa-solid fa-caret-down"></i>
+              <i
+                id="arrowUp02"
+                class="fa-solid fa-caret-up"
+                style="display: none"
+              ></i>
+              
+            </button>
+            <hr style="width: 490px; margin-top: -2px;">
+            <div id="module02" class="module-content">
+              <p>- Importar cronograma desde MsProject</p>
+              <p>- Sobre gráfico Gantt y cronograma en Synchro</p>
+              <p>- Importar objetos 3D</p>
+              <p>- Análisis de propiedades para los elementos 3D</p>
+            </div>
+            <button
+              id="toggleModule04"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module04')"
+            >
+              <h4>Módulo 04</h4>
+              <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
+              <i
+                id="arrowUp04"
+                class="fa-solid fa-caret-up"
+                style="display: none"
+              ></i>
+            </button>
+            <hr style="width: 490px; margin-top: -2px;">
+            <div id="module04" class="module-content">
+              <p>- Mapeo de riesgos generales del proyecto</p>
+              <p>- Creación de riesgos y conexión con el cronograma</p>
+              <p>- Creación de baseline para control de obra</p>
+              <p>- Report es de avance</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Pie de página-->
+    <section class="Footer bg-light">
+      <div class="container pt-3">
+        <p class="text-center small text-muted">
+          <img
+            style="width: 20%"
+            src="/Imagenes/aecode-logo.png"
+            class="logo"
+            alt=""
+          />
+        </p>
+      </div>
+      <div class="container pb-2">
+        <p class="text-center small text-muted">
+          Sponsored by Generative and Optimal Design Solutions S.A.C.
+        </p>
+        <p class="text-center small text-muted">Copyright &copy; AECODE 2023</p>
+      </div>
+    </section>
+    <!--Formularios-->
+    <div id="miModal" class="modal">
+      <div class="modal-content">
+        <!-- Formulario oculto por defecto -->
+        <div class="row g-5 py-4">
+          <form id="form" method="post" class="form-control text-center px-5 position-relative" onsubmit="mostrarFormulario2(); return false;">
+            <div class="position-absolute top-0 end-0">
+              <button type="" class="close btnText" onclick="cerrarFormulario()">
+                X
+              </button> 
+            </div>
+            <div class="">
+              <h5 class="fw-bold display-6 py-3">¡Únete a la comunidad AECODE!</h5>
+              <p class="text-muted text-secondary">
+                Ingresa tu nombre y correo electrónico, para recibir información sobre nuestros cursos y mucho más!
+              </p>
+            </div>
+            <div class="mb-3 mt-3">
+              <input type="text" required class="form-control input" placeholder="Nombre y apellido" name="Client Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" required class="form-control input" placeholder="Correo electrónico" name="Email" >
+            </div>
+            <div class="">
+              <button type="submit" id="submit-button"class="btn btn-primary px-4" style="background-color: #380489; border: #380489;"><strong>Enviar información</strong></button>
+            </div>
+            <div>
+              <p class="small text-muted pt-3">
+                Al enviar tus datos, aceptas recibir información sobre noticias, promociones, productos y servicios de AECODE.pe.
+              </p>
+            </div>
+            <div>
+              <p class="small text-muted">¡Bienvenido!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="miModal2" class="modal2">
+      <div class="modal-content2">
+        <!-- Formulario oculto por defecto -->
+        <div class="row g-5 py-4">
+          <form id="form2" method="post" class="form-control text-center px-5 position-relative">
+            <div class="position-absolute top-0 end-0"> <!-- Ajusta la posición del contenedor del botón -->
+              <button type="button" class="close2 btnText" onclick="cerrarFormulario2()">
+                X
+              </button>
+            </div>
+            <div class="">
+              <h5 class="fw-bold display-6 py-3">¡Bienvenido a la comunidad AECODE!</h5>
+              <p class="text-muted text-secondary">
+                Estamos contentos de poder contar contigo, recibirás un correo con información sobre nuestros cursos y mucho más!
+              </p>
+            </div>
+            <div class="">
+              <a href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x" target="_blank" class="btn btn-primary px-4" style="background-color: #380489; border: #380489; color: white;">
+                <strong>¡Únete a nuestro grupo de Whatsapp!</strong>
+              </a>
+            </div>
+            <div>
+              <p class="small text-muted pt-3">¡Bienvenido!</p>
+            </div>
+          </form>
         </div>
       </div>
     </div>

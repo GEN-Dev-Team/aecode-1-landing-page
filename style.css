@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, h3, h5, .nav-link, .btn, .mi-boton{
+h1, h3, h5,h4, .nav-link, .btn, .mi-boton{
   font-family: 'Ruberoid';
   
   /*font-family: 'Quicksand', sans-serif;*/
@@ -23,19 +23,39 @@ p{
   font-weight: 600;
 }
 
+.btnText {
+  font-family: 'Ruberoid';
+  font-weight: 400;
+  margin-right: 1px;
+}
+
+.close, .close2 {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: black;
+  background-color: white;
+  outline: none;
+}
+
+.close:hover, .close2:hover {
+  background-color: red;
+  color: white;
+}
+
+
+/*Estilos de los íconos*/
 .nav-link-icon {
   display: flex;
   align-items: center;
 }
 
-.icon-text {
-  margin-left: 5px;
-}
-
-.inline-text {
-  display: inline; /* Esto hace que el span sea en línea */
-  margin-left: 5px; /* Ajusta según sea necesario */
-}
 .iconoHeader {
   font-size: 30px;
 }
@@ -49,6 +69,22 @@ p{
   padding: 15px;
   box-shadow: 0px 5px 10px rgb(0,0,0,.35);
 }
+
+.icon-text {
+  margin-left: 5px;
+}
+
+.fa-envelope, .fa-phone, .fa-circle-check {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+.inline-text {
+  display: inline; /* Esto hace que el span sea en línea */
+  margin-left: 5px; /* Ajusta según sea necesario */
+}
+
 
 .fa-facebook:hover {
   background-color: RGB(59, 89, 152);
@@ -70,8 +106,18 @@ p{
   color: white;
 }
 
+.fa-telegram:hover {
+  background-color: rgb(0, 136, 204);
+  color: white;
+}
+
 .logo {
   width: 30%;
+}
+
+.logoCurso1 {
+  width: 55%;
+  margin-right: 130px;
 }
 
 /*Estilos del slider*/
@@ -118,6 +164,10 @@ p{
   height: auto;
   margin: auto;
   overflow: hidden;
+}
+
+.slider2 h5 {
+  white-space: nowrap;
 }
 
 .slider2 .slide-track {
@@ -230,26 +280,6 @@ p{
   }
 }
 
-.close, .close2 {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 20px;
-  height: 20px;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  cursor: pointer;
-  border: black;
-  background-color: white;
-  outline: none;
-}
-
-.close:hover, .close2:hover {
-  background-color: red;
-  color: white;
-}
-
 /*Carrusel de tarjetas*/
 @media (min-width: 768px) {
   .carousel-inner {
@@ -265,11 +295,7 @@ p{
 .carousel-inner{
   padding: 1em;
 }
-.card{
-  margin: 0 1.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
-}
+
 .carousel-control-prev, .carousel-control-next{
   background-color: #e1e1e1;
   width: 6vh;
@@ -281,11 +307,6 @@ p{
 
 
 /*Animacion de la barra de navegación*/
-.navbar {
-  top: -100%;
-  animation: anim1 2s forwards 0s;
-}
-
 .navbar {
   top: -100%;
   animation: anim1 2s forwards 0s;
@@ -343,11 +364,44 @@ p{
   animation: slideUp 2s ease-in-out;
 }
 
+.card{
+  border-radius: 2%;
+  margin: 0 0.9em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  padding: 12px;
+}
+
 .card img {
+  border-radius: 4%;
   max-width: 100%;
-  height: 50em;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
+
+.fa-caret-down {
+  font-size: 25px;
+  margin-top: 4px;
+  margin-left: 325px;
+  color: #263C94;
+}
+
+.fa-caret-up {
+  font-size: 25px;
+  margin-top: 4px;
+  margin-left: 325px;
+  color: #5AA747;
+}
+
+.fa-circle-check {
+  color: #5AA747;
+}
+
+.module-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
+}
+
