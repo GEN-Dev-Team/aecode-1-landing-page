@@ -1,20 +1,26 @@
 /*Estilos generales*/
 @font-face {
-  font-family: 'Ruberoid';
+  font-family: "Ruberoid";
   src: url(Ruberoid/Ruberoid-Medium.otf);
 }
 body {
   overflow-x: hidden;
 }
 
-h1, h3, h5,h4, .nav-link, .btn, .mi-boton{
-  font-family: 'Ruberoid';
-  
+h1,
+h3,
+h5,
+h4,
+.nav-link,
+.btn,
+.mi-boton {
+  font-family: "Ruberoid";
+
   /*font-family: 'Quicksand', sans-serif;*/
 }
 
-p{
-  font-family: 'Plus Jakarta Sans';
+p {
+  font-family: "Plus Jakarta Sans";
   /*font-family: 'Mulish';*/
   font-size: large;
 }
@@ -24,12 +30,13 @@ p{
 }
 
 .btnText {
-  font-family: 'Ruberoid';
+  font-family: "Ruberoid";
   font-weight: 400;
   margin-right: 1px;
 }
 
-.close, .close2 {
+.close,
+.close2 {
   position: absolute;
   top: 2px;
   right: 4px;
@@ -44,11 +51,11 @@ p{
   outline: none;
 }
 
-.close:hover, .close2:hover {
+.close:hover,
+.close2:hover {
   background-color: red;
   color: white;
 }
-
 
 /*Estilos de los íconos*/
 .nav-link-icon {
@@ -67,24 +74,24 @@ p{
   color: black;
   border-radius: 50%;
   padding: 15px;
-  box-shadow: 0px 5px 10px rgb(0,0,0,.35);
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
 }
 
 .icon-text {
   margin-left: 5px;
 }
 
-.fa-envelope, .fa-phone, .fa-circle-check {
+.fa-envelope,
+.fa-phone,
+.fa-circle-check {
   padding-right: 10px;
   font-size: 20px;
 }
-
 
 .inline-text {
   display: inline; /* Esto hace que el span sea en línea */
   margin-left: 5px; /* Ajusta según sea necesario */
 }
-
 
 .fa-facebook:hover {
   background-color: RGB(59, 89, 152);
@@ -122,10 +129,10 @@ p{
 
 /*Estilos del slider*/
 .slider {
-    width: auto;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
 }
 
 .slider .slide {
@@ -149,12 +156,12 @@ p{
 
 @keyframes scroll1 {
   0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      -webkit-transform: translateX(calc(-80px*7));
-      transform: translateX(calc(-80px*7));
+    -webkit-transform: translateX(calc(-80px * 7));
+    transform: translateX(calc(-80px * 7));
   }
 }
 
@@ -179,79 +186,75 @@ p{
 
 @keyframes scroll2 {
   0% {
-      -webkit-transform: translateX(calc(-80px*7));
-      transform: translateX(calc(-80px*7));
+    -webkit-transform: translateX(calc(-80px * 7));
+    transform: translateX(calc(-80px * 7));
   }
   100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
-
 
 .footer-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    list-style: none;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
 
-  .nav-item {
-    list-style: none;
-    margin-right: 10px; /* Ajusta el espaciado entre los elementos según sea necesario */
-  }
-  
-  .image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Ajusta la altura según tus necesidades */
-  }
+.nav-item {
+  list-style: none;
+  margin-right: 10px; /* Ajusta el espaciado entre los elementos según sea necesario */
+}
 
-  .img-Palabras {
-    margin-top: 20px;
-    max-width: 40%;
-    height: auto;
-  }
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ajusta la altura según tus necesidades */
+}
 
-  .slide img {
-    width: 70px;
-  }
-  
+.img-Palabras {
+  margin-top: 20px;
+  max-width: 40%;
+  height: auto;
+}
 
-  /*Estilos para el botón de wssp*/
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.slide img {
+  width: 70px;
+}
+
+/*Estilos para el botón de wssp*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 .float:hover {
-	text-decoration: none;
-	color: #FFF;
-  background-color:#1ab152;
-    
-    animation: shake 1s;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1ab152;
 
- 
+  animation: shake 1s;
+
   animation-iteration-count: infinite;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+  margin-top: 16px;
 }
 
-
-.modal, .modal2 {
+.modal,
+.modal2 {
   display: none;
   position: fixed;
   top: 40px;
@@ -264,8 +267,17 @@ p{
   z-index: 1;
 }
 
+.modal-content3 {
+  background-color: #fff;
+  margin-left: 5%; /* Ajusta este valor según sea necesario */
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Estilo para el contenido del formulario */
-.modal-content, .modal-content2 {
+.modal-content,
+.modal-content2 {
   background-color: #fff;
   padding-right: 50px;
   padding-left: 50px;
@@ -275,7 +287,8 @@ p{
 }
 
 @media (max-width: 1200px) {
-  .modal-content, .modal-content2 {
+  .modal-content,
+  .modal-content2 {
     width: 80%;
   }
 }
@@ -292,11 +305,12 @@ p{
   }
 }
 
-.carousel-inner{
+.carousel-inner {
   padding: 1em;
 }
 
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
   background-color: #e1e1e1;
   width: 6vh;
   height: 6vh;
@@ -304,7 +318,6 @@ p{
   top: 50%;
   transform: translateY(-50%);
 }
-
 
 /*Animacion de la barra de navegación*/
 .navbar {
@@ -317,7 +330,7 @@ p{
     top: -100%;
   }
   to {
-    top:0%
+    top: 0%;
   }
 }
 
@@ -336,7 +349,8 @@ p{
 }
 
 /*Animacion del botón de wssp y del texto del home*/
-.whatsapp, .text-container {
+.whatsapp,
+.text-container {
   animation: slideInFromRight 3s ease-in-out;
 }
 
@@ -349,7 +363,6 @@ p{
   }
 }
 
-
 /* Define la animación para el botón de WhatsApp */
 @keyframes slideInFromRight {
   0% {
@@ -360,11 +373,12 @@ p{
   }
 }
 
-.whatsapp, .titulos {
+.whatsapp,
+.titulos {
   animation: slideUp 2s ease-in-out;
 }
 
-.card{
+.card {
   border-radius: 2%;
   margin: 0 0.9em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -385,18 +399,18 @@ p{
   font-size: 25px;
   margin-top: 4px;
   margin-left: 325px;
-  color: #263C94;
+  color: #263c94;
 }
 
 .fa-caret-up {
   font-size: 25px;
   margin-top: 4px;
   margin-left: 325px;
-  color: #5AA747;
+  color: #5aa747;
 }
 
 .fa-circle-check {
-  color: #5AA747;
+  color: #5aa747;
 }
 
 .module-content {
@@ -404,4 +418,3 @@ p{
   overflow: hidden;
   transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
 }
-

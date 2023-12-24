@@ -106,7 +106,7 @@
         <i class="fa fa-whatsapp my-float"></i>
       </a>
     </div>
-    <div class="container py-5">
+    <div class="container" style="margin-bottom: 150px">
       <!--Título del curso-->
       <div class="row pt-5">
         <h1
@@ -114,55 +114,72 @@
             color: #f0f1f2;
             font-weight: 600;
             line-height: 45px;
-            margin-top: 80px;
+            margin-top: 110px;
           "
         >
-          
-            MODELAMIENTO DE PUENTES<br />CON AUTODESK, REVIT Y DYNAMO
+          MODELAMIENTO DE PUENTES<br />CON AUTODESK, REVIT Y DYNAMO
         </h1>
       </div>
 
       <!--Cuerpo del curso-->
-      <div class="row py-4">
+      <div class="row py-1">
         <!--Objetivo, dirigido a y beneficios del curso-->
-        <div class="col-md-6" style="margin-top: 50px;padding-right: 70px">
+        <div class="col-md-6" style="padding-right: 70px">
           <div class="row" style="color: #f0f1f2">
-            <h3 class="mt-1" style="">¿Qué aprenderás con el curso?</h3>
+            <h3 class="mt-5">¿Qué aprenderás con el curso?</h3>
             <p>
-              El curso tiene como objetivo enseñar técnicas elementales para
-              realizar BIM 4D. Con la formación del curso el alumno tendrá los
-              conocimientos esenciales para poder implementar el 4D en proyectos
-              de infraestructura.
+              Tiene como objetivo enseñar técnicas elementales para realizar BIM
+              4D. El alumno tendrá los conocimientos esenciales para poder
+              implementar el 4D en proyectos de infraestructura.
             </p>
 
-            <h3 class="pt-4">¿Qué beneficios tendré al llevar el curso?</h3>
+            <h3 class="pt-5" style="margin-top: 8px">
+              ¿Qué beneficios tendré al llevar el curso?
+            </h3>
             <p>
               <i class="fa-solid fa-circle-check"></i> Certificación Bentley
               <br />
               <i class="fa-solid fa-circle-check"></i> Certificado de nuestro
               centro académico <br />
               <i class="fa-solid fa-circle-check"></i> Curricula basada en las
-              necesidades actuales del estado <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; peruano y el contexto
-              internacional. <br />
+              necesidades actuales del estado <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              peruano y el contexto internacional. <br />
               <i class="fa-solid fa-circle-check"></i> Carta de reconocimiento
               académico e insiginía de Bentley
               <br />
               <i class="fa-solid fa-circle-check"></i> Se brinda acceso al
-              software de Synchro 4D Pro para <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; uso educativo.
+              software de Synchro 4D Pro para <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              uso educativo.
             </p>
           </div>
         </div>
         <!--Imagen de referencia y módulos del curso-->
         <div class="col-md-6">
           <!-- Imagen de referencia -->
-          <div class="Img-Referencia mb-5" style="margin-top: -48px;">
-            <img class="" style="width: 737px;" src="/Imagenes/Curso1Ejemplo.png" alt="" />
+          <div
+            class="Img-Referencia mb-5"
+            style="margin-top: 0px; position: absolute; right: 0px"
+          >
+            <img
+              class=""
+              style="width: 750px; height: 500px"
+              src="/Imagenes/Curso1Ejemplo.png"
+              alt=""
+            />
           </div>
-        </div>        
-        
+        </div>
+
         <!--Módulos del curso-->
+      </div>
+    </div>
+
+    <!--Módulos de cursos-->
+    <div class="miModal" style="position: absolute; width: 100%; margin-top:-105px;">
+      <div class="modal-content3">
         <div class="row Modulos">
-          <div class="col-md-6">
+          <div class="col-md-6 px-5 py-3">
             <button
               id="toggleModule01"
               style="border: none; display: flex; background: none"
@@ -232,60 +249,58 @@
             </div>
             <hr style="width: 490px; margin-top: -2px" />
           </div>
-          <div class="col-md-6">
-            <div style="">
-              <button
-                id="toggleModule04"
-                style="border: none; display: flex; background: none"
-                onclick="toggleModule('module04')"
-              >
-                <h4>Módulo 04</h4>
-                <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
-                <i
-                  id="arrowUp04"
-                  class="fa-solid fa-caret-up"
-                  style="display: none"
-                ></i>
-              </button>
-              <div id="module04" class="module-content">
-                <p>- Mapeo de riesgos generales del proyecto</p>
-                <p>- Creación de riesgos y conexión con el cronograma</p>
-                <p>- Creación de baseline para control de obra</p>
-                <p>- Report es de avance</p>
-              </div>
-              <hr style="width: 490px; margin-top: -2px" />
-
-              <button
-                id="toggleModule05"
-                style="border: none; display: flex; background: none"
-                onclick="toggleModule('module05')"
-              >
-                <h4>Módulo 05: Animación</h4>
-                <i
-                  id="arrowDown05"
-                  class="fa-solid fa-caret-down"
-                  style="margin-left: 181px"
-                ></i>
-                <i
-                  id="arrowUp05"
-                  class="fa-solid fa-caret-up"
-                  style="display: none; margin-left: 181px"
-                ></i>
-              </button>
-              <div id="module05" class="module-content">
-                <p>- Creación de "ViewPoints"</p>
-                <p>- Configuración de la Animación</p>
-                <p>- Exportación y detalles de entrega</p>
-              </div>
-              <hr style="width: 490px; margin-top: -2px" />
+          <div class="col-md-6 px-5 pt-3">
+            <button
+              id="toggleModule04"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module04')"
+            >
+              <h4>Módulo 04</h4>
+              <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
+              <i
+                id="arrowUp04"
+                class="fa-solid fa-caret-up"
+                style="display: none"
+              ></i>
+            </button>
+            <div id="module04" class="module-content">
+              <p>- Mapeo de riesgos generales del proyecto</p>
+              <p>- Creación de riesgos y conexión con el cronograma</p>
+              <p>- Creación de baseline para control de obra</p>
+              <p>- Report es de avance</p>
             </div>
+            <hr style="width: 490px; margin-top: -2px" />
+
+            <button
+              id="toggleModule05"
+              style="border: none; display: flex; background: none"
+              onclick="toggleModule('module05')"
+            >
+              <h4>Módulo 05: Animación</h4>
+              <i
+                id="arrowDown05"
+                class="fa-solid fa-caret-down"
+                style="margin-left: 181px"
+              ></i>
+              <i
+                id="arrowUp05"
+                class="fa-solid fa-caret-up"
+                style="display: none; margin-left: 181px"
+              ></i>
+            </button>
+            <div id="module05" class="module-content">
+              <p>- Creación de "ViewPoints"</p>
+              <p>- Configuración de la Animación</p>
+              <p>- Exportación y detalles de entrega</p>
+            </div>
+            <hr style="width: 490px; margin-top: -2px" />
           </div>
         </div>
       </div>
     </div>
     <!--Pie de página-->
-    <section class="Footer bg-light">
-      <div class="container pt-3">
+    <section class="Footer bg-light mt-5 pt-5">
+      <div class="container" style="padding-top: 100px">
         <p class="text-center small text-muted">
           <img
             style="width: 20%"
