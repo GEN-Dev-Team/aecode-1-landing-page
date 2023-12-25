@@ -118,18 +118,6 @@ p {
   color: white;
 }
 
-/* Efecto hover para los botones */
-.miModal button:hover {
-  color: #7f7f7f; /* Cambia el color al pasar el mouse sobre el botón */
-}
-
-/* Efecto hover para los íconos */
-.miModal button:hover i {
-  color: #7f7f7f; /* Color más claro al pasar el mouse sobre el botón */
-}
-
-
-
 .logo {
   width: 30%;
 }
@@ -418,15 +406,19 @@ p {
   font-size: 25px;
   margin-top: 4px;
   margin-left: 325px;
-  color: #5aa747;
+  color: #FDD406;
 }
 
 .fa-circle-check {
-  color: #5aa747;
+  color: #FDD406;
 }
 
 .module-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
+}
+
+.row p {
+  margin-top: -7px;
 }
