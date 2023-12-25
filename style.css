@@ -118,6 +118,18 @@ p {
   color: white;
 }
 
+/* Efecto hover para los botones */
+.miModal button:hover {
+  color: #7f7f7f; /* Cambia el color al pasar el mouse sobre el botón */
+}
+
+/* Efecto hover para los íconos */
+.miModal button:hover i {
+  color: #7f7f7f; /* Color más claro al pasar el mouse sobre el botón */
+}
+
+
+
 .logo {
   width: 30%;
 }
