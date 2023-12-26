@@ -283,30 +283,53 @@ p {
 }
 
 .miModal button {
-  width: 200px; /* Ajusta el ancho según tus necesidades */
+  width: 210px; /* Ajusta el ancho según tus necesidades */
+  height: 50px;
   margin: 0 10px; /* Agrega espacio entre los botones */
+  border: rgb(197, 195, 195) solid 1px;
+}
+
+.miModal button:hover {
+  border: #263c94 solid 1px;
 }
 
 .module-content {
-  margin-top: 15px;
+  border-radius: 2.5%;
+  border: none;
   max-height: 0;
+  margin-left: 10px;
   width: 400px;
   overflow: hidden;
+  transition: border 0.5s ease;
   transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
+}
+
+.module-content p {
+  margin-left: 10px;
+}
+
+.Modulos h5 {
+  margin-top: 12px;
+}
+
+.Modulos .btn {
+  display: flex;
+  align-items: center;
+  background: none;
 }
 
 .fa-caret-down {
   font-size: 25px;
   margin-top: 2px;
-  margin-left: 20px;
+  margin-left: 55px;
   color: #263c94;
 }
 
 .fa-caret-up {
   font-size: 25px;
   margin-top: 2px;
-  margin-left: 20px;
-  color: #FDD406;
+  margin-left: 55px;
+  color: #fdd406;
 }
 
 /* Estilo para el contenido del formulario */
@@ -430,7 +453,7 @@ p {
 }
 
 .fa-circle-check {
-  color: #FDD406;
+  color: #fdd406;
 }
 
 .row p {

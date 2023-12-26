@@ -44,9 +44,13 @@ function toggleModule(moduleId) {
   if (moduleContent.style.maxHeight === "0px" || moduleContent.style.maxHeight === "") {
     moduleContent.style.maxHeight = moduleContent.scrollHeight + "px";
     arrowDown.style.display = "none";
+    moduleContent.style.border = "1px solid rgb(197, 195, 195)";
     arrowUp.style.display = "block";
   } else {
     moduleContent.style.maxHeight = "0";
+    setTimeout(function() {
+      moduleContent.style.border = "none"; // Establece el borde a "none" después de que la transición termine
+    }, 500); // Ajusta el tiempo según la duración de tu transición (en milisegundos)
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";
   }
