@@ -269,10 +269,44 @@ p {
 
 .modal-content3 {
   background-color: #fff;
-  margin-left: 5%; /* Ajusta este valor según sea necesario */
+  margin-left: 5%;
   border-radius: 10px;
   width: 90%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Modulos {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.miModal button {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  margin: 0 10px; /* Agrega espacio entre los botones */
+}
+
+.module-content {
+  margin-top: 15px;
+  max-height: 0;
+  width: 400px;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
+}
+
+.fa-caret-down {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 20px;
+  color: #263c94;
+}
+
+.fa-caret-up {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 20px;
+  color: #FDD406;
 }
 
 /* Estilo para el contenido del formulario */
@@ -395,28 +429,8 @@ p {
   align-items: center;
 }
 
-.fa-caret-down {
-  font-size: 25px;
-  margin-top: 4px;
-  margin-left: 325px;
-  color: #263c94;
-}
-
-.fa-caret-up {
-  font-size: 25px;
-  margin-top: 4px;
-  margin-left: 325px;
-  color: #FDD406;
-}
-
 .fa-circle-check {
   color: #FDD406;
-}
-
-.module-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
 }
 
 .row p {
