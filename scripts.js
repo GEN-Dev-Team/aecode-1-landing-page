@@ -41,6 +41,23 @@ function toggleModule(moduleId) {
   var arrowDown = document.getElementById("arrowDown" + moduleId.slice(-2));
   var arrowUp = document.getElementById("arrowUp" + moduleId.slice(-2));
 
+  // Cerrar todos los módulos excepto el seleccionado
+  var allModuleContents = document.querySelectorAll('.module-content');
+  allModuleContents.forEach(function (otherModule) {
+    if (otherModule.id !== moduleId) {
+      otherModule.style.maxHeight = "0";
+      setTimeout(function() {
+        otherModule.style.border = "none";
+      }, 500);
+
+      // Ocultar arrowUp y mostrar arrowDown de los módulos cerrados
+      var otherArrowDown = document.getElementById("arrowDown" + otherModule.id.slice(-2));
+      var otherArrowUp = document.getElementById("arrowUp" + otherModule.id.slice(-2));
+      otherArrowDown.style.display = "block";
+      otherArrowUp.style.display = "none";
+    }
+  });
+
   if (moduleContent.style.maxHeight === "0px" || moduleContent.style.maxHeight === "") {
     moduleContent.style.maxHeight = moduleContent.scrollHeight + "px";
     arrowDown.style.display = "none";
@@ -49,8 +66,8 @@ function toggleModule(moduleId) {
   } else {
     moduleContent.style.maxHeight = "0";
     setTimeout(function() {
-      moduleContent.style.border = "none"; // Establece el borde a "none" después de que la transición termine
-    }, 500); // Ajusta el tiempo según la duración de tu transición (en milisegundos)
+      moduleContent.style.border = "none";
+    }, 500);
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";
   }
