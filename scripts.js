@@ -46,9 +46,8 @@ function toggleModule(moduleId) {
   allModuleContents.forEach(function (otherModule) {
     if (otherModule.id !== moduleId) {
       otherModule.style.maxHeight = "0";
-      setTimeout(function() {
-        otherModule.style.border = "none";
-      }, 500);
+      otherModule.style.border = "none";
+      otherModule.classList.add("closing"); // Agrega la clase para cerrar sin animación
 
       // Ocultar arrowUp y mostrar arrowDown de los módulos cerrados
       var otherArrowDown = document.getElementById("arrowDown" + otherModule.id.slice(-2));
@@ -59,16 +58,39 @@ function toggleModule(moduleId) {
   });
 
   if (moduleContent.style.maxHeight === "0px" || moduleContent.style.maxHeight === "") {
-    moduleContent.style.maxHeight = moduleContent.scrollHeight + "px";
+    moduleContent.style.maxHeight = "1000px"; // Ajusta esto según sea necesario
+    moduleContent.classList.remove("closing"); // Elimina la clase de cerrar sin animación
     arrowDown.style.display = "none";
     moduleContent.style.border = "1px solid rgb(197, 195, 195)";
     arrowUp.style.display = "block";
   } else {
     moduleContent.style.maxHeight = "0";
-    setTimeout(function() {
-      moduleContent.style.border = "none";
-    }, 500);
+    moduleContent.classList.add("closing"); // Agrega la clase para cerrar sin animación
+    moduleContent.style.border = "none";
     arrowDown.style.display = "block";
     arrowUp.style.display = "none";
   }
 }
+
+
+
+// Función para los 3 desplegables generales
+function toggleContent(contentId, angleUpId, angleDownId) {
+  var content = document.getElementById(contentId);
+  var button = content.previousElementSibling;
+  var angleUp = document.getElementById(angleUpId);
+  var angleDown = document.getElementById(angleDownId);
+
+  button.classList.toggle('active');
+
+  if (button.classList.contains('active')) {
+    content.style.maxHeight = 'none';
+    angleUp.style.display = 'block';
+    angleDown.style.display = 'none';
+  } else {
+    content.style.maxHeight = '0';
+    angleUp.style.display = 'none';
+    angleDown.style.display = 'block';
+  }
+}
+

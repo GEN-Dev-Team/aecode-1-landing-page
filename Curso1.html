@@ -110,7 +110,7 @@
       <!--Título del curso-->
       <div class="row pt-5">
         <h1 class="display-5" style="color: #f0f1f2; margin-top: 100px">
-          Modelamiento de puentes <br />con Autodesk, Revit y Dynamo
+          MODELAMIENTO DE PUENTES<br />CON AUTODESK, REVIT Y DYNAMO
         </h1>
       </div>
 
@@ -154,7 +154,12 @@
           >
             <img
               class=""
-              style="width: 750px; height: 603px; margin-top: -150px;opacity: 0.75;"
+              style="
+                width: 700px;
+                height: 603px;
+                margin-top: -209px;
+                opacity: 0.75;
+              "
               src="/Imagenes/Curso1Ejemplo.png"
               alt=""
             />
@@ -163,136 +168,271 @@
       </div>
     </div>
 
-    <!--Módulos de cursos-->
-    <div
-      class="miModal"
-      style="position: absolute; width: 100%; margin-top: -30px"
-    >
-      <div class="modal-content3">
-        <div class="row Modulos">
-          <div class="col-md-2 py-3 mt-1">
+    <!--Apartado de los 3 desplegables generales: Presentación, Módulos, Inversión-->
+    <div class="desplegables bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <!--PRESENTACIÓN-->
+          <div class="col-md-4">
             <button
-              class="btn"
-              id="toggleModule01"
-              onclick="toggleModule('module01')"
+              class="btn btnGeneral justify-content-between"
+              onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
             >
-              <h5><strong>Módulo 01</strong></h5>
-              <i
-                id="arrowDown01"
-                class="fa-solid fa-caret-down"
-                style="animation: blink 1s infinite"
-              ></i>
-              <i
-                id="arrowUp01"
-                class="fa-solid fa-caret-up"
-                style="display: none; animation: blink 1s infinite"
-              ></i>
+              <h5>PRESENTACIÓN</h5>
+              <div>
+                <i id="angleUp" class="fa-solid fa-angle-up"></i>
+                <i id="angleDown" class="fa-solid fa-angle-down"></i>
+              </div>
             </button>
-
-            <div id="module01" class="module-content">
+            <div id="presentacionContent" class="content">
               <p style="margin-top: 10px">
-                - Introducción al contexto nacional BIM
+                <i class="fa-solid fa-check"></i> Introducción al contexto
+                nacional BIM
               </p>
-              <p>- BIM 4D: usos, beneficios y propósito</p>
-              <p>- Interoperabilidad que ofrece Synchro 4D Pro</p>
-              <p>- Entendiendo y usos del espacio de trabajo</p>
+              <p>
+                <i class="fa-solid fa-check"></i> BIM 4D: usos, beneficios y
+                propósito
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i> Interoperabilidad que ofrece
+                Synchro 4D Pro
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i> Entendiendo y usos del espacio
+                de trabajo
+              </p>
             </div>
           </div>
-          <div class="col-md-2 py-3 mt-1">
+          <!--MÓDULOS-->
+          <div class="col-md-4">
             <button
-              class="btn"
-              id="toggleModule02"
-              onclick="toggleModule('module02')"
+              class="btn btnGeneral justify-content-between"
+              onclick="toggleContent('grupoModulos', 'angleUp', 'angleDown')"
             >
-              <h5><strong>Módulo 02</strong></h5>
-              <i id="arrowDown02" class="fa-solid fa-caret-down"></i>
-              <i
-                id="arrowUp02"
-                class="fa-solid fa-caret-up"
-                style="display: none"
-              ></i>
+              <h5>MÓDULOS</h5>
+              <div>
+                <i id="angleUp" class="fa-solid fa-angle-up"></i>
+                <i id="angleDown" class="fa-solid fa-angle-down"></i>
+              </div>
             </button>
-            <div id="module02" class="module-content">
-              <p style="margin-top: 10px">
-                - Importar cronograma desde MsProject
-              </p>
-              <p>- Sobre gráfico Gantt y cronograma en Synchro</p>
-              <p>- Importar objetos 3D</p>
-              <p>- Análisis de propiedades para los elementos 3D</p>
+            <div id="grupoModulos" class="grupo">
+              <div class="contenidoModulo py-1">
+                <button
+                  class="btn justify-content-between"
+                  id="toggleModule01"
+                  onclick="toggleModule('module01')"
+                >
+                  <h5>Módulo 01</h5>
+                  <div>
+                    <i
+                      id="arrowDown01"
+                      class="fa-solid fa-caret-down"
+                      style="animation: blink 1s infinite"
+                    ></i>
+                    <i
+                      id="arrowUp01"
+                      class="fa-solid fa-caret-up"
+                      style="display: none; animation: blink 1s infinite"
+                    ></i>
+                  </div>
+                </button>
+                <div id="module01" class="module-content">
+                  <p style="margin-top: 10px">
+                    <i class="fa-solid fa-check"></i>Introducción al contexto
+                    nacional BIM
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>BIM 4D: usos, beneficios y
+                    propósito
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Interoperabilidad que
+                    ofrece Synchro 4D Pro
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Entendiendo y usos del
+                    espacio de trabajo
+                  </p>
+                </div>
+              </div>
+              <div class="contenidoModulo py-1">
+                <button
+                  class="btn justify-content-between"
+                  id="toggleModule02"
+                  onclick="toggleModule('module02')"
+                >
+                  <h5>Módulo 02</h5>
+                  <div>
+                    <i id="arrowDown02" class="fa-solid fa-caret-down"></i>
+                    <i
+                      id="arrowUp02"
+                      class="fa-solid fa-caret-up"
+                      style="display: none"
+                    ></i>
+                  </div>
+                </button>
+                <div id="module02" class="module-content">
+                  <p style="margin-top: 10px">
+                    <i class="fa-solid fa-check"></i>Importar cronograma desde
+                    MsProject
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Sobre gráfico Gantt y
+                    cronograma en Synchro
+                  </p>
+                  <p><i class="fa-solid fa-check"></i>Importar objetos 3D</p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Análisis de propiedades
+                    para los elementos 3D
+                  </p>
+                </div>
+              </div>
+              <div class="contenidoModulo py-1">
+                <button
+                  class="btn justify-content-between"
+                  id="toggleModule03"
+                  onclick="toggleModule('module03')"
+                >
+                  <h5>Módulo 03</h5>
+                  <div>
+                    <i id="arrowDown03" class="fa-solid fa-caret-down"></i>
+                    <i
+                      id="arrowUp03"
+                      class="fa-solid fa-caret-up"
+                      style="display: none"
+                    ></i>
+                  </div>
+                </button>
+                <div id="module03" class="module-content">
+                  <p style="margin-top: 10px">
+                    <i class="fa-solid fa-check"></i>Ejemplo práctico de
+                    cronograma en base a objetos
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Emparejamiento automático
+                    de recursos con taréas
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Criterios sobre la data
+                    importada
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Importación de objetos 3D
+                  </p>
+                </div>
+              </div>
+              <div class="contenidoModulo py-1">
+                <button
+                  class="btn justify-content-between"
+                  id="toggleModule04"
+                  onclick="toggleModule('module04')"
+                >
+                  <h5>Módulo 04</h5>
+                  <div>
+                    <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
+                    <i
+                      id="arrowUp04"
+                      class="fa-solid fa-caret-up"
+                      style="display: none"
+                    ></i>
+                  </div>
+                </button>
+                <div id="module04" class="module-content">
+                  <p style="margin-top: 10px">
+                    <i class="fa-solid fa-check"></i>Mapeo de riesgos generales
+                    del proyecto
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Creación de riesgos y
+                    conexión con el cronograma
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Creación de baseline para
+                    control de obra
+                  </p>
+                  <p><i class="fa-solid fa-check"></i>Report es de avance</p>
+                </div>
+              </div>
+              <div class="contenidoModulo py-1">
+                <button
+                  class="btn justify-content-between"
+                  id="toggleModule05"
+                  onclick="toggleModule('module05')"
+                >
+                  <h5>Bonus</h5>
+                  <div>
+                    <i id="arrowDown05" class="fa-solid fa-caret-down"></i>
+                    <i
+                      id="arrowUp05"
+                      class="fa-solid fa-caret-up"
+                      style="display: none"
+                    ></i>
+                  </div>
+                </button>
+                <div id="module05" class="module-content">
+                  <p style="margin-top: 10px">
+                    <i class="fa-solid fa-check"></i>Creación de "ViewPoints"
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Configuración de la
+                    Animación
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-check"></i>Exportación y detalles de
+                    entrega
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-2 py-3 mt-1">
+          <!--INVERSIÓN-->
+          <div class="col-md-4">
             <button
-              class="btn"
-              id="toggleModule03"
-              onclick="toggleModule('module03')"
+              class="btn btnGeneral justify-content-between"
+              onclick="toggleContent('inversionContent', 'angleUp', 'angleDown')"
             >
-              <h5><strong>Módulo 03</strong></h5>
-              <i id="arrowDown03" class="fa-solid fa-caret-down"></i>
-              <i
-                id="arrowUp03"
-                class="fa-solid fa-caret-up"
-                style="display: none"
-              ></i>
+              <h5>INVERSIÓN</h5>
+              <div>
+                <i id="angleUp" class="fa-solid fa-angle-up"></i>
+                <i id="angleDown" class="fa-solid fa-angle-down"></i>
+              </div>
             </button>
-            <div id="module03" class="module-content">
+            <div id="inversionContent" class="content">
               <p style="margin-top: 10px">
-                - Ejemplo práctico de cronograma en base a objetos
+                <i class="fa-solid fa-check"></i> Introducción al contexto
+                nacional BIM
               </p>
-              <p>- Emparejamiento automático de recursos con taréas</p>
-              <p>- Criterios sobre la data importada</p>
-              <p>- Importación de objetos 3D</p>
-            </div>
-          </div>
-          <div class="col-md-2 py-3 mt-1">
-            <button
-              class="btn"
-              id="toggleModule04"
-              onclick="toggleModule('module04')"
-            >
-              <h5><strong>Módulo 04</strong></h5>
-              <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
-              <i
-                id="arrowUp04"
-                class="fa-solid fa-caret-up"
-                style="display: none"
-              ></i>
-            </button>
-            <div id="module04" class="module-content">
-              <p style="margin-top: 10px">
-                - Mapeo de riesgos generales del proyecto
+              <p>
+                <i class="fa-solid fa-check"></i> BIM 4D: usos, beneficios y
+                propósito
               </p>
-              <p>- Creación de riesgos y conexión con el cronograma</p>
-              <p>- Creación de baseline para control de obra</p>
-              <p>- Report es de avance</p>
-            </div>
-          </div>
-          <div class="col-md-2 py-3 mt-1">
-            <button
-              class="btn"
-              id="toggleModule05"
-              onclick="toggleModule('module05')"
-            >
-              <h5><strong>Módulo 05</strong></h5>
-              <i id="arrowDown05" class="fa-solid fa-caret-down"></i>
-              <i
-                id="arrowUp05"
-                class="fa-solid fa-caret-up"
-                style="display: none"
-              ></i>
-            </button>
-            <div id="module05" class="module-content" style="width: 340px;">
-              <p style="margin-top: 10px">- Creación de "ViewPoints"</p>
-              <p>- Configuración de la Animación</p>
-              <p>- Exportación y detalles de entrega</p>
+              <p>
+                <i class="fa-solid fa-check"></i> Interoperabilidad que ofrece
+                Synchro 4D Pro
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i> Entendiendo y usos del espacio
+                de trabajo
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!--Ofertas y promociones-->
+    <div class="row text-center pt-5 px-5 bg-light">
+      <p  class="text-center lead pt-2" style="color: black; font-size: 25px;">
+        Si estás interesado en comprar más de un módulo aprovecha
+        <a href="https://api.whatsapp.com/send?phone=51900121245"
+          >los descuentos y promociones</a
+        >
+        que tenemos para ti.
+      </p>
+    </div>
     <!--Pie de página-->
-    <section class="Footer bg-light mt-5 pt-5">
-      <div class="container" style="padding-top: 45px">
+    <section class="Footer bg-light pt-5">
+      <div class="container">
         <p class="text-center small text-muted">
           <img
             style="width: 20%"

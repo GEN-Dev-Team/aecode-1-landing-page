@@ -15,7 +15,6 @@ h4,
 .btn,
 .mi-boton {
   font-family: "Ruberoid";
-
   /*font-family: 'Quicksand', sans-serif;*/
 }
 
@@ -84,7 +83,7 @@ p {
 .fa-envelope,
 .fa-phone,
 .fa-circle-check {
-  padding-right: 10px;
+  padding-right: 12px;
   font-size: 20px;
 }
 
@@ -267,69 +266,9 @@ p {
   z-index: 1;
 }
 
-.modal-content3 {
-  background-color: #fff;
-  margin-left: 5%;
-  border-radius: 10px;
-  width: 90%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.Modulos {
-  display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.miModal button {
-  width: 210px; /* Ajusta el ancho según tus necesidades */
-  height: 50px;
-  margin: 0 10px; /* Agrega espacio entre los botones */
-  border: rgb(197, 195, 195) solid 1px;
-}
-
-.miModal button:hover {
-  border: #263c94 solid 1px;
-}
-
-.module-content {
-  border-radius: 2.5%;
-  border: none;
-  max-height: 0;
-  margin-left: 10px;
-  width: 400px;
-  overflow: hidden;
-  transition: border 0.5s ease;
-  transition: max-height 0.5s ease; /* Transición en max-height para crear la animación */
-}
-
-.module-content p {
-  margin-left: 10px;
-}
-
-.Modulos h5 {
-  margin-top: 12px;
-}
-
-.Modulos .btn {
-  display: flex;
-  align-items: center;
-  background: none;
-}
-
-.fa-caret-down {
-  font-size: 25px;
-  margin-top: 2px;
-  margin-left: 55px;
-  color: #263c94;
-}
-
-.fa-caret-up {
-  font-size: 25px;
-  margin-top: 2px;
-  margin-left: 55px;
-  color: #fdd406;
+.col-md-2 {
+  width: 18%;
+  margin-right: 20px;
 }
 
 /* Estilo para el contenido del formulario */
@@ -458,4 +397,94 @@ p {
 
 .row p {
   margin-top: -7px;
+}
+
+
+/*Estilos de desplegables generales*/
+.desplegables .btn {
+  border-radius: 2.5%; /* Ajusta el valor según tus preferencias */
+  background-color: #263c94;
+  color: white;
+  padding-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.desplegables .btnGeneral:hover {
+  background-color: #324ebd;
+  color: white;
+}
+.desplegables i {
+  margin-left: 10px;
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.desplegables .content {
+  background-color: #263c94;
+  color: white;
+  border: none;
+  height: auto;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.module-content {
+  background-color: #263c94;
+  color: white;
+  height:auto;
+  border: none;
+  max-height: 0;
+  width: auto;
+  overflow: hidden;
+  transition: max-height 1s ease, border 0.5s ease; /* Combinar ambas transiciones */
+}
+
+.module-content .closing {
+  transition: none; /* Elimina la transición al cerrar */
+}
+
+.desplegables .grupo {
+  color: white;
+  border: none;
+  width: 100%;
+  height: auto; /* Cambiado de 100% a auto */
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease, margin-top 0.5s ease; /* Añadida transición para margin-top */
+}
+
+
+
+/*Desplegables de módulos*/
+.module-content.closing {
+  transition: none; /* Elimina la transición al cerrar */
+}
+
+.module-content p {
+  margin-left: 10px;
+}
+
+.fa-caret-down {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.fa-caret-up {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 1px;
+  color: #fdd406;
+}
+
+.fa-angle-up {
+  display: none;
+}
+
+.fa-check {
+  margin-left: 10px;
 }
