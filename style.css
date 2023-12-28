@@ -487,10 +487,23 @@ p {
   display: none;
 }
 
-.imagenesCurso1 img {
-  width: 50px;
-  margin-right: 50px;
+.imgLogo {
+  position: absolute;
+  margin-top: 35%;
+  margin-left: 44%;
+  z-index: 2;
 }
+
+.imgLogo img {
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 4px;
+  width: 36px;
+  height: 36px; /* Asegura que la imagen sea cuadrada para que sea completamente circular */
+  margin-right: 7px;
+  border-radius: 50%; /* Hace que el borde sea completamente circular */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .modal-content3 {
   background-color: white;
