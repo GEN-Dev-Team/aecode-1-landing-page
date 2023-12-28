@@ -402,7 +402,6 @@ p {
 
 /*Estilos de desplegables generales*/
 .desplegables .btn {
-  border-radius: 2.5%; /* Ajusta el valor según tus preferencias */
   background-color: #263c94;
   color: white;
   padding-top: 15px;
@@ -423,7 +422,8 @@ p {
 }
 
 .desplegables .content {
-  background-color: #263c94;
+  border-radius: 0% 0% 2% 2%;
+  background-color: #3152A1;
   color: white;
   border: none;
   height: auto;
@@ -433,7 +433,8 @@ p {
 }
 
 .module-content {
-  background-color: #263c94;
+  border-radius: 0% 0% 2% 2%;
+  background-color: #3152A1;
   color: white;
   height:auto;
   border: none;
@@ -485,6 +486,7 @@ p {
   display: none;
 }
 
-.fa-check {
-  margin-left: 10px;
+.imagenesCurso1 img {
+  width: 50px;
+  margin-right: 50px;
 }
