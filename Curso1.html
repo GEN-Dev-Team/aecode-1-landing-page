@@ -113,7 +113,7 @@
           class="display-5"
           style="color: #f0f1f2; margin-top: 100px; font-size: 40px"
         >
-          MODELAMIENTO DE PUENTES<br />CON AUTODESK, REVIT Y DYNAMO
+          MODELAMIENTO BIM DE PUENTES<br />CON AUTODESK, REVIT Y DYNAMO
         </h1>
       </div>
 
@@ -126,25 +126,27 @@
               ¿Qué beneficios tendré al llevar el curso?
             </h3>
             <p>
-              <i class="fa-solid fa-circle-check"></i> Certificación Bentley
+              <i class="fa-solid fa-circle-check"></i> Aprendizaje dinámico y
+              práctico partiendo desde lo más básico hasta un nivel avanzado
+              bajo la guía de expertos en la materia.
             </p>
             <p>
-              <i class="fa-solid fa-circle-check"></i> Certificado de nuestro
-              centro académico
+              <i class="fa-solid fa-circle-check"></i> Acceso de por vida a las
+              sesiones grabadas en la nube.
             </p>
             <p>
-              <i class="fa-solid fa-circle-check"></i> Curricula basada en las
-              necesidades actuales del estado peruano y el
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              contexto internacional.
+              <i class="fa-solid fa-circle-check"></i> Acceso a nuestra
+              comunidad selecta donde podrá interactuar con profesionales de
+              alta experiencia.
             </p>
             <p>
-              <i class="fa-solid fa-circle-check"></i> Carta de reconocimiento
-              académico e insiginía de Bentley
+              <i class="fa-solid fa-circle-check"></i> Acceso a una biblioteca
+              de scripts, y plantillas exclusivas que aumentaran su
+              productividad en Revit y Dynamo.
             </p>
             <p>
-              <i class="fa-solid fa-circle-check"></i> Se brinda acceso al
-              software de Synchro 4D Pro para uso educativo.
+              <i class="fa-solid fa-circle-check"></i> Entrega de certificado
+              por cada módulo completo del curso.
             </p>
           </div>
         </div>
@@ -159,8 +161,8 @@
               class=""
               style="
                 width: 700px;
-                height: 603px;
-                margin-top: -209px;
+                height: 550px;
+                margin-top: -208px;
                 opacity: 0.75;
               "
               src="/Imagenes/Curso1Ejemplo.png"
@@ -173,278 +175,327 @@
 
     <!--Apartado de los 3 desplegables generales: Presentación, Módulos, Inversión-->
     <div class="miModal">
-      <div class="row">
-        <!--PRESENTACIÓN-->
-        <div class="col-md-4">
-          <button
-            class="btn btnGeneral justify-content-between"
-            onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
-          >
-            <h5>PRESENTACIÓN</h5>
-            <div>
-              <i id="angleUp" class="fa-solid fa-angle-up"></i>
-              <i id="angleDown" class="fa-solid fa-angle-down"></i>
+      <div class="modal-content3">
+        <div class="desplegables">
+          <div class="container py-5">
+            <div class="row">
+              <!--PRESENTACIÓN-->
+              <div class="col-md-4">
+                <button
+                  class="btn btnGeneral justify-content-between"
+                  onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
+                >
+                  <h5>PRESENTACIÓN</h5>
+                  <div>
+                    <i id="angleUp" class="fa-solid fa-angle-up"></i>
+                    <i id="angleDown" class="fa-solid fa-angle-down"></i>
+                  </div>
+                </button>
+                <div
+                  id="presentacionContent"
+                  class="content"
+                  style="margin-left: 1px; margin-right: 2px"
+                >
+                  <p style="margin-top: 10px">
+                    Sumérgete en el emocionante mundo del modelado en Revit y
+                    descubre cómo potenciar tus habilidades mediante la
+                    automatización con Python y Dynamo. Este curso te guiará
+                    desde los fundamentos del modelado en Revit hasta técnicas
+                    avanzadas que transformarán tu enfoque en diseño
+                    estructural.
+                  </p>
+                </div>
+              </div>
+              <!--MÓDULOS-->
+              <div class="col-md-4">
+                <button
+                  class="btn btnGeneral justify-content-between"
+                  onclick="toggleContent('grupoModulos', 'angleUp1', 'angleDown1')"
+                >
+                  <h5>MÓDULOS</h5>
+                  <div>
+                    <i id="angleUp1" class="fa-solid fa-angle-up"></i>
+                    <i id="angleDown1" class="fa-solid fa-angle-down"></i>
+                  </div>
+                </button>
+                <div id="grupoModulos" class="grupo">
+                  <div class="contenidoModulo py-1">
+                    <button
+                      class="btn justify-content-between"
+                      id="toggleModule01"
+                      onclick="toggleModule('module01')"
+                    >
+                      <h5>Módulo 01</h5>
+                      <div>
+                        <i
+                          id="arrowDown01"
+                          class="fa-solid fa-caret-down"
+                          style="animation: blink 1s infinite"
+                        ></i>
+                        <i
+                          id="arrowUp01"
+                          class="fa-solid fa-caret-up"
+                          style="display: none; animation: blink 1s infinite"
+                        ></i>
+                      </div>
+                    </button>
+                    <div id="module01" class="module-content">
+                      <p style="margin-top: 10px">
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Metodología BIM-VDC</strong> aplicado a la
+                        Ingeniería de Puentes
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Modelamiento BIM</strong> de puentes con Revit
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Automatización</strong> con Dynamo, API Revit y
+                        Python
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Caso práctico:</strong> Puente Continuo de Vigas
+                        Prefabricadas
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contenidoModulo py-1">
+                    <button
+                      class="btn justify-content-between"
+                      id="toggleModule02"
+                      onclick="toggleModule('module02')"
+                    >
+                      <h5>Módulo 02</h5>
+                      <div>
+                        <i id="arrowDown02" class="fa-solid fa-caret-down"></i>
+                        <i
+                          id="arrowUp02"
+                          class="fa-solid fa-caret-up"
+                          style="display: none"
+                        ></i>
+                      </div>
+                    </button>
+                    <div id="module02" class="module-content">
+                      <p style="margin-top: 10px">
+                        <i class="fa-solid fa-check"></i> Creación de
+                        <strong>Familias Paramétricas </strong>para puentes
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Caso práctico 1:</strong> Creación de familia de
+                        pilares para puentes con componentes anidados
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Modelado avanzado de acero de refuerzo</strong>
+                        en Revit
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Caso práctico 2:</strong> Modelado de Puente de
+                        dovelas sucesivas con Dynamo
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contenidoModulo py-1">
+                    <button
+                      class="btn justify-content-between"
+                      id="toggleModule03"
+                      onclick="toggleModule('module03')"
+                    >
+                      <h5>Módulo 03</h5>
+                      <div>
+                        <i id="arrowDown03" class="fa-solid fa-caret-down"></i>
+                        <i
+                          id="arrowUp03"
+                          class="fa-solid fa-caret-up"
+                          style="display: none"
+                        ></i>
+                      </div>
+                    </button>
+                    <div id="module03" class="module-content">
+                      <p style="margin-top: 10px">
+                        <i class="fa-solid fa-check"></i>
+                        <strong
+                          >Automatización BIM en tableros de puentes</strong
+                        >
+                        con Dynamo y Revit API
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Modelado paramétrico de postensados</strong>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Generación de Listas de Barras</strong> para
+                        Fabricación de Acero de refuerzo
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Caso práctico:</strong> Modelado paramétrico de
+                        Viaducto de tablero con vigas artesa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contenidoModulo py-1">
+                    <button
+                      class="btn justify-content-between"
+                      id="toggleModule04"
+                      onclick="toggleModule('module04')"
+                    >
+                      <h5>Módulo 04</h5>
+                      <div>
+                        <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
+                        <i
+                          id="arrowUp04"
+                          class="fa-solid fa-caret-up"
+                          style="display: none"
+                        ></i>
+                      </div>
+                    </button>
+                    <div id="module04" class="module-content">
+                      <p style="margin-top: 10px">
+                        <i class="fa-solid fa-check"></i>
+                        <strong
+                          >Programación en la Ingeniería de Puentes</strong
+                        >
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong
+                          >Aplicaciones avanzadas de Interoperabilidad</strong
+                        >
+                        con Revit API, C#, Robot, Python, Dynamo, grasshopper.
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Diseño paramétrico, Generativo</strong> para
+                        Fabricación de Acero de refuerzo
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Caso práctico:</strong> Modelado paramétrico de
+                        Viaducto de tablero con vigas artesa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contenidoModulo py-1">
+                    <button
+                      class="btn justify-content-between"
+                      id="toggleModule05"
+                      onclick="toggleModule('module05')"
+                    >
+                      <h5>Bonus</h5>
+                      <div>
+                        <i id="arrowDown05" class="fa-solid fa-caret-down"></i>
+                        <i
+                          id="arrowUp05"
+                          class="fa-solid fa-caret-up"
+                          style="display: none"
+                        ></i>
+                      </div>
+                    </button>
+                    <div id="module05" class="module-content">
+                      <p style="margin-top: 10px">
+                        <i class="fa-solid fa-check"></i>Introducción a
+                        <strong
+                          >plataformas de desarrollo (VIKTOR, GITHUB, GENCOLAB,
+                          etc)</strong
+                        >
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i
+                        ><strong>Creación de addins en Revit y C#</strong>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i
+                        ><strong
+                          >Detallamiento automatizado con Revit y
+                          Sofistik</strong
+                        >
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i> Introducción a la
+                        <strong
+                          >aplicación de la Inteligencia Artificial en la
+                          Ingeniería</strong
+                        >
+                        de Puentes
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-check"></i
+                        ><strong>Diseño computacional</strong> de puentes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--INVERSIÓN-->
+              <div class="col-md-4">
+                <button
+                  class="btn btnGeneral justify-content-between"
+                  onclick="toggleContent('inversionContent', 'angleUp2', 'angleDown2')"
+                >
+                  <h5>INVERSIÓN</h5>
+                  <div>
+                    <i id="angleUp2" class="fa-solid fa-angle-up"></i>
+                    <i id="angleDown2" class="fa-solid fa-angle-down"></i>
+                  </div>
+                </button>
+                <div
+                  id="inversionContent"
+                  class="content"
+                  style="margin-left: 2px; margin-right: 1px"
+                >
+                  <div class="row">
+                    <div class="col">Col 1</div>
+                    <div class="col">Col 2</div>
+                    <div class="col">Col 3</div>
+                    <div class="col">Col 4</div>
+                    <div class="col">Col 5</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Dato 1</div>
+                    <div class="col">Dato 2</div>
+                    <div class="col">Dato 3</div>
+                    <div class="col">Dato 4</div>
+                    <div class="col">Dato 5</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Dato 6</div>
+                    <div class="col">Dato 7</div>
+                    <div class="col">Dato 8</div>
+                    <div class="col">Dato 9</div>
+                    <div class="col">Dato 10</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Dato 11</div>
+                    <div class="col">Dato 12</div>
+                    <div class="col">Dato 13</div>
+                    <div class="col">Dato 14</div>
+                    <div class="col">Dato 15</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Dato 16</div>
+                    <div class="col">Dato 17</div>
+                    <div class="col">Dato 18</div>
+                    <div class="col">Dato 19</div>
+                    <div class="col">Dato 20</div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </button>
-          <div id="presentacionContent" class="content">
-            <p style="margin-top: 10px">
-              <i class="fa-solid fa-check"></i> Metodología BIM-VDC aplicado a
-              la Ingeniería de Puentes
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> Modelamiento BIM de puentes
-              con Revit
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> Automatización con Dynamo, API
-              Revit y Python
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> Caso práctico: Puente Continuo
-              de Vigas Prefabricadas
-            </p>
           </div>
         </div>
-        <!--MÓDULOS-->
-        <div class="col-md-4">
-          <button
-            class="btn btnGeneral justify-content-between"
-            onclick="toggleContent('grupoModulos', 'angleUp1', 'angleDown1')"
-          >
-            <h5>MÓDULOS</h5>
-            <div>
-              <i id="angleUp1" class="fa-solid fa-angle-up"></i>
-              <i id="angleDown1" class="fa-solid fa-angle-down"></i>
-            </div>
-          </button>
-          <div id="grupoModulos" class="grupo">
-            <div class="contenidoModulo py-1">
-              <button
-                class="btn justify-content-between"
-                id="toggleModule01"
-                onclick="toggleModule('module01')"
-              >
-                <h5>Módulo 01</h5>
-                <div>
-                  <i
-                    id="arrowDown01"
-                    class="fa-solid fa-caret-down"
-                    style="animation: blink 1s infinite"
-                  ></i>
-                  <i
-                    id="arrowUp01"
-                    class="fa-solid fa-caret-up"
-                    style="display: none; animation: blink 1s infinite"
-                  ></i>
-                </div>
-              </button>
-              <div id="module01" class="module-content">
-                <p style="margin-top: 10px">
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Metodología BIM-VDC</strong> aplicado a la
-                  Ingeniería de Puentes
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Modelamiento BIM</strong> de puentes con Revit
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Automatización</strong> con Dynamo, API Revit y
-                  Python
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Caso práctico:</strong> Puente Continuo de Vigas
-                  Prefabricadas
-                </p>
-              </div>
-            </div>
-            <div class="contenidoModulo py-1">
-              <button
-                class="btn justify-content-between"
-                id="toggleModule02"
-                onclick="toggleModule('module02')"
-              >
-                <h5>Módulo 02</h5>
-                <div>
-                  <i id="arrowDown02" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp02"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module02" class="module-content">
-                <p style="margin-top: 10px">
-                  <i class="fa-solid fa-check"></i> Creación de
-                  <strong>Familias Paramétricas </strong>para puentes
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Caso práctico 1:</strong> Creación de familia de
-                  pilares para puentes con componentes anidados
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Modelado avanzado de acero de refuerzo</strong> en
-                  Revit
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Caso práctico 2:</strong> Modelado de Puente de
-                  dovelas sucesivas con Dynamo
-                </p>
-              </div>
-            </div>
-            <div class="contenidoModulo py-1">
-              <button
-                class="btn justify-content-between"
-                id="toggleModule03"
-                onclick="toggleModule('module03')"
-              >
-                <h5>Módulo 03</h5>
-                <div>
-                  <i id="arrowDown03" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp03"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module03" class="module-content">
-                <p style="margin-top: 10px">
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Automatización BIM en tableros de puentes</strong>
-                  con Dynamo y Revit API
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Modelado paramétrico de postensados</strong>
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Generación de Listas de Barras</strong> para
-                  Fabricación de Acero de refuerzo
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Caso práctico:</strong> Modelado paramétrico de
-                  Viaducto de tablero con vigas artesa
-                </p>
-              </div>
-            </div>
-            <div class="contenidoModulo py-1">
-              <button
-                class="btn justify-content-between"
-                id="toggleModule04"
-                onclick="toggleModule('module04')"
-              >
-                <h5>Módulo 04</h5>
-                <div>
-                  <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp04"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module04" class="module-content">
-                <p style="margin-top: 10px">
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Programación en la Ingeniería de Puentes</strong>
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Aplicaciones avanzadas de Interoperabilidad</strong> con Revit API, C#, Robot, Python, Dynamo, grasshopper.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Diseño paramétrico, Generativo</strong> para
-                  Fabricación de Acero de refuerzo
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  <strong>Caso práctico:</strong> Modelado paramétrico de
-                  Viaducto de tablero con vigas artesa
-                </p>
-              </div>
-            </div>
-            <div class="contenidoModulo py-1">
-              <button
-                class="btn justify-content-between"
-                id="toggleModule05"
-                onclick="toggleModule('module05')"
-              >
-                <h5>Bonus</h5>
-                <div>
-                  <i id="arrowDown05" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp05"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module05" class="module-content">
-                <p style="margin-top: 10px">
-                  <i class="fa-solid fa-check"></i>Creación de "ViewPoints"
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Configuración de la
-                  Animación
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Exportación y detalles de
-                  entrega
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--INVERSIÓN-->
-        <div class="col-md-4">
-          <button
-            class="btn btnGeneral justify-content-between"
-            onclick="toggleContent('inversionContent', 'angleUp2', 'angleDown2')"
-          >
-            <h5>INVERSIÓN</h5>
-            <div>
-              <i id="angleUp2" class="fa-solid fa-angle-up"></i>
-              <i id="angleDown2" class="fa-solid fa-angle-down"></i>
-            </div>
-          </button>
-          <div id="inversionContent" class="content">
-            <p style="margin-top: 10px">
-              <i class="fa-solid fa-check"></i> Introducción al contexto
-              nacional BIM
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> BIM 4D: usos, beneficios y
-              propósito
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> Interoperabilidad que ofrece
-              Synchro 4D Pro
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i> Entendiendo y usos del espacio
-              de trabajo
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="desplegables bg-light">
-      <div class="container py-5">
-        
       </div>
     </div>
 
-    <div class="row imagenesCurso1 bg-light d-flex text-center">
+    <div
+      style="padding-top: 150px"
+      class="row imagenesCurso1 bg-light d-flex text-center"
+    >
       <div>
         <img src="Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
         <img src="Lenguajes_Plugins/wallaceilogo.png" alt="" />
@@ -459,8 +510,10 @@
     <!--Ofertas y promociones-->
     <div class="row text-center pt-5 px-5 bg-light">
       <p class="text-center lead pt-2" style="color: black; font-size: 25px">
-        Si estás interesado en adquirir más de un módulo aprovecha los 
-        <a style="color: #263C94;" href="https://api.whatsapp.com/send?phone=51900121245"
+        Si estás interesado en adquirir más de un módulo aprovecha los
+        <a
+          style="color: #263c94"
+          href="https://api.whatsapp.com/send?phone=51900121245"
           >descuentos y promociones</a
         >
         que tenemos para ti.

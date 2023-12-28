@@ -423,6 +423,7 @@ p {
 
 .desplegables .content {
   border-radius: 0% 0% 2% 2%;
+  padding: 0% 3% 0 3%;
   background-color: #3152A1;
   color: white;
   border: none;
@@ -489,4 +490,20 @@ p {
 .imagenesCurso1 img {
   width: 50px;
   margin-right: 50px;
+}
+
+.modal-content3 {
+  background-color: white;
+  border-radius: 10px;
+  margin-left:1%;
+  width: 98%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.miModal {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  margin-top: -60px;
 }
