@@ -578,3 +578,12 @@ p {
 .cuadroFecha p {
   font-weight: 600;
 }
+
+@media (max-width : 800px) {
+  .Img-Referencia {
+    display: none;
+  }
+  .ofertasProm {
+    margin-top: 30%;
+  }
+}
