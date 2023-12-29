@@ -9,6 +9,7 @@ body {
 
 h1,
 h3,
+h2,
 h5,
 h4,
 .nav-link,
@@ -399,7 +400,6 @@ p {
   margin-top: -7px;
 }
 
-
 /*Estilos de desplegables generales*/
 .desplegables .btn {
   background-color: #263c94;
@@ -409,7 +409,6 @@ p {
   display: flex;
   justify-content: center;
 }
-
 
 .desplegables .btnGeneral:hover {
   background-color: #324ebd;
@@ -424,7 +423,7 @@ p {
 .desplegables .content {
   border-radius: 0% 0% 2% 2%;
   padding: 0% 3% 0 3%;
-  background-color: #3152A1;
+  background-color: #3152a1;
   color: white;
   border: none;
   height: auto;
@@ -435,9 +434,9 @@ p {
 
 .module-content {
   border-radius: 0% 0% 2% 2%;
-  background-color: #3152A1;
+  background-color: #3152a1;
   color: white;
-  height:auto;
+  height: auto;
   border: none;
   max-height: 0;
   width: auto;
@@ -458,8 +457,6 @@ p {
   max-height: 0;
   transition: max-height 0.5s ease, margin-top 0.5s ease; /* Añadida transición para margin-top */
 }
-
-
 
 /*Desplegables de módulos*/
 .module-content.closing {
@@ -487,6 +484,10 @@ p {
   display: none;
 }
 
+.desplegables .fa-dollar-sign {
+  font-size: 17px;
+}
+
 .imgLogo {
   position: absolute;
   margin-top: 35%;
@@ -498,9 +499,26 @@ p {
   background-color: rgba(255, 255, 255, 0.507);
   padding: 4px;
   width: 36px;
-  height: 36px; /* Asegura que la imagen sea cuadrada para que sea completamente circular */
+  height: 36px;
   margin-right: 7px;
-  border-radius: 50%; /* Hace que el borde sea completamente circular */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imgLogo1 {
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 30%;
+  z-index: 2;
+}
+
+.imgLogo1 img {
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+  margin-right: 7px;
+  border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -519,4 +537,23 @@ p {
   width: 100%;
   align-items: center;
   margin-top: -60px;
+}
+
+.content .fa-tag {
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+
+.modCont {
+  margin-left: 8%;
+}
+
+.modCont2 {
+  margin-right: -21%;
+}
+
+.cuadroFecha {
+  color: #fdd406;
+  width: auto;
+  height: auto;
 }
