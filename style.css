@@ -557,3 +557,19 @@ p {
   width: auto;
   height: auto;
 }
+
+.curso2 .btn{
+  background-color: #3E2C80;
+}
+
+.curso2 .btnGeneral:hover {
+  background-color: #370489da;
+}
+
+.curso2 .content{
+  background-color: #370489da;
+}
+
+.curso2 .module-content {
+  background-color: #370489da;
+}
