@@ -84,6 +84,7 @@ p {
 .fa-envelope,
 .fa-phone,
 .fa-circle-check {
+  opacity: 0.75;
   padding-right: 12px;
   font-size: 20px;
 }
@@ -393,7 +394,7 @@ p {
 }
 
 .fa-circle-check {
-  color: #fdd406;
+  color: #F3D533;
 }
 
 .row p {
@@ -553,7 +554,7 @@ p {
 }
 
 .cuadroFecha {
-  color: #fdd406;
+  color: #F3D533;
   width: auto;
   height: auto;
 }
@@ -572,4 +573,8 @@ p {
 
 .curso2 .module-content {
   background-color: #370489da;
+}
+
+.cuadroFecha p {
+  font-weight: 600;
 }
