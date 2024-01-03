@@ -16,6 +16,13 @@ h4,
   /*font-family: 'Quicksand', sans-serif;*/
 }
 
+body {
+  width: 100%;
+  margin: 0; /* Esto elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Esto elimina el relleno predeterminado del cuerpo */
+  overflow-x:hidden;
+}
+
 p {
   font-family: "Plus Jakarta Sans";
   /*font-family: 'Mulish';*/
@@ -618,6 +625,10 @@ p {
     display: none;
   }
 
+  .Capacitaciones {
+    margin-top: -20%;
+  }
+
   .carousel .btn {
     width: 100%;
   }
@@ -660,6 +671,39 @@ p {
   .sliderTitulos {
     display: block;
   }
+
+  .slider3 .slide img {
+    width: 50px;
+  }
+
+  .slider3 .slide {
+    padding-right: 80px;
+  }
+
+  .slider0 .slide img {
+    width: 67px;
+  }
+
+  .slider0 .slide {
+    padding-right: 50px;
+  }
+
+  .txtInicialForm {
+    display:none;
+  }
+
+  .txtInicialForm1 {
+    display: block;
+  }
+
+  .form-control .btn {
+    width: 60%;
+  }
+
+  .form2 .btn {
+    width: 100%;
+  }
+
 }
 
 /*Carrusel de tarjetas*/
