@@ -120,6 +120,23 @@ p {
   width: 30%;
 }
 
+.Footer .logo {
+  width: 20%;
+}
+
+.header .btn{
+  width: 50%;
+}
+
+.Contacto .btn {
+  width: 25%;
+}
+
+.Contacto .contactos {
+  text-align: center;
+}
+
+
 .logoCurso1 {
   width: 55%;
   margin-right: 130px;
@@ -191,6 +208,11 @@ p {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+/*Slider de textos para las palabras clave*/
+.sliderTitulos {
+  display: none;
 }
 
 .footer-items {
@@ -265,6 +287,10 @@ p {
   z-index: 1;
 }
 
+.form-control .btn {
+  width: 25%;
+}
+
 .col-md-2 {
   width: 18%;
   margin-right: 20px;
@@ -279,25 +305,6 @@ p {
   border-radius: 10px;
   width: 40%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 1200px) {
-  .modal-content,
-  .modal-content2 {
-    width: 80%;
-  }
-}
-
-/*Carrusel de tarjetas*/
-@media (min-width: 768px) {
-  .carousel-inner {
-    display: flex;
-  }
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
 }
 
 .carousel-inner {
@@ -582,5 +589,87 @@ p {
   }
   .ofertasProm {
     margin-top: 30%;
+  }
+}
+
+
+/*Responsividad*/
+@media (max-width: 1200px) {
+  .modal-content,
+  .modal-content2 {
+    width: 80%;
+  }
+
+  .header .btn{
+    width: 65%;
+  }
+
+  /*3 palabras clave*/
+  .titulos h3{
+    font-size: 15px;
+  }
+
+  .Capacitaciones h2{
+    margin-inline: 10%;
+    font-size: 15px;
+  }
+
+  .Capacitaciones p{
+    display: none;
+  }
+
+  .carousel .btn {
+    width: 100%;
+  }
+
+  .Contacto h1{
+    margin-inline: -15%;
+  }
+
+  .Contacto .btn {
+    width: 130%;
+    margin-left: -15%;
+  }
+
+  .Contacto .contactos {
+    text-align: left;
+  }
+
+  .footer-items p {
+    margin-inline: 1%;
+  }
+
+  .footer-items .iconos {
+    font-size: 23px;
+    margin-top: 35px;
+    margin-inline: -5%;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
+  }
+
+  .Footer .logo{ 
+    width: 50%;
+  }
+  
+  .contenedorTitulos {
+    display: none;
+  }
+
+  .sliderTitulos {
+    display: block;
+  }
+}
+
+/*Carrusel de tarjetas*/
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
   }
 }

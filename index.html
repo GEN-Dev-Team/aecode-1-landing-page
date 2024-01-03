@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <!-- Palabras clave para SEO -->
     <meta
@@ -45,6 +48,12 @@
       integrity="sha512-..."
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+
+    <!--swipper para el carrusel de texto de las 3 palabras clave -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
     <!--Enlace con el .js-->
@@ -143,7 +152,7 @@
               <div class="text-center">
                 <button
                   onclick="mostrarFormulario()"
-                  class="btn btn-primary w-50"
+                  class="btn btn-primary"
                   style="background-color: #380489; border: #380489"
                 >
                   ¡Quiero unirme!
@@ -171,7 +180,7 @@
                     X
                   </button>
                 </div>
-                <div class="">
+                <div class="txtInicialForm1">
                   <h5 class="fw-bold display-6 py-3">
                     ¡Únete a la comunidad AECODE!
                   </h5>
@@ -205,7 +214,7 @@
                     class="btn btn-primary px-4"
                     style="background-color: #380489; border: #380489"
                   >
-                    <strong>Enviar información</strong>
+                    <strong>Enviar</strong>
                   </button>
                 </div>
                 <div>
@@ -275,7 +284,7 @@
         </div>
       </div>
       <div class="container text-center">
-        <div class="titulos row g-5 py-5">
+        <div class="contenedorTitulos row g-5 py-5">
           <div class="col-md-4">
             <h3 class="fw-bold">INNOVACIÓN</h3>
             <p class="text-muted">
@@ -302,6 +311,57 @@
         </div>
       </div>
 
+      <div class="sliderTitulos">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="container text-center">
+                <div class="titulos row g-5 py-5">
+                  <div class="col-md-4">
+                    <h3 class="fw-bold">INNOVACIÓN</h3>
+                    <p class="text-muted">
+                      Buscamos redefinir la ingeniería moderna en el sector AEC,
+                      estableciendo estándares optimizados y sostenibles para su
+                      futuro.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container text-center">
+                <div class="titulos row g-5 py-5">
+                  <div class="col-md-4">
+                    <h3 class="fw-bold">DIGITALIZACIÓN</h3>
+                    <p class="text-muted">
+                      Impulsamos la transformación digital en la Ingeniería y
+                      Construcción, redefiniendo estándares globales para el
+                      futuro del sector.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container text-center">
+                <div class="titulos row g-5 py-5">
+                  <div class="col-md-4">
+                    <h3 class="fw-bold">AUTOMATIZACIÓN</h3>
+                    <p class="text-muted">
+                      Transformamos los desafíos de ingeniería mediante
+                      soluciones óptimas, integrando la pasión y creatividad con
+                      tecnología avanzada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Agrega la paginación -->
+          <div class="swiper-pagination"></div>
+        </div>
+  
+      </div>
       <!--SLIDERS-->
       <section class="bg-light mb-5">
         <!--Slider de lenguajes-->
@@ -513,7 +573,7 @@
       </section>
       <!--Sección Capacitaciones-->
       <section id="Capacitaciones" class="text-center pt-5">
-        <div class="pt-5">
+        <div class="Capacitaciones pt-5">
           <h2 class="fw-bold text-center mb-4">
             POTENCIA TUS PROYECTOS ACADÉMICOS Y PROFESIONALES
           </h2>
@@ -621,7 +681,7 @@
       </section>
 
       <section class="p-5 bg-light">
-        <div class="container">
+        <div class="Contacto container">
           <h1 class="display-5 text-center">
             ¡Sé parte de la red de networking!
           </h1>
@@ -633,13 +693,13 @@
               class="btn btn-primary px-4"
               style="background-color: #380489; border: #380489; color: white"
             >
-              <strong>¡Únete a nuestro grupo de Whatsapp!</strong>
+              <strong>¡Únete al grupo de Whatsapp!</strong>
             </a>
           </div>
           <p class="text-center text-secondary lead pt-2">
             Estamos en contacto:
           </p>
-          <p class="text-center text-secondary lead">
+          <p class="contactos text-secondary lead">
             <i class="fa-regular fa-envelope"></i> contacto@aecode.ai <br />
             <i class="fa-solid fa-phone"></i> (+51) 900 121 245 <br />
             <i class="fa-solid fa-phone"></i> (+51) 927 301 701 <br />
@@ -691,14 +751,9 @@
 
       <!--Footer-->
       <section class="Footer">
-        <div class="container pt-4">
+        <div class="Footer container pt-4">
           <p class="text-center small text-muted">
-            <img
-              style="width: 20%"
-              src="/Imagenes/aecode-logo.png"
-              class="logo"
-              alt=""
-            />
+            <img src="/Imagenes/aecode-logo.png" class="logo" alt="" />
           </p>
         </div>
         <div class="container p-3">
@@ -815,6 +870,27 @@
             }
           });
         });
+      });
+    </script>
+
+    <!-- Agrega el script de Swiper.js al final del cuerpo del HTML -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Inicializa el slider
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000, // Tiempo en milisegundos entre cada diapositiva
+        },
       });
     </script>
 
