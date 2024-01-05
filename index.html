@@ -63,6 +63,10 @@
 
     <!--Enlace con el .js-->
     <script src="scripts.js"></script>
+
+    <!--Ícono de navegador-->
+    <link rel="icon" href="Imagenes/aecode-logo.png" type="image/x-icon" />
+    <link rel="icon" href="Imagenes/aecode-logo.png" type="image/png" />
   </head>
   <body>
     <!--Boton de whatsapp-->
@@ -81,7 +85,7 @@
     </div>
     <!-- Barra de navegación-->
     <div class="navbar navbar-expand-lg bg-light fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <a href="#" class="navbar-brand fs-3 pb-2"
           ><img src="/Imagenes/aecode-logo.png" alt="" class="img-fluid logo"
         /></a>
@@ -97,22 +101,22 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#Home" class="nav-link mt-2"
+              <a href="/index.html#Home" class="nav-link mt-2"
                 ><strong>Nosotros</strong></a
               >
             </li>
             <li class="nav-item">
-              <a href="#Capacitaciones" class="nav-link mt-2"
+              <a href="/index.html#Capacitaciones" class="nav-link mt-2"
                 ><strong>Capacitaciones</strong></a
               >
             </li>
             <li class="nav-item">
-              <a href="#Contáctanos" class="nav-link mt-2"
+              <a href="/index.html#Contáctanos" class="nav-link mt-2"
                 ><strong>Contáctanos</strong></a
               >
             </li>
             <li class="nav-item mt-1">
-              <a href="/index_en.html" class="nav-link nav-link-icon"
+              <a href="Curso2_en.html" class="nav-link nav-link-icon"
                 ><i class="fa-solid iconoHeader fa-earth-americas"></i
                 ><span class="icon-text"><strong>ES</strong></span></a
               >
@@ -150,7 +154,7 @@
               <h1 class="display-4 text-center">
                 Ingeniería 4.0 + Programación
               </h1>
-              <p class="lead text-center text-secondary pt-4">
+              <p class="text-center text-secondary pt-4">
                 Potencia tu formación profesional con cursos prácticos y
                 especializados.
               </p>
@@ -168,18 +172,22 @@
         </div>
       </div>
       <!--3 palabras clave-->
-      <div class="container text-center">
+      <div
+        id="contenedorPalabrasClave"
+        class="container text-center"
+        style="margin-top: -0%"
+      >
         <div class="contenedorTitulos row g-5 py-5">
           <div class="col-md-4">
             <h3 class="fw-bold">INNOVACIÓN</h3>
-            <p class="text-muted">
+            <p class="text-secondary">
               Buscamos redefinir la ingeniería moderna en el sector AEC,
               estableciendo estándares optimizados y sostenibles para su futuro.
             </p>
           </div>
           <div class="col-md-4">
             <h3 class="fw-bold">DIGITALIZACIÓN</h3>
-            <p class="text-muted">
+            <p class="text-secondary">
               Impulsamos la transformación digital en la Ingeniería y
               Construcción, redefiniendo estándares globales para el futuro del
               sector.
@@ -187,79 +195,69 @@
           </div>
           <div class="col-md-4">
             <h3 class="fw-bold">AUTOMATIZACIÓN</h3>
-            <p class="text-muted">
+            <p class="text-secondary">
               Transformamos los desafíos de ingeniería mediante soluciones
               óptimas, integrando la pasión y creatividad con tecnología
               avanzada.
             </p>
           </div>
         </div>
-      </div>
-      <div class="sliderTitulos">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="container text-center">
-                <div class="titulos row g-5 py-5">
-                  <div class="col-md-4">
-                    <h3 class="fw-bold">INNOVACIÓN</h3>
-                    <p class="text-muted">
-                      Buscamos redefinir la ingeniería moderna en el sector AEC,
-                      estableciendo estándares optimizados y sostenibles para su
-                      futuro.
-                    </p>
+        <div id="sliderTitulos" class="sliderTitulos">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container text-center">
+                  <div class="titulos row g-5 py-5">
+                    <div class="col-md-4">
+                      <h2 class="fw-bold text-center">INNOVACIÓN</h2>
+                      <p class="text-secondary">
+                        Buscamos redefinir la ingeniería moderna en el sector
+                        AEC, estableciendo estándares optimizados y sostenibles
+                        para su futuro.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container text-center">
-                <div class="titulos row g-5 py-5">
-                  <div class="col-md-4">
-                    <h3 class="fw-bold">DIGITALIZACIÓN</h3>
-                    <p class="text-muted">
-                      Impulsamos la transformación digital en la Ingeniería y
-                      Construcción, redefiniendo estándares globales para el
-                      futuro del sector.
-                    </p>
+              <div class="swiper-slide">
+                <div class="container text-center">
+                  <div class="titulos row g-5 py-5">
+                    <div class="col-md-4">
+                      <h2 class="fw-bold text-center">DIGITALIZACIÓN</h2>
+                      <p class="text-secondary">
+                        Impulsamos la transformación digital en la Ingeniería y
+                        Construcción, redefiniendo estándares globales para el
+                        futuro del sector.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="container text-center">
-                <div class="titulos row g-5 py-5">
-                  <div class="col-md-4">
-                    <h3 class="fw-bold">AUTOMATIZACIÓN</h3>
-                    <p class="text-muted">
-                      Transformamos los desafíos de ingeniería mediante
-                      soluciones óptimas, integrando la pasión y creatividad con
-                      tecnología avanzada.
-                    </p>
+              <div class="swiper-slide">
+                <div class="container text-center">
+                  <div class="titulos row g-5 py-5">
+                    <div class="col-md-4">
+                      <h2 class="fw-bold text-center">AUTOMATIZACIÓN</h2>
+                      <p class="text-secondary">
+                        Transformamos los desafíos de ingeniería mediante
+                        soluciones óptimas, integrando la pasión y creatividad
+                        con tecnología avanzada.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Agrega la paginación
-          <div class="swiper-pagination"></div>-->
-          
+          <!-- Agrega la paginación-->
+          <div
+            id="paginatorSwiper"
+            class="swiper-pagination"
+            style="margin-bottom: 12%"
+          ></div>
         </div>
       </div>
     </div>
-    <div
-      id="message"
-      style="
-        display: none;
-        margin: 20px;
-        font-weight: bold;
-        color: green;
-        padding: 8px;
-        background-color: beige;
-        border-radius: 4px;
-        border-color: aquamarine;
-      "
-    ></div>
 
     <!--SLIDERS-->
     <section class="bg-light mb-5">
@@ -276,9 +274,8 @@
             <div class="slide">
               <img src="/Softwares/logo_trimbleconnect.png" alt="" />
             </div>
-            <div class="slide mt-2">
+            <div class="slide mt-2 slidePersonalizado">
               <img
-                style="width: 120px"
                 src="/Softwares/logaster-2020-08-h-rhinoceros-logo-15.png"
                 alt=""
               />
@@ -317,7 +314,7 @@
             <div class="slide">
               <img src="/Softwares/logo_trimbleconnect.png" alt="" />
             </div>
-            <div class="slide mt-2">
+            <div class="slide mt-2 slidePersonalizado">
               <img
                 src="/Softwares/logaster-2020-08-h-rhinoceros-logo-15.png"
                 alt=""
@@ -417,7 +414,7 @@
             <div class="slide">
               <img src="/Lenguajes_Plugins/logo octopus.png" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide slidePersonalizado">
               <img src="/Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
             </div>
             <div class="slide">
@@ -426,7 +423,7 @@
             <div class="slide">
               <img src="/Lenguajes_Plugins/swallow.png" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide slidePersonalizado">
               <img
                 src="/Lenguajes_Plugins/Visual_Studio_Code_1.35_icon.svg.png"
                 alt=""
@@ -442,7 +439,7 @@
             <div class="slide">
               <img src="/Lenguajes_Plugins/logo octopus.png" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide slidePersonalizado">
               <img src="/Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
             </div>
             <div class="slide">
@@ -451,7 +448,7 @@
             <div class="slide">
               <img src="/Lenguajes_Plugins/swallow.png" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide slidePersonalizado">
               <img
                 src="/Lenguajes_Plugins/Visual_Studio_Code_1.35_icon.svg.png"
                 alt=""
@@ -468,16 +465,29 @@
     <!--Sección Capacitaciones-->
     <section id="Capacitaciones" class="text-center pt-5">
       <div class="Capacitaciones pt-5">
-        <h2 class="fw-bold text-center mb-4">
-          POTENCIA TUS PROYECTOS ACADÉMICOS Y PROFESIONALES
-        </h2>
-        <p style="padding: 20px" class="text-secondary">
-          Participa en la transformación digital de la industria AEC,
-          enriqueciendo tu formación en programación, diseño paramétrico y
-          construcción virtual, <br />
-          para acelerar la adopción de BIM en proyectos de diseño y
-          construcción.
-        </p>
+        <div class="CapacitacionesTitulo">
+          <h2 class="fw-bold text-center mb-4">
+            POTENCIA TUS PROYECTOS ACADÉMICOS Y PROFESIONALES
+          </h2>
+        </div>
+        <div class="CapacitacionesTitulo2">
+          <h2 class="fw-bold text-center mb-4">POTENCIA TUS PROYECTOS</h2>
+        </div>
+        <div class="CapacitacionesText">
+          <p style="padding: 20px" class="text-secondary">
+            Participa en la transformación digital de la industria AEC,
+            enriqueciendo tu formación en programación, diseño paramétrico y
+            construcción virtual, <br />
+            para acelerar la adopción de BIM en proyectos de diseño y
+            construcción.
+          </p>
+        </div>
+        <div class="CapacitacionesText2">
+          <p style="padding: 20px" class="text-secondary">
+            Únete a la transformación digital de la industria AEC y acelera la
+            adopción de BIM.
+          </p>
+        </div>
       </div>
       <!--Tarjetas de cursos-->
       <div id="carouselExampleControls" class="carousel slide mb-5">
@@ -590,7 +600,8 @@
             <strong>¡Únete al grupo de Whatsapp!</strong>
           </a>
         </div>
-        <p class="text-center text-secondary lead pt-2">Estamos en contacto:</p>
+        <p class="text-center contactoText text-secondary lead pt-2">Estamos en contacto:</p>
+        <p class="contactoText1 text-secondary lead pt-2">Estamos en contacto:</p>
         <p class="contactos text-secondary lead">
           <i class="fa-regular fa-envelope"></i> contacto@aecode.ai <br />
           <i class="fa-solid fa-phone"></i> (+51) 900 121 245 <br />
@@ -645,7 +656,7 @@
     <section class="Footer">
       <div class="Footer container pt-4">
         <p class="text-center small text-muted">
-          <img src="/Imagenes/aecode-logo.png" class="logo" alt="" />
+          <img src="/Imagenes/aecode-logo.png" class="logoFooterHome" alt="" />
         </p>
       </div>
       <div class="container p-3">
@@ -681,8 +692,8 @@
               </h5>
               <div class="txtInicialForm">
                 <p class="text-muted text-secondary">
-                  Ingresa tu nombre y correo electrónico, para recibir información
-                  sobre nuestros cursos y mucho más!
+                  Ingresa tu nombre y correo electrónico, para recibir
+                  información sobre nuestros cursos y mucho más!
                 </p>
               </div>
               <div class="txtInicialForm1 just">
@@ -752,17 +763,29 @@
               </button>
             </div>
             <div class="">
-              <h5 class="fw-bold display-6 py-3">
-                ¡Bienvenido a la comunidad AECODE!
-              </h5>
-              <p class="text-muted text-secondary">
-                Estamos contentos de contar contigo, en unos instantes recibirás
-                un correo de confirmación. Con esto podrás acceder a la
-                información de cursos, novedades y mucho más. Si quieres
-                pertenecer a una comunidad de networking más exclusiva:
-              </p>
+              <div class="form2Title">
+                <h5 class="fw-bold display-6 py-3">
+                  ¡Bienvenido a <br />
+                  la comunidad AECODE!
+                </h5>
+              </div>
+              <div class="form2Text">
+                <p class="text-muted text-secondary">
+                  Estamos contentos de contar contigo, en unos instantes
+                  recibirás un correo de confirmación. Con esto podrás acceder a
+                  la información de cursos, novedades y mucho más. Si quieres
+                  pertenecer a una comunidad de networking más exclusiva:
+                </p>
+              </div>
+              <div class="form2Text2">
+                <p class="text-muted text-secondary">
+                  En unos instantes recibirás un correo de confirmación para
+                  acceder a novedades y mucho más. <br />
+                  Si quieres pertenecer a una comunidad más exclusiva:
+                </p>
+              </div>
             </div>
-            <div class="">
+            <div class="text-center">
               <a
                 href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
                 target="_blank"
@@ -773,12 +796,26 @@
               </a>
             </div>
             <div>
-              <p class="small text-muted pt-3">¡Bienvenido!</p>
+              <p class="text-muted pt-3">¡Bienvenido!</p>
             </div>
           </form>
         </div>
       </div>
     </div>
+
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
 
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {

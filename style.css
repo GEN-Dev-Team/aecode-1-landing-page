@@ -20,7 +20,7 @@ body {
   width: 100%;
   margin: 0; /* Esto elimina el margen predeterminado del cuerpo */
   padding: 0; /* Esto elimina el relleno predeterminado del cuerpo */
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 p {
@@ -124,14 +124,15 @@ p {
 }
 
 .logo {
-  width: 30%;
+  margin-left: 5%;
+  width: 25%;
 }
 
 .Footer .logo {
   width: 20%;
 }
 
-.header .btn{
+.header .btn {
   width: 50%;
 }
 
@@ -143,10 +144,13 @@ p {
   text-align: center;
 }
 
-
 .logoCurso1 {
   width: 55%;
   margin-right: 130px;
+}
+
+.logoaecodeCurso1 img {
+  width: 25%;
 }
 
 /*Estilos del slider*/
@@ -298,6 +302,10 @@ p {
   width: 25%;
 }
 
+.form2 .btn {
+  width: 70%;
+}
+
 .col-md-2 {
   width: 18%;
   margin-right: 20px;
@@ -405,7 +413,7 @@ p {
 }
 
 .fa-circle-check {
-  color: #F3D533;
+  color: #f3d533;
 }
 
 .row p {
@@ -534,7 +542,6 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .modal-content3 {
   background-color: white;
   border-radius: 10px;
@@ -565,20 +572,20 @@ p {
 }
 
 .cuadroFecha {
-  color: #F3D533;
+  color: #f3d533;
   width: auto;
   height: auto;
 }
 
-.curso2 .btn{
-  background-color: #3E2C80;
+.curso2 .btn {
+  background-color: #3e2c80;
 }
 
 .curso2 .btnGeneral:hover {
   background-color: #370489da;
 }
 
-.curso2 .content{
+.curso2 .content {
   background-color: #370489da;
 }
 
@@ -590,7 +597,7 @@ p {
   font-weight: 600;
 }
 
-@media (max-width : 800px) {
+@media (max-width: 800px) {
   .Img-Referencia {
     display: none;
   }
@@ -599,6 +606,47 @@ p {
   }
 }
 
+.CapacitacionesText2 {
+  display: none;
+}
+
+.form2Text2 {
+  display: none;
+}
+
+.ofertasProm p {
+  color: black;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.CursoBeneficios {
+  display: block;
+}
+
+.CursoBeneficios1 {
+  display: none;
+}
+
+.CapacitacionesTitulo2 {
+  display: none;
+}
+
+.contactoText1 {
+  display: none;
+}
+
+.logoFooterHome {
+  width: 25%;
+}
+
+.slider0 .slidePersonalizado img {
+  width: 120px;
+}
+
+.CourseContent1 {
+  display: none;
+}
 
 /*Responsividad*/
 @media (max-width: 1200px) {
@@ -607,22 +655,44 @@ p {
     width: 80%;
   }
 
-  .header .btn{
+  .header .btn {
     width: 65%;
   }
 
   /*3 palabras clave*/
-  .titulos h3{
-    font-size: 15px;
+  .titulos h3 {
+    font-size: 18px;
   }
 
-  .Capacitaciones h2{
+  .Capacitaciones h2 {
     margin-inline: 10%;
-    font-size: 15px;
+    font-size: 20px;
   }
 
-  .Capacitaciones p{
+  .sliderTitulos h2 {
+    font-size: 20px;
+  }
+
+  .CapacitacionesTitulo {
     display: none;
+  }
+
+  .CapacitacionesTitulo2 {
+    display: block;
+  }
+
+  .CapacitacionesTitulo2 h2 {
+    font-size: 20px;
+  }
+
+  .CapacitacionesText {
+    display: none;
+  }
+
+  .CapacitacionesText2 {
+    display: block;
+    margin-top: -8%;
+    margin-bottom: -10%;
   }
 
   .Capacitaciones {
@@ -633,17 +703,16 @@ p {
     width: 100%;
   }
 
-  .Contacto h1{
+  .Contacto h1 {
     margin-inline: -15%;
-  }
-
-  .Contacto .btn {
-    width: 130%;
-    margin-left: -15%;
   }
 
   .Contacto .contactos {
     text-align: left;
+  }
+
+  .Contacto .btn {
+    width: 100%;
   }
 
   .footer-items p {
@@ -660,20 +729,33 @@ p {
     box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
   }
 
-  .Footer .logo{ 
-    width: 50%;
+  .logo {
+    width: 40%;
   }
-  
+
+  .Footer .logo {
+    width: 40%;
+  }
+
   .contenedorTitulos {
     display: none;
   }
 
   .sliderTitulos {
+    margin-top: -12%;
     display: block;
+  }
+
+  .slider2 .slide {
+    padding-right: 75px;
   }
 
   .slider3 .slide img {
     width: 50px;
+  }
+
+  .slider3 .slidePersonalizado img {
+    width: 45px;
   }
 
   .slider3 .slide {
@@ -684,12 +766,16 @@ p {
     width: 67px;
   }
 
+  .slider0 .slidePersonalizado img {
+    width: 110px;
+  }
+
   .slider0 .slide {
     padding-right: 50px;
   }
 
   .txtInicialForm {
-    display:none;
+    display: none;
   }
 
   .txtInicialForm1 {
@@ -704,6 +790,96 @@ p {
     width: 100%;
   }
 
+  .form2Text {
+    display: none;
+  }
+
+  .form2Text2 {
+    display: block;
+    margin-right: -15%;
+    margin-left: -15%;
+    text-align: center;
+  }
+
+  .form2Title {
+    margin-right: -30%;
+    margin-left: -30%;
+  }
+
+  .ofertasProm p {
+    margin-top: 20%;
+    font-size: 20px;
+  }
+
+  .logoaecodeCurso1 img {
+    width: 45%;
+  }
+
+  .CursoBeneficios {
+    display: none;
+  }
+
+  .CursoBeneficios1 {
+    display: block;
+  }
+
+  .sliderTitulos p {
+    text-align: none;
+  }
+
+  .contactoText {
+    display: none;
+  }
+  .contactoText1 {
+    display: block;
+  }
+
+  .logoFooterHome {
+    width: 45%;
+  }
+
+  .CourseContent {
+    display: none;
+  }
+
+  .CourseContent1 {
+    display: block;
+  }
+  
+  .courseDetailsContainer {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  
+  .desplegables .col-md-4 {
+    padding-bottom: 2%;
+  }
+
+  .contenidoModulo .btn {
+    background-color: #3152a1;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+  }
+
+  .navbar-collapse {
+    border-radius: 0% 0% 0% 4%;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+    position: absolute;
+    right: 0px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 9px;
+    margin-top: 80%;
+    text-align: end;
+  }
+
+  .collapse .nav-link-icon {
+    padding-left: 70px;
+  }
 }
 
 /*Carrusel de tarjetas*/

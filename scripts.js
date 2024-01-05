@@ -4,35 +4,51 @@ function establecerCookie() {
 function mostrarFormulario() {
   // Obtener la capa modal por su ID
   var modal = document.getElementById("miModal");
+  var sliderTitulos = document.getElementById("sliderTitulos");
 
   // Mostrar la capa modal
   modal.style.display = "flex";
+  sliderTitulos.style.display = "none";
 }
 
 function mostrarFormulario2() {
   // Obtener la capa modal por su ID
   var modal = document.getElementById("miModal");
   var modal2 = document.getElementById("miModal2");
+  var sliderTitulos = document.getElementById("sliderTitulos");
 
   // Mostrar la capa modal
   modal.style.display = "none";
   modal2.style.display = "flex";
+  sliderTitulos.style.display = "none";
 }
 
 function cerrarFormulario() {
   // Obtener la capa modal por su ID
   var modal = document.getElementById("miModal");
+  var sliderTitulos = document.getElementById("sliderTitulos");
+  var paginatorSwiper = document.getElementById("paginatorSwiper");
+  var contenedorPalabrasClave = document.getElementById("contenedorPalabrasClave");
 
   // Ocultar la capa modal
   modal.style.display = "none";
+  sliderTitulos.style.display = "initial";
+  paginatorSwiper.style.display = "initial";  
+  contenedorPalabrasClave.style.marginTop = "-12%";
 }
 
 function cerrarFormulario2() {
   // Obtener la capa modal por su ID
   var modal = document.getElementById("miModal2");
+  var sliderTitulos = document.getElementById("sliderTitulos");
+  var paginatorSwiper = document.getElementById("paginatorSwiper");
+  var contenedorPalabrasClave = document.getElementById("contenedorPalabrasClave");
 
   // Ocultar la capa modal
   modal.style.display = "none";
+  sliderTitulos.style.display = "initial";
+  paginatorSwiper.style.display = "initial";  
+  contenedorPalabrasClave.style.marginTop = "-12%";
 }
 
 // Función desplegable para el contenido de los cursos
