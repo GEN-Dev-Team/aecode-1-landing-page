@@ -443,7 +443,7 @@ p {
 .desplegables .content {
   border-radius: 0% 0% 2% 2%;
   padding: 0% 3% 0 3%;
-  background-color: #3152a1;
+  background-color: #00609B;
   color: white;
   border: none;
   height: auto;
@@ -648,6 +648,10 @@ p {
   display: none;
 }
 
+.contactTitle1 {
+  display: none;
+}
+
 /*Responsividad*/
 @media (max-width: 1200px) {
   .modal-content,
@@ -683,6 +687,7 @@ p {
 
   .CapacitacionesTitulo2 h2 {
     font-size: 20px;
+    margin-inline: -10%;
   }
 
   .CapacitacionesText {
@@ -832,6 +837,7 @@ p {
   }
   .contactoText1 {
     display: block;
+    font-weight: bold;
   }
 
   .logoFooterHome {
@@ -856,12 +862,12 @@ p {
   }
 
   .contenidoModulo .btn {
-    background-color: #3152a1;
+    background-color: #00609B;
   }
 
   .navbar-toggler {
     position: absolute;
-    right: 20px;
+    right: 10%;
   }
 
   .navbar-collapse {
@@ -872,7 +878,7 @@ p {
     right: 0px;
     padding-bottom: 30px;
     padding-left: 20px;
-    padding-right: 9px;
+    padding-right: 7%;
     margin-top: 80%;
     text-align: end;
   }
@@ -880,6 +886,16 @@ p {
   .collapse .nav-link-icon {
     padding-left: 70px;
   }
+  
+  .contactTitle {
+    display: none;
+  }
+
+  .contactTitle1 {
+    display: block;
+  }
+
+  /*color para los módulos del curso 2 #5A201C*/
 }
 
 /*Carrusel de tarjetas*/
