@@ -295,11 +295,11 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .form-control .btn {
-  width: 25%;
+  width: 45%;
 }
 
 .form2 .btn {
@@ -434,6 +434,12 @@ p {
   background-color: #324ebd;
   color: white;
 }
+
+.desplegables .btn:hover {
+  background-color: #3152a1;
+  color: white;
+}
+
 .desplegables i {
   margin-left: 10px;
   margin-right: 4px;
@@ -443,7 +449,7 @@ p {
 .desplegables .content {
   border-radius: 0% 0% 2% 2%;
   padding: 0% 3% 0 3%;
-  background-color: #00609B;
+  background-color: #3152a1;
   color: white;
   border: none;
   height: auto;
@@ -580,17 +586,20 @@ p {
 .curso2 .btn {
   background-color: #3e2c80;
 }
+.curso2 .btn:hover {
+  background-color: #370489da;
+}
 
 .curso2 .btnGeneral:hover {
   background-color: #370489da;
 }
 
 .curso2 .content {
-  background-color: #370489da;
+  background-color: #370489f5;
 }
 
 .curso2 .module-content {
-  background-color: #370489da;
+  background-color: #370489f5;
 }
 
 .cuadroFecha p {
@@ -650,6 +659,13 @@ p {
 
 .contactTitle1 {
   display: none;
+}
+.contentBtnModules {
+  display: none;
+}
+
+.swiper-wrapper .swiper-pagination {
+  padding-bottom: 7%;
 }
 
 /*Responsividad*/
@@ -851,18 +867,23 @@ p {
   .CourseContent1 {
     display: block;
   }
-  
+
   .courseDetailsContainer {
     padding-left: 4%;
-    padding-right: 4%;
+    padding-right: 5%;
   }
-  
+
   .desplegables .col-md-4 {
     padding-bottom: 2%;
   }
 
   .contenidoModulo .btn {
-    background-color: #00609B;
+    background-color: #3152a1;
+    width: 100%;
+  }
+
+  .desplegables .contentBtnModules {
+    background-color: white;
   }
 
   .navbar-toggler {
@@ -870,23 +891,6 @@ p {
     right: 10%;
   }
 
-  .navbar-collapse {
-    border-radius: 0% 0% 0% 4%;
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
-    position: absolute;
-    right: 0px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 7%;
-    margin-top: 80%;
-    text-align: end;
-  }
-
-  .collapse .nav-link-icon {
-    padding-left: 70px;
-  }
-  
   .contactTitle {
     display: none;
   }
@@ -895,7 +899,17 @@ p {
     display: block;
   }
 
-  /*color para los módulos del curso 2 #5A201C*/
+  .ofertasProm p {
+    font-size: 19px;
+  }
+
+  .curso2 .contenidoModulo .btn {
+    background-color: #3e2c80ea;
+  }
+
+  .curso2 .module-content {
+    background-color: #3e2c80ea;
+  }
 }
 
 /*Carrusel de tarjetas*/

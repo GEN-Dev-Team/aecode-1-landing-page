@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso de Modelamiento BIM de puentes con Autodesk Revit y Dynamo - AECODE</title>
+    <title>
+      Curso de Modelamiento BIM de puentes con Autodesk Revit y Dynamo - AECODE
+    </title>
     <!--Conexión para el uso de bootstrap 5-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -32,9 +34,9 @@
     <!--Scripts-->
     <script src="scripts.js"></script>
 
-     <!--Ícono de navegador-->
-     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
-     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
+    <!--Ícono de navegador-->
+    <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
+    <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
   </head>
   <body
     class="Curso1"
@@ -48,7 +50,7 @@
         <a href="#" class="navbar-brand fs-3 pb-2"
           ><img src="/Imagenes/aecode-logo.png" alt="" class="img-fluid logo"
         /></a>
-        
+
         <button
           class="navbar-toggler"
           type="button"
@@ -58,7 +60,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+        <div
+          class="collapse navbar-collapse position-relative"
+          id="navbarNavDropdown"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="/index.html#Home" class="nav-link mt-2"
@@ -123,8 +128,15 @@
           </h1>
           <div class="row">
             <div class="cuadroFecha d-flex">
-              <h5 class="pt-3" style="font-size: 20px;">Fecha de inicio:</h5>
-              <p style="color: white; padding-top: 6.8%; margin-left: 10px; font-size: 17px;">
+              <h5 class="pt-3" style="font-size: 20px">Fecha de inicio:</h5>
+              <p
+                style="
+                  color: white;
+                  padding-top: 6.8%;
+                  margin-left: 10px;
+                  font-size: 17px;
+                "
+              >
                 01&nbsp;&nbsp; / &nbsp; Febrero &nbsp;&nbsp;2024
               </p>
             </div>
@@ -133,14 +145,21 @@
         <div class="CourseContent1">
           <h1
             class="display-5"
-            style="color: #f0f1f2; margin-top: 100px; font-size: 30px"
+            style="color: #f0f1f2; margin-top: 60px; font-size: 30px"
           >
             Modelamiento BIM de puentes con Autodesk Revit y Dynamo
           </h1>
           <div class="row">
             <div class="cuadroFecha d-flex">
-              <h5 class="pt-3" style="font-size: 18px;">Fecha de inicio:</h5>
-              <p style="color: white; padding-top: 7.5%; margin-left: 10px; font-size: 15px;">
+              <h5 class="pt-3" style="font-size: 18px">Fecha de inicio:</h5>
+              <p
+                style="
+                  color: white;
+                  padding-top: 7.5%;
+                  margin-left: 10px;
+                  font-size: 15px;
+                "
+              >
                 01&nbsp;&nbsp; / &nbsp; Febrero &nbsp;&nbsp;2024
               </p>
             </div>
@@ -290,7 +309,7 @@
                     <i id="angleDown1" class="fa-solid fa-angle-down"></i>
                   </div>
                 </button>
-                <div id="grupoModulos" class="grupo">
+                <div id="grupoModulos" class="contentBtnModules">
                   <div class="contenidoModulo py-1">
                     <button
                       class="btn justify-content-between"
@@ -558,7 +577,7 @@
     </div>
     <!--Ofertas y promociones-->
     <div class="row ofertasProm text-center pt-5 px-5 bg-light">
-      <p class="text-center lead pt-2">
+      <p class="text-center pt-2">
         Si estás interesado en adquirir más de un módulo aprovecha los
         <a
           style="color: #263c94"
@@ -590,7 +609,7 @@
           <form
             id="form"
             method="post"
-            class="form-control text-center px-5 position-relative"
+            class="form-control form1 text-center px-5 position-relative"
             onsubmit="mostrarFormulario2(); return false;"
           >
             <div class="position-absolute top-0 end-0">
@@ -636,7 +655,7 @@
                 class="btn btn-primary px-4"
                 style="background-color: #380489; border: #380489"
               >
-                <strong>Enviar información</strong>
+                <strong>Enviar</strong>
               </button>
             </div>
             <div>
@@ -659,7 +678,7 @@
           <form
             id="form2"
             method="post"
-            class="form-control text-center px-5 position-relative"
+            class="form-control form2 text-center px-5 position-relative"
           >
             <div class="position-absolute top-0 end-0">
               <!-- Ajusta la posición del contenedor del botón -->
@@ -672,28 +691,40 @@
               </button>
             </div>
             <div class="">
-              <h5 class="fw-bold display-6 py-3">
-                ¡Bienvenido a la comunidad AECODE!
-              </h5>
-              <p class="text-muted text-secondary">
-                Estamos contentos de contar contigo, en unos instantes recibirás
-                un correo de confirmación. Con esto podrás acceder a la
-                información de cursos, novedades y mucho más. Si quieres
-                pertenecer a una comunidad de networking más exclusiva:
-              </p>
+              <div class="form2Title">
+                <h5 class="fw-bold display-6 py-3">
+                  ¡Bienvenido a <br />
+                  la comunidad AECODE!
+                </h5>
+              </div>
+              <div class="form2Text">
+                <p class="text-muted text-secondary">
+                  Estamos contentos de contar contigo, en unos instantes
+                  recibirás un correo de confirmación. Con esto podrás acceder a
+                  la información de cursos, novedades y mucho más. Si quieres
+                  pertenecer a una comunidad de networking más exclusiva:
+                </p>
+              </div>
+              <div class="form2Text2">
+                <p class="text-muted text-secondary">
+                  En unos instantes recibirás un correo de confirmación para
+                  acceder a novedades y mucho más. <br />
+                  Si quieres pertenecer a una comunidad más exclusiva:
+                </p>
+              </div>
             </div>
-            <div class="">
+            <div class="text-center">
               <a
                 href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
                 target="_blank"
                 class="btn btn-primary px-4"
                 style="background-color: #380489; border: #380489; color: white"
               >
-                <strong>¡Únete a nuestro grupo de Whatsapp!</strong>
+                <strong>¡Únete al grupo de Whatsapp!</strong>
               </a>
             </div>
             <div>
-              <p class="small text-muted pt-3">¡Bienvenido!</p>
+              <p class="text-muted pt-3">¡Bienvenido!</p>
             </div>
           </form>
         </div>

@@ -90,6 +90,7 @@
           ><img src="/Imagenes/aecode-logo.png" alt="" class="img-fluid logo"
         /></a>
         <button
+          id="botonHamburguesa"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -177,7 +178,7 @@
         class="container text-center"
         style="margin-top: -0%"
       >
-        <div class="contenedorTitulos row g-5 py-5">
+        <div id="contenedorTitulos" class="contenedorTitulos row g-5 py-5">
           <div class="col-md-4">
             <h3 class="fw-bold">INNOVACIÓN</h3>
             <p class="text-secondary">
@@ -202,7 +203,7 @@
             </p>
           </div>
         </div>
-        <div id="sliderTitulos" class="sliderTitulos">
+        <div id="sliderTitulos" class="sliderTitulos row">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -248,13 +249,11 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-wrapper">
+              <div id="paginatorSwiper" class="swiper-pagination"></div>
+            </div>
+            <!-- Agrega la paginación-->
           </div>
-          <!-- Agrega la paginación-->
-          <div
-            id="paginatorSwiper"
-            class="swiper-pagination"
-            style="margin-bottom: 12%"
-          ></div>
         </div>
       </div>
     </div>
@@ -509,9 +508,21 @@
                       background-color: #380489;
                       border: #380489;
                       color: white;
+                      margin-right: 5%;
                     "
                   >
-                    <strong>¡Ver detalles del curso!</strong>
+                    <strong>¡Ver detalles!</strong>
+                  </a>
+                  <a
+                    href=""
+                    class="btn btn-primary px-4 mb-3"
+                    style="
+                      background-color: #380489;
+                      border: #380489;
+                      color: white;
+                    "
+                  >
+                    <strong>¡Adquirir curso!</strong>
                   </a>
                 </div>
               </div>
@@ -526,12 +537,31 @@
                 alt="..."
               />
               <div class="card-body">
-                <a
-                  href="/Curso2.html"
-                  class="btn btn-primary px-4 mb-3"
-                  style="background-color: #380489; border: #380489"
-                  >¡Ver detalles del curso!</a
-                >
+                <div class="">
+                  <a
+                    href="/Curso2.html"
+                    class="btn btn-primary px-4 mb-3"
+                    style="
+                      background-color: #380489;
+                      border: #380489;
+                      color: white;
+                      margin-right: 5%;
+                    "
+                  >
+                    <strong>¡Ver detalles!</strong>
+                  </a>
+                  <a
+                    href=""
+                    class="btn btn-primary px-4 mb-3"
+                    style="
+                      background-color: #380489;
+                      border: #380489;
+                      color: white;
+                    "
+                  >
+                    <strong>¡Adquirir curso!</strong>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -592,7 +622,7 @@
           </h1>
         </div>
         <div class="contactTitle1">
-          <h2 class="fw-bold text-center">
+          <h2 class="display-5 text-center">
             ¡Sé parte de la red de networking!
           </h2>
         </div>
@@ -607,8 +637,12 @@
             <strong>¡Únete al grupo de Whatsapp!</strong>
           </a>
         </div>
-        <p class="text-center contactoText text-secondary lead pt-2">Estamos en contacto:</p>
-        <p class="contactoText1 text-secondary lead pt-2">Estamos en contacto:</p>
+        <p class="text-center contactoText text-secondary lead pt-2">
+          Estamos en contacto:
+        </p>
+        <p class="contactoText1 text-secondary lead pt-2">
+          Estamos en contacto:
+        </p>
         <p class="contactos text-secondary lead">
           <i class="fa-regular fa-envelope"></i> contacto@aecode.ai <br />
           <i class="fa-solid fa-phone"></i> (+51) 900 121 245 <br />
@@ -889,6 +923,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Obtén el elemento del botón del menú desplegable
         var navbarToggle = document.querySelector(".navbar-toggler");
+        var botonHamburguesa = document.getElementById("botonHamburguesa");
 
         // Obtén la lista de elementos del menú
         var navbarNav = document.querySelector("#navbarNavDropdown");
