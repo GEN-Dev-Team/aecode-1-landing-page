@@ -29,10 +29,10 @@ EXTRA:
 -Quitar hover de la hamburguesa
 -Tomar de referencia a platzi (ver img de wssp)
 |-Quitar negrtia de se parte de la red....
--Usar azul del fondo de curso para módulos
--Ajustar el desplegable a la hamburguesa
--Reducir margen del formulario de registro
--Corregir posición del paginador
+|-Usar azul del fondo de curso para módulos
+|-Ajustar el desplegable a la hamburguesa
+|-Reducir margen del formulario de registro
+|-Corregir posición del paginador
 |-Reducir padding top del título del curso
 |-Corregir 3 títulos de landing al cerrar el formulario
 |-Reducir tamaño del texto de promociones en el curso

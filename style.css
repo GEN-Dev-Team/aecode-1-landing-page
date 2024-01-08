@@ -886,11 +886,6 @@ p {
     background-color: white;
   }
 
-  .navbar-toggler {
-    position: absolute;
-    right: 10%;
-  }
-
   .contactTitle {
     display: none;
   }
