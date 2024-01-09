@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <!-- Palabras clave para SEO -->
     <meta
@@ -52,14 +53,14 @@
       referrerpolicy="no-referrer"
     />
 
-    <!--Enlace con el .js-->
-    <script src="scripts.js"></script>
-
     <!--swipper para el carrusel de texto de las 3 palabras clave -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
+    <!--Enlace con el .js-->
+    <script src="scripts.js"></script>
 
     <!--Ícono de navegador-->
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
@@ -93,7 +94,6 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
-          onclick="toggleButtonPosition()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -854,6 +854,20 @@
       "
     ></div>
 
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
     <script>
       document.getElementById("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default form submission
@@ -946,6 +960,7 @@
           });
         });
         navbarNav.style.marginLeft = "6%";
+
       });
     </script>
 
