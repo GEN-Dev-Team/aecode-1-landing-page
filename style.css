@@ -125,7 +125,7 @@ p {
 
 .logo {
   margin-left: 5%;
-  width: 25%;
+  width: 22%;
 }
 
 .Footer .logo {
@@ -668,6 +668,10 @@ p {
   padding-bottom: 7%;
 }
 
+.desplegables .textDescuentos1 {
+  display: none;
+}
+
 /*Responsividad*/
 @media (max-width: 1200px) {
   .modal-content,
@@ -904,6 +908,14 @@ p {
 
   .curso2 .module-content {
     background-color: #3e2c80ea;
+  }
+
+  .desplegables .textDescuentos {
+    display: none;
+  }
+
+  .desplegables .textDescuentos1 {
+    display: block;
   }
 }
 
