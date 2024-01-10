@@ -50,7 +50,6 @@
         <a href="/index.html#Home" class="navbar-brand fs-3 pb-2"
           ><img src="/Imagenes/aecode-logo.png" alt="" class="img-fluid logo"
         /></a>
-
         <button
           id="botonHamburguesa"
           class="navbar-toggler"
@@ -58,15 +57,11 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
-          onclick="toggleButtonPosition()"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse position-relative"
-          id="navbarNavDropdown"
-        >
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="/#Home" class="nav-link mt-2"
@@ -132,7 +127,7 @@
               CON AUTODESK REVIT Y DYNAMO
             </h1>
             <div class="row">
-              <div class="cuadroFecha d-flex">
+              <div class="cuadroFecha d-flex mt-3">
                 <h5 class="pt-3" style="font-size: 20px">Fecha de inicio:</h5>
                 <p
                   style="
@@ -532,12 +527,18 @@
                     <div class="col modCont2">
                       <p><i class="fa-solid fa-dollar-sign"></i>175</p>
                     </div>
+                    <div class="col modCont3">
+                      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                     <hr />
                   </div>
                   <div class="row">
                     <div class="col modCont"><p>Módulo 2</p></div>
                     <div class="col modCont2">
                       <p><i class="fa-solid fa-dollar-sign"></i>210</p>
+                    </div>
+                    <div class="col modCont3">
+                      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                     <hr />
                   </div>
@@ -546,12 +547,18 @@
                     <div class="col modCont2">
                       <p><i class="fa-solid fa-dollar-sign"></i>480</p>
                     </div>
+                    <div class="col modCont3">
+                      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                     <hr />
                   </div>
                   <div class="row">
                     <div class="col modCont"><p>Módulo 4</p></div>
                     <div class="col modCont2">
                       <p><i class="fa-solid fa-dollar-sign"></i>795</p>
+                    </div>
+                    <div class="col modCont3">
+                      <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                     <hr />
                   </div>
@@ -858,6 +865,7 @@
             }
           });
         });
+        navbarNav.style.marginLeft = "6%";
       });
     </script>
     <!--Script para el uso de bootstrap 5-->

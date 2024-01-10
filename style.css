@@ -574,13 +574,43 @@ p {
 }
 
 .modCont2 {
-  margin-right: -21%;
+  margin-left: 5%;
+}
+
+.modCont3 {
+  margin-top: -3%;
+  margin-right: 5%;
+}
+
+.modCont3 a {
+  display: inline-block;
+  padding: 8px;
+  padding-right: 15px;
+  background-color: #ffcc00; /* Color de fondo */
+  color: white; /* Color del ícono */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.modCont3 a:hover {
+  background-color: #ffcc00; /* Cambia el color de fondo al pasar el ratón */
+  color: #263C94; /* Cambia el color del ícono al pasar el ratón */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+}
+
+.modCont3 a i {
+  font-size: 20px; /* Tamaño del ícono */
+
 }
 
 .cuadroFecha {
+  margin-left: 1%;
   color: #f3d533;
   width: auto;
   height: auto;
+  border-radius: 5px;
+  border: #ffcc00 1px solid;
 }
 
 .curso2 .btn {
@@ -916,6 +946,10 @@ p {
 
   .desplegables .textDescuentos1 {
     display: block;
+  }
+
+  .cuadroFecha {
+    margin-top: 3%;
   }
 }
 
