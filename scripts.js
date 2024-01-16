@@ -102,44 +102,8 @@ function toggleModule(moduleId) {
   }
 }
 
-// Función para cerrar todos los desplegables excepto el especificado por contentId
-function closeOtherContents(contentId) {
-  var allContents = document.querySelectorAll(".content,.contentBtnModules");
-  var allButtons = document.querySelectorAll(".btnGeneral");
-  var allAngleUps = document.querySelectorAll(".fa-angle-up");
-  var allAngleDowns = document.querySelectorAll(".fa-angle-down");
-
-  allContents.forEach(function (item) {
-    if (item.id !== contentId) {
-      item.style.maxHeight = "0";
-      item.style.display = "none";
-    }
-  });
-
-  allButtons.forEach(function (item) {
-    if (item.nextElementSibling.id !== contentId) {
-      item.classList.remove("active");
-    }
-  });
-
-  allAngleUps.forEach(function (item) {
-    if (item.id !== contentId) {
-      item.style.display = "none";
-    }
-  });
-
-  allAngleDowns.forEach(function (item) {
-    if (item.id !== contentId) {
-      item.style.display = "block";
-    }
-  });
-}
-
 // Función para los 3 desplegables generales
 function toggleContent(contentId, angleUpId, angleDownId) {
-  // Cerrar todos los demás desplegables antes de abrir el seleccionado
-  closeOtherContents(contentId);
-
   var content = document.getElementById(contentId);
   var button = content.previousElementSibling;
   var angleUp = document.getElementById(angleUpId);
@@ -158,4 +122,36 @@ function toggleContent(contentId, angleUpId, angleDownId) {
     angleUp.style.display = "none";
     angleDown.style.display = "block";
   }
+}
+
+function toggleContent1(angleUpId, angleDownId) {
+  var buttons = document.querySelectorAll(".contentBtnModules");
+
+  // Itera sobre los elementos y alterna la visibilidad
+  buttons.forEach(function (button) {
+    button.style.display =
+      button.style.display === "none" || button.style.display === ""
+        ? "flex"
+        : "none";
+  });
+  buttons.forEach(function (button) {
+    // Obtiene el contenedor del contenido asociado al botón
+    var content = button.nextElementSibling;
+
+    content.style.display =
+      content.style.display === "none" || content.style.display === ""
+        ? "block"
+        : "none";
+
+    var angleUp = document.getElementById(angleUpId);
+    var angleDown = document.getElementById(angleDownId);
+
+    if (content.style.display === "flex") {
+      angleUp.style.display = "inline-block";
+      angleDown.style.display = "none";
+    } else {
+      angleUp.style.display = "none";
+      angleDown.style.display = "inline-block";
+    }
+  });
 }

@@ -306,11 +306,6 @@ p {
   width: 70%;
 }
 
-.col-md-2 {
-  width: 18%;
-  margin-right: 20px;
-}
-
 /* Estilo para el contenido del formulario */
 .modal-content,
 .modal-content2 {
@@ -427,7 +422,6 @@ p {
   padding-top: 15px;
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .desplegables .btnGeneral:hover {
@@ -447,7 +441,7 @@ p {
 }
 
 .desplegables .content {
-  border-radius: 0% 0% 2% 2%;
+  border-radius: 0% 0% 7px 7px;
   padding: 0% 3% 0 3%;
   background-color: #3152a1;
   color: white;
@@ -458,30 +452,24 @@ p {
   transition: max-height 0.5s ease;
 }
 
+.desplegables p {
+  font-size: 19px;
+}
+
 .module-content {
-  border-radius: 0% 0% 2% 2%;
+  border-radius: 0% 0% 7px 7px;
   background-color: #3152a1;
   color: white;
   height: auto;
   border: none;
   max-height: 0;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   transition: max-height 1s ease, border 0.5s ease; /* Combinar ambas transiciones */
 }
 
 .module-content .closing {
   transition: none; /* Elimina la transición al cerrar */
-}
-
-.desplegables .grupo {
-  color: white;
-  border: none;
-  width: 100%;
-  height: auto; /* Cambiado de 100% a auto */
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.5s ease, margin-top 0.5s ease; /* Añadida transición para margin-top */
 }
 
 /*Desplegables de módulos*/
@@ -579,29 +567,29 @@ p {
 
 .modCont3 {
   margin-top: -3%;
-  margin-right: 5%;
+  margin-right: -2%;
 }
 
 .modCont3 a {
   display: inline-block;
-  padding: 8px;
-  padding-right: 15px;
-  background-color: #ffcc00; /* Color de fondo */
-  color: white; /* Color del ícono */
+  padding: 5px;
+  padding-right: 8px;
+  background-color: white; /* Color de fondo */
+  color: #263c94; /* Color del ícono */
   border-radius: 5px; /* Bordes redondeados */
   text-decoration: none; /* Quita el subrayado del enlace */
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 .modCont3 a:hover {
-  background-color: #ffcc00; /* Cambia el color de fondo al pasar el ratón */
-  color: #263C94; /* Cambia el color del ícono al pasar el ratón */
+  background-color: #3152a1; /* Cambia el color de fondo al pasar el ratón */
+  color: white; /* Cambia el color del ícono al pasar el ratón */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
 }
 
 .modCont3 a i {
-  font-size: 20px; /* Tamaño del ícono */
-
+  font-size: 19px; /* Tamaño del ícono */
+  margin-left: 6px;
 }
 
 .cuadroFecha {
@@ -610,7 +598,7 @@ p {
   width: auto;
   height: auto;
   border-radius: 5px;
-  border: #ffcc00 1px solid;
+  border: #ffcc00ad 1px solid;
 }
 
 .curso2 .btn {
@@ -640,9 +628,6 @@ p {
   .Img-Referencia {
     display: none;
   }
-  .ofertasProm {
-    margin-top: 30%;
-  }
 }
 
 .CapacitacionesText2 {
@@ -651,12 +636,6 @@ p {
 
 .form2Text2 {
   display: none;
-}
-
-.ofertasProm p {
-  color: black;
-  font-size: 25px;
-  margin-top: 30px;
 }
 
 .CursoBeneficios {
@@ -690,7 +669,8 @@ p {
 .contactTitle1 {
   display: none;
 }
-.contentBtnModules {
+.desplegables .contentBtnModules {
+  margin-top: 6px;
   display: none;
 }
 
@@ -698,8 +678,61 @@ p {
   padding-bottom: 7%;
 }
 
-.desplegables .textDescuentos1 {
+.modCont p {
+  font-size: 19px;
+}
+
+.desplegables .checkBox {
+  margin-top: -0.6%;
+}
+
+.contenedorResumen {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contenedorResumen .precios {
+  padding-right: 2%;
+}
+
+.contenedorResumen .texto {
+  padding-left: 2%;
+}
+
+.desplegables .contenedorInversion {
+  text-align: justify;
   display: none;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  border-top: 0px;
+  border-radius: 0 0 7px 7px;
+}
+
+.desplegables .contenedorMetodosP {
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  height: 100%;
+}
+
+.contenedorResumen .btnResumenCompra {
+  justify-content: center;
+  width: 47%;
+}
+
+.contenedorMetodosP img {
+  width: 28px;
+  border-radius: 5px;
+}
+.contenedorMetodosP .bcpBox {
+  background-color: #cccccc41;
+  height: 45px;
+}
+.desplegables .card {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*Responsividad*/
@@ -861,11 +894,6 @@ p {
     margin-left: -30%;
   }
 
-  .ofertasProm p {
-    margin-top: 20%;
-    font-size: 20px;
-  }
-
   .logoaecodeCurso1 img {
     width: 45%;
   }
@@ -928,24 +956,12 @@ p {
     display: block;
   }
 
-  .ofertasProm p {
-    font-size: 19px;
-  }
-
   .curso2 .contenidoModulo .btn {
     background-color: #3e2c80ea;
   }
 
   .curso2 .module-content {
     background-color: #3e2c80ea;
-  }
-
-  .desplegables .textDescuentos {
-    display: none;
-  }
-
-  .desplegables .textDescuentos1 {
-    display: block;
   }
 
   .cuadroFecha {
