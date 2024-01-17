@@ -33,16 +33,13 @@
 
     <!--Scripts-->
     <script src="scripts.js"></script>
+    <script src="carrusel.js"></script>
 
     <!--Ícono de navegador-->
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
   </head>
-  <body
-    class="Curso1"
-    background="Imagenes/Curso1Fondo.png"
-    style="background-size: cover"
-  >
+  <body background="Imagenes/Curso1Fondo.png" style="background-size: cover">
     <!--CURSO1-->
     <!--Cabecera-->
     <div class="navbar navbar-expand-lg bg-light fixed-top">
@@ -171,13 +168,83 @@
       <!--Cuerpo del curso-->
       <div class="row py-1">
         <!--Objetivo, dirigido a y beneficios del curso-->
-        <div class="col-md-6" style="margin-top: -10px; margin-bottom: 50px">
+        <div class="col-md-6" style="margin-top: -10px">
           <div class="row" style="color: #f0f1f2">
             <h3 class="pt-4" style="margin-top: 10px; margin-bottom: 20px">
-              ¿Qué beneficios tendré al llevar el curso?
+              Únete a la 1era Edición del Programa de Ingeniería BIM y
+              Programación en Puentes
             </h3>
+            <p style="color: #f0f1f2; text-wrap: pretty">
+              Sumérgete en el emocionante mundo del modelado en Revit y descubre
+              cómo potenciar tus habilidades mediante la automatización con
+              Python y Dynamo. Este curso te guiará desde los fundamentos del
+              modelado en Revit hasta técnicas avanzadas que transformarán tu
+              enfoque en diseño estructural.
+            </p>
+          </div>
+        </div>
+        <!--Imagen de referencia y módulos del curso-->
+        <div class="col-md-6">
+          <!--Logos de lenguajes claves-->
+          <!-- Imagen de referencia -->
+          <div
+            class="Img-Referencia mb-5"
+            style="position: absolute; right: 0px; top: 358px"
+          >
+            <div class="imgLogo1">
+              <img src="Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
+              <img src="/Softwares/logo_revit.png" alt="" />
+              <img
+                style="width: 40px"
+                src="/Softwares/logo_sofistik.png"
+                alt=""
+              />
+              <img src="/Softwares/dynamoLogo.png" alt="" />
+              <img src="Lenguajes_Plugins/Python-logo-notext.svg.png" alt="" />
+            </div>
+            <img
+              class="Img-Referencia"
+              style="
+                width: 640px;
+                height: 450px;
+                margin-top: -215px;
+                opacity: 0.75;
+              "
+              src="/Imagenes/flyer  modelamiento bim-09.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Apartado de: Beneficios e Inversión-->
+    <section class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <button
+            class="btn btnGeneral justify-content-between d-flex"
+            style="color: white; background-color: #263c94"
+            onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
+          >
+            <h5 class="pt-2">BENEFICIOS</h5>
+            <div>
+              <i id="angleUp" class="fa-solid fa-angle-up"></i>
+              <i id="angleDown" class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
+          <div
+            id="presentacionContent"
+            class="content presentacionContent pb-1"
+            style="
+              text-align: justify;
+              padding-left: 25px;
+              padding-right: 25px;
+              display: none;
+            "
+          >
             <div class="CursoBeneficios">
-              <p>
+              <p style="margin-top: 20px">
                 <i class="fa-solid fa-circle-check"></i> Aprendizaje dinámico y
                 práctico partiendo desde lo más básico hasta un nivel avanzado
                 bajo la guía de expertos en la materia.
@@ -202,7 +269,7 @@
               </p>
             </div>
             <div class="CursoBeneficios1">
-              <p>
+              <p style="margin-top: 10px">
                 <i class="fa-solid fa-circle-check"></i> Aprendizaje práctico
                 desde lo básico hasta avanzado bajo la guía de expertos.
               </p>
@@ -225,828 +292,561 @@
             </div>
           </div>
         </div>
-        <!--Imagen de referencia y módulos del curso-->
-        <div class="col-md-6">
-          <!--Logos de lenguajes claves-->
-          <!-- Imagen de referencia -->
-          <div
-            class="Img-Referencia mb-5"
-            style="margin-top: 80px; position: absolute; right: 0px"
+        <div class="row my-4">
+          <button
+            class="btn btnGeneral justify-content-between d-flex"
+            style="color: white; background-color: #263c94"
           >
-            <div class="imgLogo1">
-              <img src="Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
-              <img src="/Softwares/logo_revit.png" alt="" />
-              <img
-                style="width: 40px"
-                src="/Softwares/logo_sofistik.png"
-                alt=""
-              />
-              <img src="/Softwares/dynamoLogo.png" alt="" />
-              <img src="Lenguajes_Plugins/Python-logo-notext.svg.png" alt="" />
-            </div>
-            <img
-              class="Img-Referencia"
-              style="
-                width: 700px;
-                height: 500px;
-                margin-top: -240px;
-                opacity: 0.75;
-              "
-              src="/Imagenes/flyer  modelamiento bim-09.png"
-              alt=""
-            />
-          </div>
+            <h5 class="pt-2">MÓDULOS</h5>
+          </button>
         </div>
       </div>
-    </div>
-
-    <!--Apartado de los 3 desplegables generales: Presentación, Módulos, Inversión-->
-    <div class="miModal">
-      <div class="modal-content3">
-        <div class="desplegables">
-          <div class="container p-4">
-            <!--PRESENTACIÓN-->
-            <div class="row py-2">
-              <button
-                class="btn btnGeneral justify-content-between"
-                onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
-              >
-                <h5>PRESENTACIÓN</h5>
-                <div>
-                  <i id="angleUp" class="fa-solid fa-angle-up"></i>
-                  <i id="angleDown" class="fa-solid fa-angle-down"></i>
-                </div>
-              </button>
-              <div
-                id="presentacionContent"
-                class="content pb-1"
-                style="text-align: justify; display: none"
-              >
-                <p style="margin-top: 10px">
-                  Sumérgete en el emocionante mundo del modelado en Revit y
-                  descubre cómo potenciar tus habilidades mediante la
-                  automatización con Python y Dynamo. Este curso te guiará desde
-                  los fundamentos del modelado en Revit hasta técnicas avanzadas
-                  que transformarán tu enfoque en diseño estructural.
-                </p>
+      <!--Módulos  -->
+      <div class="container">
+        <div id="carouselExampleControls" class="carousel slide mb-4">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="/Imagenes/FLYER AZUL-01.png"
+                  style="border: rgba(228, 225, 225, 0.486) solid 1px"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
-            <!--MÓDULOS-->
-            <div class="row py-2">
-              <button
-                class="btn btnGeneral justify-content-between"
-                onclick="toggleContent1('angleUp0', 'angleDown0')"
-              >
-                <h5>MÓDULOS</h5>
-                <div>
-                  <i id="angleUp0" class="fa-solid fa-angle-up"></i>
-                  <i id="angleDown0" class="fa-solid fa-angle-down"></i>
-                </div>
-              </button>
-
-              <button
-                class="btn justify-content-between contentBtnModules"
-                id="grupoModulos1"
-                onclick="toggleModule('module01')"
-              >
-                <h5>
-                  Módulo 1: Ingeniería de puentes y metodología BIM con Revit y
-                  Dynamo
-                </h5>
-                <div>
-                  <i
-                    id="arrowDown01"
-                    class="fa-solid fa-caret-down"
-                    style="animation: blink 1s infinite"
-                  ></i>
-                  <i
-                    id="arrowUp01"
-                    class="fa-solid fa-caret-up"
-                    style="display: none; animation: blink 1s infinite"
-                  ></i>
-                </div>
-              </button>
-              <div id="module01" class="module-content">
-                <p style="margin-top: 10px">Objetivo</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Dominar el modelado de
-                  elementos estructurales en Revit, así como la aplicación
-                  experta de Dynamo y Python mediante la API de Revit,
-                  focalizado en la ingeniería de puentes.
-                </p>
-
-                <p>Contenido</p>
-
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Introducción a la Ingeniería de Puentes.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Metodología BIM, VDC aplicado a la Ingeniería de Puentes.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Introducción a Revit Estructuras.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Fundamentos de automatización con Dynamo.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Introducción a la API de Revit Dynamo
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Caso práctico: Puente Continuo de Vigas Prefabricadas
-                </p>
-                <p>Caso de Aplicación:</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Modelado de Puente Viga Losa
-                </p>
-              </div>
-              <button
-                class="btn justify-content-between contentBtnModules"
-                id="grupoModulos2"
-                onclick="toggleModule('module02')"
-              >
-                <h5>
-                  Módulo 2: Modelamiento, documentación y automatización BIM de
-                  puentes con Revit y Dynamo
-                </h5>
-                <div>
-                  <i id="arrowDown02" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp02"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module02" class="module-content">
-                <p style="margin-top: 10px">Objetivo</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Adquirirás habilidades
-                  avanzadas en la creación de familias paramétricas con
-                  componentes anidados y compartidos. Además, te convertirás en
-                  un experto en el modelado del acero de refuerzo en elementos
-                  estructurales de puentes.
-                </p>
-
-                <p>Contenido</p>
-
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Introducción a la creación de Familias Paramétricas
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Flujo de trabajo.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Herramientas del Editor de familias.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Crear una familia con componentes anidados y compartidos.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Modelado de acero de refuerzo en Revit
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Formas de armaduras.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Consideraciones y restricciones a tener en cuenta.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Extracción de información del modelo.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Introducción al diseño paramétrico y generativo.
-                </p>
-                <p>Caso de Aplicación:</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Creación de familia de
-                  pilares para puentes con componentes anidados y compartidos
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Modelado de Puente Segmental
-                  con Dynamo
-                </p>
-              </div>
-              <button
-                class="btn justify-content-between contentBtnModules"
-                id="grupoModulos3"
-                onclick="toggleModule('module03')"
-              >
-                <h5>
-                  Módulo 3: Automatización BIM en puentes con Revit, Dynamo, C#
-                  y Python
-                </h5>
-                <div>
-                  <i id="arrowDown03" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp03"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module03" class="module-content">
-                <p style="margin-top: 10px">Objetivo</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Dominar herramientas y
-                  conceptos fundamentales para el uso de Dynamo con fines de
-                  automatización del diseño de puentes continuos.
-                </p>
-
-                <p>Contenido</p>
-
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Automatización de puentes BIM con Dynamo y Revit API.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Conceptos avanzados de Dynamo y nodos especializados.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Integración de scripts Dynamo en flujos de trabajo BIM.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Modelado avanzado de acero postensado con Dynamo, API Revit y
-                  Python.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Modelado de estructuras metálicas y conexiones estructurales.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Automatización del modelado de conexiones y uso de biblioteca
-                  AISC.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Generación de listas de barras para fabricación y exportación
-                  de datos.
-                </p>
-                <p>Caso de Aplicación:</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Creación de scritps
-                  personalizados en Dynamo para el modelado y detallado de acero
-                  de refuerzo en pilares y encepados.
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Creación de familias y
-                  modelado de un viaducto con acero potensado con Dynamo
-                </p>
-              </div>
-              <button
-                class="btn justify-content-between contentBtnModules"
-                id="grupoModulos4"
-                onclick="toggleModule('module04')"
-              >
-                <h5>Módulo 4: Desarrollador de AddIns para puentes</h5>
-                <div>
-                  <i id="arrowDown04" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp04"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module04" class="module-content">
-                <p style="margin-top: 10px">Objetivo</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Personalizar tus propios
-                  addins para el modelado, detallado y dibujo de elementos
-                  estructurales en puentes
-                </p>
-
-                <p>Contenido</p>
-
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Programación en la Ingeniería de Puentes con C# y Python
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Aplicaciones de Interoperabilidad con Revit API, C#, Python y
-                  Dynamo
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Diseño Computacional y Generativo de Puentes
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Interoperabilidad Revit-Robot
-                </p>
-
-                <p>Caso de Aplicación:</p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Creación de Add-in para el
-                  modelado y detallado de acero de refuerzo en zapatas y
-                  pilotes.
-                </p>
-              </div>
-              <button
-                class="btn justify-content-between contentBtnModules"
-                id="grupoModulos5"
-                onclick="toggleModule('module05')"
-              >
-                <h5>Bonus</h5>
-                <div>
-                  <i id="arrowDown05" class="fa-solid fa-caret-down"></i>
-                  <i
-                    id="arrowUp05"
-                    class="fa-solid fa-caret-up"
-                    style="display: none"
-                  ></i>
-                </div>
-              </button>
-              <div id="module05" class="module-content">
-                <p style="margin-top: 10px">
-                  <i class="fa-solid fa-check"></i>Introducción a plataformas de
-                  desarrollo (VIKTOR, GITHUB, GENCOLAB, etc)
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Creación de addins en Revit y
-                  C#
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>
-                  Detallamiento automatizado con Revit y Sofistik
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i> Introducción a la aplicación
-                  de la Inteligencia Artificial en la Ingeniería > de Puentes
-                </p>
-                <p>
-                  <i class="fa-solid fa-check"></i>Diseño computacional de
-                  puentes
-                </p>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="/Imagenes/FLYER MORADO-02.png"
+                  style="border: rgba(228, 225, 225, 0.486) solid 1px"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
-            <!--INVERSIÓN  -->
-            <div class="row py-2">
-              <button
-                class="btn btnGeneral justify-content-between"
-                onclick="toggleContent('grupoInversion', 'angleUp3', 'angleDown3')"
-              >
-                <h5>INVERSIÓN</h5>
-                <div>
-                  <i id="angleUp3" class="fa-solid fa-angle-up"></i>
-                  <i id="angleDown3" class="fa-solid fa-angle-down"></i>
-                </div>
-              </button>
-              <div id="grupoInversion" class="content contenedorInversion">
-                <div class="row d-flex">
-                  <!--Módulos y precios - checkboxes y descuentos-->
-                  <div class="col-md-6">
-                    <div class="row mb-4 mt-5">
-                      <div class="col-md-6"><h5>Producto</h5></div>
-                      <div class="col-md-6"><h5>Precio</h5></div>
-                    </div>
-                    <div class="row">
-                      <div class="checkBox col-md-6">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="producto1"
-                            onchange="calcularSubtotal('producto1', 'precio1')"
-                          />
-                          <label class="form-check-label" for="producto1">
-                            <p>Módulo 1</p>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="mb-0">$<span id="precio1"></span></p>
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="row mt-3">
-                      <div class="checkBox col-md-6">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="producto2"
-                            onchange="calcularSubtotal('producto2', 'precio2')"
-                          />
-                          <label class="form-check-label" for="producto2">
-                            <p>Módulo 2</p>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="mb-0">$<span id="precio2">210.00</span></p>
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="row mt-3">
-                      <div class="checkBox col-md-6">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="producto3"
-                            onchange="calcularSubtotal('producto3', 'precio3')"
-                          />
-                          <label class="form-check-label" for="producto3">
-                            <p>Módulo 3</p>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="mb-0">$<span id="precio3">480.00</span></p>
-                      </div>
-                      <hr />
-                    </div>
-                    <div class="row mt-3">
-                      <div class="checkBox col-md-6">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="producto4"
-                            onchange="calcularSubtotal('producto4', 'precio4')"
-                          />
-                          <label class="form-check-label" for="producto4">
-                            <p>Módulo 4</p>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <p class="mb-0">$<span id="precio4">795.00</span></p>
-                      </div>
-                      <hr />
-                    </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="/Imagenes/FLYER MORADO-02.png"
+                  style="border: rgba(228, 225, 225, 0.486) solid 1px"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="/Imagenes/FLYER MORADO-02.png"
+                  style="border: rgba(228, 225, 225, 0.486) solid 1px"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="row">
+          <a
+            class="btn btnGeneral m-auto"
+            style="color: white; background-color: #263c94; width: 25%"
+            href=""
+            ><h5 class="mt-2">OBTENER BROCHURE</h5></a
+          >
+        </div>
+      </div>
 
-                    <div class="row mt-3">
-                      <div class="row mt-2">
-                        <div class="col-md-6">
-                          <p class="me-2">Aplicar cupón de descuento:</p>
-                        </div>
-                        <div class="col-md-6">
-                          <input
-                            id="cuponId"
-                            type="text"
-                            class="form-control"
-                            style="margin-top: -15px"
-                          />
-                        </div>
-                      </div>
+      <!--INVERSIÓN  -->
+      <div class="container py-3">
+        <div class="row mt-5">
+          <button
+            class="btn btnGeneral justify-content-between d-flex"
+            style="color: white; background-color: #263c94"
+          >
+            <h5 class="pt-2">INVERSIÓN</h5>
+          </button>
+        </div>
 
-                      <div class="row">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="descuento1Id"
-                            onchange="calcularDescuento1('descuento1Id')"
-                          />
-                          <label class="form-check-label" for="descuento1Id">
-                            <p>
-                              Descuento por pronto pago del 20% (válido hasta:
-                              15/01/2023)
-                            </p>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-check">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="descuento2Id"
-                            onchange="calcularDescuento2('descuento2Id')"
-                          />
-                          <label class="form-check-label" for="descuento2Id">
-                            <p>
-                              Descuento corporativo del 10% (válido para 3
-                              personas o más)
-                            </p>
-                          </label>
-                        </div>
-                      </div>
-                      <!--Ofertas y promociones-->
-                      <div class="row" style="padding-left: 4%">
-                        <p>
-                          Para más promociones y descuentos comunícate al
-                          <a
-                            style="color: #263c94"
-                            target="_blank"
-                            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20los%20módulos%20del%20curso."
-                            >Whatsapp</a
-                          >
-                        </p>
-                      </div>
-                    </div>
+        <div id="grupoInversion" class="grupoInversion">
+          <div class="row d-flex">
+            <!--Módulos y precios - checkboxes y descuentos-->
+            <div class="col-md-6">
+              <div class="row mb-4 mt-5">
+                <div class="col-md-6"><h5>Producto</h5></div>
+                <div class="col-md-6"><h5>Precio</h5></div>
+              </div>
+              <div class="row">
+                <div class="checkBox col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="producto1"
+                      onchange="calcularSubtotal('producto1', 'precio1')"
+                    />
+                    <label class="form-check-label" for="producto1">
+                      <p>Módulo 1</p>
+                    </label>
                   </div>
-                  <!--Resumen de compra-->
-                  <div
-                    class="col-md-6 mt-3"
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-0">$<span id="precio1"></span></p>
+                </div>
+                <hr />
+              </div>
+              <div class="row mt-3">
+                <div class="checkBox col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="producto2"
+                      onchange="calcularSubtotal('producto2', 'precio2')"
+                    />
+                    <label class="form-check-label" for="producto2">
+                      <p>Módulo 2</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-0">$<span id="precio2"></span></p>
+                </div>
+                <hr />
+              </div>
+              <div class="row mt-3">
+                <div class="checkBox col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="producto3"
+                      onchange="calcularSubtotal('producto3', 'precio3')"
+                    />
+                    <label class="form-check-label" for="producto3">
+                      <p>Módulo 3</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-0">$<span id="precio3"></span></p>
+                </div>
+                <hr />
+              </div>
+              <div class="row mt-3">
+                <div class="checkBox col-md-6">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="producto4"
+                      onchange="calcularSubtotal('producto4', 'precio4')"
+                    />
+                    <label class="form-check-label" for="producto4">
+                      <p>Módulo 4</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-0">$<span id="precio4"></span></p>
+                </div>
+                <hr />
+              </div>
+
+              <div class="row mt-3">
+                <div class="row mt-2">
+                  <div class="col-md-6">
+                    <p class="me-2">Aplicar cupón de descuento:</p>
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      id="cuponId"
+                      type="text"
+                      class="form-control"
+                      style="margin-top: -15px"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="descuento1Id"
+                      onchange="calcularDescuento1('descuento1Id')"
+                    />
+                    <label class="form-check-label" for="descuento1Id">
+                      <p>
+                        Descuento por pronto pago del 20% (válido hasta:
+                        15/01/2023)
+                      </p>
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="descuento2Id"
+                      onchange="calcularDescuento2('descuento2Id')"
+                    />
+                    <label class="form-check-label" for="descuento2Id">
+                      <p>
+                        Descuento corporativo del 10% (válido para 3 personas o
+                        más)
+                      </p>
+                    </label>
+                  </div>
+                </div>
+                <!--Ofertas y promociones-->
+                <div class="row" style="padding-left: 4%">
+                  <p>
+                    Para más promociones y descuentos comunícate al
+                    <a
+                      style="color: #263c94"
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20los%20módulos%20del%20curso."
+                      >Whatsapp</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Resumen de compra-->
+            <div
+              class="col-md-6 mt-3"
+              style="
+                color: white;
+                background-color: #263c94;
+                border-radius: 10px;
+                margin-bottom: 2%;
+                width: 45%;
+              "
+            >
+              <div class="contenedorResumen">
+                <div class="row text-center my-4">
+                  <h5>Resumen de Compra</h5>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 texto"><p>Precio base</p></div>
+                  <div class="col-md-6 precios text-end">
+                    <p>&nbsp;&nbsp;&nbsp;$<span id="subtotalId">0.00</span></p>
+                  </div>
+                  <hr />
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 texto">
+                    <p>Precio reducido</p>
+                  </div>
+                  <div class="col-md-6 precios text-end">
+                    <p>
+                      &nbsp;&nbsp;&nbsp;$<span id="dsctModulosId">0.00</span>
+                    </p>
+                  </div>
+                  <hr />
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 texto">
+                    <p>Descuento Pronto Pago</p>
+                  </div>
+                  <div class="col-md-6 precios text-end">
+                    <p>-$<span id="dsct1Id">0.00</span></p>
+                  </div>
+                  <hr />
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 texto">
+                    <p>Descuento Corporativo</p>
+                  </div>
+                  <div class="col-md-6 precios text-end">
+                    <p>-$<span id="dsct2Id">0.00</span></p>
+                  </div>
+                  <hr />
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 texto"><p>Descuento Cupón</p></div>
+                  <div class="col-md-6 precios text-end">
+                    <p>-$<span id="dsct3Id">0.00</span></p>
+                  </div>
+                  <hr />
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 texto">
+                    <p>Precio Final</p>
+                  </div>
+                  <div class="col-md-6 precios text-end">
+                    <p>
+                      &nbsp;&nbsp;&nbsp;$<span id="precioFinalId">0.00</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="row mt-3 justify-content-center">
+                  <a
+                    class="btn btnResumenCompra py-2 mb-3 px-4"
+                    style="background-color: white; color: #263c94"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20los%20módulos%20del%20curso."
+                    >Ir a pagar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Métodos de pago-->
+          <div class="row mt-5">
+            <button
+              class="btn btnGeneral justify-content-between d-flex"
+              style="color: white; background-color: #263c94"
+            >
+              <h5 class="pt-2">MÉTODOS DE PAGO</h5>
+            </button>
+          </div>
+          <div class="row d-flex py-4">
+            <div class="col-md-6">
+              <div class="contenedorMetodosP">
+                <h4>
+                  <img
+                    src="https://seeklogo.com/images/B/bcp-logo-CCCCDA45A9-seeklogo.com.png"
+                    alt="BCP logo"
+                  />
+                  Banco de Crédito del Perú
+                </h4>
+                <p class="mt-4">
+                  TITULAR: Generative and Optimal Design Solutions SAC
+                </p>
+                <p>RUC: 20611751835</p>
+
+                <div class="row py-1">
+                  <h5 class="mb-3">Soles</h5>
+                  <div class="col-md-6">
+                    <p style="color: #064b8e">
+                      <strong>N° de cuenta corriente</strong>
+                    </p>
+                    <p class="bcpBox px-2 pt-2">191-1510064-0-71</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p style="color: #064b8e"><strong>CCI</strong></p>
+                    <p class="bcpBox px-2 pt-2">002-191-001510064071-51</p>
+                  </div>
+                </div>
+
+                <div class="row py-1">
+                  <h5 class="mb-3">Dólares</h5>
+                  <div class="col-md-6">
+                    <p style="color: #064b8e">
+                      <strong>N° de cuenta corriente</strong>
+                    </p>
+                    <p class="bcpBox px-2 pt-2">191-1510382-1-93</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p style="color: #064b8e"><strong>CCI</strong></p>
+                    <p class="bcpBox px-2 pt-2">002-191-001510382193-58</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contenedorMetodosP">
+                <h4>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAq1BMVEUAv0QALaMAGqgAt00Awz8AI6YAgHoAen4AxjsAxT0AK6QAJ6UAwUEAIqYAKaQAKKUAHqcAF6kAWpAAHKcAo18AuEsAvUUAAK0AU5MAV5EAGKgAgnkAXo4AmWgATpYAplwAPJ0As1AAjnAAY4sAdIIAhnYARpkAaogANaAAlmsAi3MAnWQAOZ4AiXQAMaEAcIQAkW4AqlkAQJsAZooAdoAArlQApF4AboYASpctw3SJAAADPElEQVR4nO3di07iQABGYegFpjdoKSAUEBVRhBVF13Xf/8m2xWxiNi5Wy1xKznkB8+VvR2LC2GgQEREREREREREREREREREREREREZmR44mhrT5VvFDYy942zizVnakhhqI/SqKu31SfpUTo2OOsq0GnTChmcaDJp0YoJok2nxKhXqACoTPTClQgHERagfKFoqfvkFEiDOd6n1H5QjHW9XtQlXCge0LZQmet+ZyRLvSmms8Z6UKx0vFhW6VwqP0hlS0cWLqBsoU2QoQIESI0XugHbmwd/mxfX2EniNJkNW3N7PbBT4Z1FL4Nd/5wNW8Izwm9tntCwmK49GLR2lw6BW7/M5wTEXby4TJ3dH21a3h/bY1TERbDRReLycYW/+DqL9wP1xxdP+4a4gNbvYVdN06Tp+d8OO+j4WotzB/KOG2Ofz7unP8PV1dhPpwV3dwuPx+ufsJiuKQ5bt+9hKWGe5fxQr8Yzs2H6w8+PCo/zWhhJ0qzVe87w73LZGFntO4P892+jdtnstCdiEq2t4wWtpwj/AyECKuFEGGZECKsFkKEZUKIsFoIEZYJIcJqIURYJoQIq4UQYZkQIqwWQoRlQoiwWggRlgkhwmohRFgmhAirhRBhmRAirBZChGVCiLBaCBGWyeTvAVcWho4nGi8Lc7/LXUGY2zzP3kyen+L08DVGNRQWw4W7x+uRb8Vu0DnIq5uwsDmXm8niIkmjz231Eha44fzq4dzP8uG+cvmU+cLCJi5nremPuPxwNRGGxXEynK8fzmPri8OZL3x744rhrG8NZ7Iw3L9xv9avv4MKwxkq3A/3cteebr9wVNZEGDo5btC/f71x8+GOeym2dmExnJcP19umRxzOGOEyH255e5MdfThThP7TKoulDGeKsOkruBlT/60RCBEiPH1hdvJCa3Dqwkgq0AChvxInLgwW3okLo/Ux/upssjCRe9DoFwY9ua+hfmEyP8JNVCYLg6nkCbULXclvoXZhspF7kGoXJkvZz6hmoQqgTmEQbRQA9Qm7SW8g/R3UJvS7UTKeqxiwEJ4p/5+VVrSd3tvHuHKyJFF9Q+EpeT6JiIiIiIiIiIiIiIiIiIiIiIiIiEr0B43EYJsK/tspAAAAAElFTkSuQmCC"
+                    alt="Interbank logo"
+                  />
+                  Interbank
+                </h4>
+                <p class="mt-4">
+                  TITULAR: Generative and Optimal Design Solutions SAC
+                </p>
+                <p>RUC: 20611751835</p>
+
+                <div class="row py-1">
+                  <h5 class="mb-3">Soles</h5>
+                  <div class="col-md-6">
+                    <p style="color: #00bf44">
+                      <strong>N° de cuenta corriente</strong>
+                    </p>
+                    <p class="bcpBox px-2 pt-2">2003005808845</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p style="color: #00bf44"><strong>CCI </strong></p>
+                    <p class="bcpBox px-2 pt-2">00320000300580884538</p>
+                  </div>
+                </div>
+
+                <div class="row py-1">
+                  <h5 class="mb-3">Dólares</h5>
+                  <div class="col-md-6">
+                    <p style="color: #00bf44">
+                      <strong>N° de cuenta corriente</strong>
+                    </p>
+                    <p class="bcpBox px-2 pt-2">2003005808852</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p style="color: #00bf44"><strong>CCI</strong></p>
+                    <p class="bcpBox px-2 pt-2">00320000300580885234</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3 mt-3 contenedorQrs">
+            <div class="col-md-6">
+              <div class="card m-auto">
+                <div class="card-body d-flex">
+                  <img
                     style="
-                      color: white;
-                      background-color: #263c94;
-                      border-radius: 10px;
-                      margin-bottom: 2%;
-                      width: 45%;
+                      margin-right: 7px;
+                      width: 25px;
+                      height: 28px;
+                      border-radius: 5px;
+                    "
+                    src="https://seeklogo.com/images/Y/yape-logo-3E473EE7E5-seeklogo.com.png"
+                    alt="logo yape"
+                  />
+                  <h4>Yape /</h4>
+                  <img
+                    style="
+                      margin-right: 7px;
+                      margin-left: 15px;
+                      width: 25px;
+                      height: 28px;
+                      border-radius: 5px;
+                    "
+                    src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png"
+                    alt="logo yape"
+                  />
+                  <h4>Plin</h4>
+                </div>
+                <div
+                  style="
+                    padding-top: 10%;
+                    height: 100%;
+                    margin-inline: 4%;
+                    background-image: url('Imagenes/yape\ fondo.png');
+                    background-size: cover;
+                    background-position: center center;
+                    color: white;
+                    border-radius: 5px;
+                  "
+                >
+                  <img
+                    style="
+                      width: 80%;
+                      display: block;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                    src="/Imagenes/qrYape.jpeg"
+                    class="card-img-top img-center"
+                    alt="Yape QR"
+                  />
+                  <p
+                    style="
+                      text-align: center;
+                      padding: 3%;
+                      width: 80%;
+                      background-color: #349e98;
+                      margin-right: auto;
+                      margin-left: auto;
+                      border-radius: 15px;
+                      margin-top: 5px;
                     "
                   >
-                    <div class="contenedorResumen">
-                      <div class="row text-center my-4">
-                        <h5>Resumen de Compra</h5>
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-md-6 texto"><p>Precio base</p></div>
-                        <div class="col-md-6 precios text-end">
-                          <p>
-                            &nbsp;&nbsp;&nbsp;$<span id="subtotalId">0.00</span>
-                          </p>
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-md-6 texto">
-                          <p>Precio reducido</p>
-                        </div>
-                        <div class="col-md-6 precios text-end">
-                          <p>
-                            &nbsp;&nbsp;&nbsp;$<span id="dsctModulosId"
-                              >0.00</span
-                            >
-                          </p>
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-md-6 texto">
-                          <p>Descuento Pronto Pago</p>
-                        </div>
-                        <div class="col-md-6 precios text-end">
-                          <p>-$<span id="dsct1Id">0.00</span></p>
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-md-6 texto">
-                          <p>Descuento Corporativo</p>
-                        </div>
-                        <div class="col-md-6 precios text-end">
-                          <p>-$<span id="dsct2Id">0.00</span></p>
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-md-6 texto"><p>Descuento Cupón</p></div>
-                        <div class="col-md-6 precios text-end">
-                          <p>-$<span id="dsct3Id">0.00</span></p>
-                        </div>
-                        <hr />
-                      </div>
-                      <div class="row mt-3">
-                        <div class="col-md-6 texto">
-                          <p>Precio Final</p>
-                        </div>
-                        <div class="col-md-6 precios text-end">
-                          <p>
-                            &nbsp;&nbsp;&nbsp;$<span id="precioFinalId"
-                              >0.00</span
-                            >
-                          </p>
-                        </div>
-                      </div>
-                      <div class="row mt-3 justify-content-center">
-                        <a
-                          class="btn btnResumenCompra py-2 mb-3 px-4"
-                          style="background-color: white; color: #263c94"
-                          target="_blank"
-                          href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20los%20módulos%20del%20curso."
-                          >Ir a pagar</a
-                        >
-                      </div>
-                    </div>
+                    <strong>Paga aquí con Yape o Plin</strong>
+                  </p>
+
+                  <div class="card-body mx-3 text-center">
+                    <p style="font-size: 18px">Número: 900 121 245</p>
+                    <p style="font-size: 18px">
+                      Titular: Generative and Optimal Design Solutions SAC
+                    </p>
+                    <p style="font-size: 18px">RUC: 20611751835</p>
                   </div>
                 </div>
-                <!--Métodos de pago-->
-                <div class="row">
-                  <h1>Métodos de pago</h1>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card m-auto">
+                <div class="card-body d-flex">
+                  <img
+                    style="
+                      margin-top: -8px;
+                      margin-right: 1px;
+                      margin-left: -7px;
+                      height: 40px;
+                      width: 40px;
+                      border-radius: 5px;
+                    "
+                    src="https://brandlogos.net/wp-content/uploads/2021/11/paypal-logo-512x512.png"
+                    alt="logo paypal"
+                  />
+                  <h5 class="card-text">Paypal</h5>
                 </div>
-                <div class="row d-flex py-4">
-                  <div class="col-md-6">
-                    <div class="contenedorMetodosP">
-                      <h4>
-                        <img
-                          src="https://seeklogo.com/images/B/bcp-logo-CCCCDA45A9-seeklogo.com.png"
-                          alt="BCP logo"
-                        />
-                        Banco de Crédito del Perú
-                      </h4>
-                      <p class="mt-4">
-                        TITULAR: Generative and Optimal Design Solutions SAC
-                      </p>
-                      <p>RUC: 20611751835</p>
-
-                      <div class="row py-1">
-                        <h5 class="mb-3">Soles</h5>
-                        <div class="col-md-6">
-                          <p>N° de cuenta corriente</p>
-                          <p class="bcpBox px-2 pt-2">191-1510064-0-71</p>
-                        </div>
-                        <div class="col-md-6">
-                          <p>CCI</p>
-                          <p class="bcpBox px-2 pt-2">
-                            002-191-001510064071-51
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="row py-1">
-                        <h5 class="mb-3">Dólares</h5>
-                        <div class="col-md-6">
-                          <p>N° de cuenta corriente</p>
-                          <p class="bcpBox px-2 pt-2">191-1510382-1-93</p>
-                        </div>
-                        <div class="col-md-6">
-                          <p>CCI</p>
-                          <p class="bcpBox px-2 pt-2">
-                            002-191-001510382193-58
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="contenedorMetodosP">
-                      <h4>
-                        <img
-                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAq1BMVEUAv0QALaMAGqgAt00Awz8AI6YAgHoAen4AxjsAxT0AK6QAJ6UAwUEAIqYAKaQAKKUAHqcAF6kAWpAAHKcAo18AuEsAvUUAAK0AU5MAV5EAGKgAgnkAXo4AmWgATpYAplwAPJ0As1AAjnAAY4sAdIIAhnYARpkAaogANaAAlmsAi3MAnWQAOZ4AiXQAMaEAcIQAkW4AqlkAQJsAZooAdoAArlQApF4AboYASpctw3SJAAADPElEQVR4nO3di07iQABGYegFpjdoKSAUEBVRhBVF13Xf/8m2xWxiNi5Wy1xKznkB8+VvR2LC2GgQEREREREREREREREREREREREREZmR44mhrT5VvFDYy942zizVnakhhqI/SqKu31SfpUTo2OOsq0GnTChmcaDJp0YoJok2nxKhXqACoTPTClQgHERagfKFoqfvkFEiDOd6n1H5QjHW9XtQlXCge0LZQmet+ZyRLvSmms8Z6UKx0vFhW6VwqP0hlS0cWLqBsoU2QoQIESI0XugHbmwd/mxfX2EniNJkNW3N7PbBT4Z1FL4Nd/5wNW8Izwm9tntCwmK49GLR2lw6BW7/M5wTEXby4TJ3dH21a3h/bY1TERbDRReLycYW/+DqL9wP1xxdP+4a4gNbvYVdN06Tp+d8OO+j4WotzB/KOG2Ofz7unP8PV1dhPpwV3dwuPx+ufsJiuKQ5bt+9hKWGe5fxQr8Yzs2H6w8+PCo/zWhhJ0qzVe87w73LZGFntO4P892+jdtnstCdiEq2t4wWtpwj/AyECKuFEGGZECKsFkKEZUKIsFoIEZYJIcJqIURYJoQIq4UQYZkQIqwWQoRlQoiwWggRlgkhwmohRFgmhAirhRBhmRAirBZChGVCiLBaCBGWyeTvAVcWho4nGi8Lc7/LXUGY2zzP3kyen+L08DVGNRQWw4W7x+uRb8Vu0DnIq5uwsDmXm8niIkmjz231Eha44fzq4dzP8uG+cvmU+cLCJi5nremPuPxwNRGGxXEynK8fzmPri8OZL3x744rhrG8NZ7Iw3L9xv9avv4MKwxkq3A/3cteebr9wVNZEGDo5btC/f71x8+GOeym2dmExnJcP19umRxzOGOEyH255e5MdfThThP7TKoulDGeKsOkruBlT/60RCBEiPH1hdvJCa3Dqwkgq0AChvxInLgwW3okLo/Ux/upssjCRe9DoFwY9ua+hfmEyP8JNVCYLg6nkCbULXclvoXZhspF7kGoXJkvZz6hmoQqgTmEQbRQA9Qm7SW8g/R3UJvS7UTKeqxiwEJ4p/5+VVrSd3tvHuHKyJFF9Q+EpeT6JiIiIiIiIiIiIiIiIiIiIiIiIiEr0B43EYJsK/tspAAAAAElFTkSuQmCC"
-                          alt="Interbank logo"
-                        />
-                        Interbank
-                      </h4>
-                      <p class="mt-4">
-                        TITULAR: Generative and Optimal Design Solutions SAC
-                      </p>
-                      <p>RUC: 20611751835</p>
-
-                      <div class="row py-1">
-                        <h5 class="mb-3">Soles</h5>
-                        <div class="col-md-6">
-                          <p>N° de cuenta corriente</p>
-                          <p class="bcpBox px-2 pt-2">2003005808845</p>
-                        </div>
-                        <div class="col-md-6">
-                          <p>CCI</p>
-                          <p class="bcpBox px-2 pt-2">00320000300580884538</p>
-                        </div>
-                      </div>
-
-                      <div class="row py-1">
-                        <h5 class="mb-3">Dólares</h5>
-                        <div class="col-md-6">
-                          <p>N° de cuenta corriente</p>
-                          <p class="bcpBox px-2 pt-2">2003005808852</p>
-                        </div>
-                        <div class="col-md-6">
-                          <p>CCI</p>
-                          <p class="bcpBox px-2 pt-2">00320000300580885234</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row py-3 mt-3">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body d-flex">
-                        <img
-                          style="
-                            margin-right: 7px;
-                            width: 25px;
-                            border-radius: 5px;
-                          "
-                          src="https://seeklogo.com/images/Y/yape-logo-3E473EE7E5-seeklogo.com.png"
-                          alt="logo yape"
-                        />
-                        <h4>Yape</h4>
-                      </div>
-                      <div
-                        style="
-                          padding-top: 10%;
-                          margin-inline: 4%;
-                          background-color: #601f77;
-                          color: white;
-                          border-radius: 5px;
-                        "
-                      >
-                        <img
-                          style="
-                            width: 80%;
-                            display: block;
-                            margin-left: auto;
-                            margin-right: auto;
-                          "
-                          src="/Imagenes/qrYape.jpeg"
-                          class="card-img-top img-center"
-                          alt="Yape QR"
-                        />
-                        <p
-                          style="
-                            text-align: center;
-                            padding: 3%;
-                            width: 70%;
-                            background-color: #349e98;
-                            margin-right: auto;
-                            margin-left: auto;
-                            border-radius: 15px;
-                            margin-top: 5px;
-                          "
-                        >
-                          Paga aquí con Yape
-                        </p>
-                        <div class="card-body mx-3">
-                          <p style="font-size: 18px">
-                            Titular: Generative and Optimal Design Solutions SAC
-                          </p>
-                          <p style="font-size: 18px">RUC: 20611751835</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-body d-flex">
-                        <img
-                          style="
-                            margin-top: -8px;
-                            margin-right: 1px;
-                            width: 40px;
-                            border-radius: 5px;
-                          "
-                          src="https://brandlogos.net/wp-content/uploads/2021/11/paypal-logo-512x512.png"
-                          alt="logo paypal"
-                        />
-                        <h5 class="card-text">Paypal</h5>
-                      </div>
-                      <div
-                        style="
-                          padding-top: 10%;
-                          margin-inline: 4%;
-                          background-color: #002c8b;
-                          color: white;
-                          border-radius: 5px;
-                        "
-                      >
-                        <img
-                          style="
-                            width: 80%;
-                            display: block;
-                            margin-left: auto;
-                            margin-right: auto;
-                          "
-                          src="/Imagenes/qrYape.jpeg"
-                          class="card-img-top img-center"
-                          alt="Yape QR"
-                        />
-                        <p
-                          style="
-                            text-align: center;
-                            padding: 3%;
-                            width: 70%;
-                            background-color: #27a9e5;
-                            margin-right: auto;
-                            margin-left: auto;
-                            border-radius: 15px;
-                            margin-top: 5px;
-                          "
-                        >
-                          Paga aquí con Paypal
-                        </p>
-                        <div class="card-body mx-3">
-                          <p style="font-size: 18px">
-                            Titular: Generative and Optimal Design Solutions SAC
-                          </p>
-                          <p style="font-size: 18px">RUC: 20611751835</p>
-                        </div>
-                      </div>
-                    </div>
+                <div
+                  style="
+                    padding-top: 10%;
+                    height: 600px;
+                    margin-inline: 4%;
+                    background-image: url('Imagenes/paypal\ fondo.png');
+                    background-size: cover;
+                    background-position: center center;
+                    color: white;
+                    border-radius: 5px;
+                  "
+                >
+                  <img
+                    style="
+                      width: 80%;
+                      height: auto;
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                    src="/Imagenes/qrYape.jpeg"
+                    class="card-img-top img-center"
+                    alt="Yape QR"
+                  />
+                  <p
+                    style="
+                      text-align: center;
+                      padding: 3%;
+                      width: 70%;
+                      background-color: #27a9e5;
+                      margin-right: auto;
+                      margin-left: auto;
+                      border-radius: 15px;
+                      margin-top: 5px;
+                    "
+                  >
+                    <strong>Paga aquí con Paypal</strong>
+                  </p>
+                  <div class="card-body mx-3 text-center">
+                    <p style="font-size: 18px">Número: +51 900 121 245</p>
+                    <p style="font-size: 18px">
+                      Titular: Generative and Optimal Design Solutions SAC
+                    </p>
+                    <p style="font-size: 18px">RUC: 20611751835</p>
                   </div>
                 </div>
               </div>
@@ -1054,19 +854,25 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--Pie de página-->
-    <section class="Footer bg-light pt-5">
+    <section class="Footer bg-light pt-3">
       <div class="container logoaecodeCurso1">
         <p class="text-center small text-muted">
           <img src="/Imagenes/aecode-logo.png" alt="" />
         </p>
       </div>
-      <div class="container pb-4">
+      <div class="container pt-1">
+        <p class="text-center small text-muted">
+          Sponsored by Generative and Optimal Solutions SAC
+        </p>
+      </div>
+      <div class="container pb-2">
         <p class="text-center small text-muted">Copyright &copy; AECODE 2023</p>
       </div>
     </section>
@@ -1216,6 +1022,10 @@
     <!--Script para actualizar el total cuando se marca/desmarca un checkbox-->
     <script>
       function calcularSubtotal(productoId, precioId) {
+        // URL del documento de Google Sheets
+        let url =
+          "https://docs.google.com/spreadsheets/d/1x4iDb_QP5VBde2X1Elo4cg6L_PnE6n9BTxMDY0Cwgec/gviz/tq?";
+
         var checkbox = document.getElementById(productoId);
         var precio = parseFloat(document.getElementById(precioId).innerText);
         var precioBase = parseFloat(
@@ -1240,76 +1050,145 @@
           document.getElementById("subtotalId").style.textDecoration = "none";
         }
 
-        if (checkbox1.checked && checkbox2.checked) {
-          document.getElementById("dsctModulosId").innerText = (330).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
+        // Realizar la solicitud fetch
+        fetch(url)
+          .then((res) => res.text())
+          .then((rep) => {
+            // Analizar la respuesta JSON
+            const data = JSON.parse(rep.substr(47).slice(0, -2));
+            // Recorrer las filas de datos
+            data.table.rows.forEach((main, rowIndex) => {
+              const row = document.createElement("tr");
 
-        if (checkbox1.checked && checkbox3.checked) {
-          document.getElementById("dsctModulosId").innerText = (575).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
+              // Recorrer las celdas de la fila actual
+              main.c.forEach((ele, colIndex) => {
+                const cell = document.createElement("td");
+                cell.textContent = ele.v;
+                row.append(cell);
 
-        if (checkbox1.checked && checkbox4.checked) {
-          document.getElementById("dsctModulosId").innerText = (860).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox2.checked && checkbox3.checked) {
-          document.getElementById("dsctModulosId").innerText = (600).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox2.checked && checkbox4.checked) {
-          document.getElementById("dsctModulosId").innerText = (885).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox3.checked && checkbox4.checked) {
-          document.getElementById("dsctModulosId").innerText = (1100).toFixed(
-            2
-          );
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
-          document.getElementById("dsctModulosId").innerText = (655).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox1.checked && checkbox2.checked && checkbox4.checked) {
-          document.getElementById("dsctModulosId").innerText = (910).toFixed(2);
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox1.checked && checkbox3.checked && checkbox4.checked) {
-          document.getElementById("dsctModulosId").innerText = (1100).toFixed(
-            2
-          );
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (checkbox2.checked && checkbox3.checked && checkbox4.checked) {
-          document.getElementById("dsctModulosId").innerText = (1125).toFixed(
-            2
-          );
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
-        if (
-          checkbox1.checked &&
-          checkbox2.checked &&
-          checkbox3.checked &&
-          checkbox4.checked
-        ) {
-          document.getElementById("dsctModulosId").innerText = (1085).toFixed(
-            2
-          );
-          document.getElementById("subtotalId").style.textDecoration =
-            "line-through";
-        }
+                if (colIndex == 1) {
+                  if (
+                    checkbox1.checked &&
+                    checkbox2.checked &&
+                    rowIndex === 4
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+
+                  if (
+                    checkbox1.checked &&
+                    checkbox3.checked &&
+                    rowIndex === 5
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+
+                  if (
+                    checkbox1.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 6
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox2.checked &&
+                    checkbox3.checked &&
+                    rowIndex === 7
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox2.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 8
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox3.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 9
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox1.checked &&
+                    checkbox2.checked &&
+                    checkbox3.checked &&
+                    rowIndex === 10
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox1.checked &&
+                    checkbox2.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 11
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox1.checked &&
+                    checkbox3.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 12
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox2.checked &&
+                    checkbox3.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 13
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                  if (
+                    checkbox1.checked &&
+                    checkbox2.checked &&
+                    checkbox3.checked &&
+                    checkbox4.checked &&
+                    rowIndex === 14
+                  ) {
+                    document.getElementById("dsctModulosId").textContent =
+                      ele.v.toFixed(2);
+                    document.getElementById("subtotalId").style.textDecoration =
+                      "line-through";
+                  }
+                }
+              });
+            });
+          });
 
         document.getElementById("subtotalId").innerText = subtotal.toFixed(2);
         calcularDescuento1("descuento1Id");
@@ -1320,7 +1199,7 @@
       function calcularDescuento1(descuentoId) {
         var checkbox = document.getElementById(descuentoId);
         var subtotal = parseFloat(
-          document.getElementById("subtotalId").innerText
+          document.getElementById("dsctModulosId").innerText
         );
         var descuento = 0;
 
@@ -1336,7 +1215,7 @@
       function calcularDescuento2(descuentoId) {
         var checkbox = document.getElementById(descuentoId);
         var subtotal = parseFloat(
-          document.getElementById("subtotalId").innerText
+          document.getElementById("dsctModulosId").innerText
         );
         var descuento = 0;
         if (checkbox.checked) {
@@ -1366,20 +1245,15 @@
       // URL del documento de Google Sheets
       let url =
         "https://docs.google.com/spreadsheets/d/1x4iDb_QP5VBde2X1Elo4cg6L_PnE6n9BTxMDY0Cwgec/gviz/tq?";
-      const output = document.querySelector(".output");
-      const pruebaElement = document.getElementById("precio1");
-
       // Realizar la solicitud fetch
       fetch(url)
         .then((res) => res.text())
         .then((rep) => {
           // Analizar la respuesta JSON
           const data = JSON.parse(rep.substr(47).slice(0, -2));
-
           // Recorrer las filas de datos
           data.table.rows.forEach((main, rowIndex) => {
             const row = document.createElement("tr");
-            output.append(row);
 
             // Recorrer las celdas de la fila actual
             main.c.forEach((ele, colIndex) => {
@@ -1389,13 +1263,19 @@
 
               // Verificar si estamos en la columna y fila que queremos
               if (colIndex === 1 && rowIndex === 0) {
-                output.textContent = ele.v;
+                document.getElementById("precio1").textContent = ele.v;
+              }
+              if (colIndex === 1 && rowIndex === 1) {
+                document.getElementById("precio2").textContent = ele.v;
+              }
+              if (colIndex === 1 && rowIndex === 2) {
+                document.getElementById("precio3").textContent = ele.v;
+              }
+              if (colIndex === 1 && rowIndex === 3) {
+                document.getElementById("precio4").textContent = ele.v;
               }
             });
           });
-        })
-        .catch((error) => {
-          console.error("Error al obtener los datos:", error);
         });
     </script>
 

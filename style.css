@@ -424,28 +424,19 @@ p {
   display: flex;
 }
 
-.desplegables .btnGeneral:hover {
-  background-color: #324ebd;
-  color: white;
-}
-
-.desplegables .btn:hover {
-  background-color: #3152a1;
-  color: white;
-}
-
 .desplegables i {
   margin-left: 10px;
   margin-right: 4px;
   font-size: 20px;
 }
 
-.desplegables .content {
+.content {
   border-radius: 0% 0% 7px 7px;
+  margin-top: -4px;
+  border: 1px solid #ccc;
+
+  border-top: none;
   padding: 0% 3% 0 3%;
-  background-color: #3152a1;
-  color: white;
-  border: none;
   height: auto;
   overflow: hidden;
   max-height: 0;
@@ -531,7 +522,8 @@ p {
   padding: 4px;
   width: 36px;
   height: 36px;
-  margin-right: 7px;
+  margin-right: 4px;
+  margin-bottom: 200px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -593,12 +585,10 @@ p {
 }
 
 .cuadroFecha {
-  margin-left: 1%;
   color: #f3d533;
   width: auto;
   height: auto;
   border-radius: 5px;
-  border: #ffcc00ad 1px solid;
 }
 
 .curso2 .btn {
@@ -699,17 +689,7 @@ p {
   padding-left: 2%;
 }
 
-.desplegables .contenedorInversion {
-  text-align: justify;
-  display: none;
-  background-color: white;
-  color: black;
-  border: 1px solid rgba(128, 128, 128, 0.432);
-  border-top: 0px;
-  border-radius: 0 0 7px 7px;
-}
-
-.desplegables .contenedorMetodosP {
+.contenedorMetodosP {
   padding: 20px 20px 20px 20px;
   border: 1px solid #ccc;
   border-radius: 7px;
@@ -729,10 +709,14 @@ p {
   background-color: #cccccc41;
   height: 45px;
 }
-.desplegables .card {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+
+.contenedorQrs .card {
+  width: 60%;
+  height: 620px;
+}
+
+.btnGeneral .fa-solid {
+  margin-top: 10px;
 }
 
 /*Responsividad*/
