@@ -65,10 +65,11 @@ p {
 .nav-link-icon {
   display: flex;
   align-items: center;
+  margin-top: 3px;
 }
 
 .iconoHeader {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .iconos {
@@ -434,7 +435,7 @@ p {
   border-radius: 0% 0% 7px 7px;
   margin-top: -4px;
   border: 1px solid #ccc;
-
+  background-color: rgba(128, 128, 128, 0.041);
   border-top: none;
   padding: 0% 3% 0 3%;
   height: auto;
@@ -629,7 +630,13 @@ p {
 }
 
 .CursoBeneficios {
-  display: block;
+  border-radius: 0% 0% 7px 7px;
+  margin-top: -4px;
+  border: 1px solid #ccc;
+  background-color: rgba(128, 128, 128, 0.041);
+  border-top: none;
+  padding: 0% 3% 0 3%;
+  height: auto;
 }
 
 .CursoBeneficios1 {
@@ -710,13 +717,60 @@ p {
   height: 45px;
 }
 
-.contenedorQrs .card {
+.contenedorQrs p {
+  font-size: 15px;
+}
+
+.contenedorQrs .card-img-top {
   width: 60%;
-  height: 620px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedorQrs .card {
+  width: 55%;
+  height: 500px;
+  padding-bottom: 10%;
+}
+
+.contenedorYapePlin {
+  padding-top: 5%;
+  height: 410px;
+  margin-inline: 4%;
+  background-image: url("Imagenes/yape\ fondo.png");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  border-radius: 5px;
+}
+
+.contenedorPaypal {
+  padding-top: 5%;
+  height: 410px;
+  margin-inline: 4%;
+  background-image: url("Imagenes/paypal\ fondo.png");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  border-radius: 5px;
 }
 
 .btnGeneral .fa-solid {
   margin-top: 10px;
+}
+
+.btnGeneral {
+  width: 98%;
+  margin: auto;
+}
+
+.contenedorResumenC {
+  color: white;
+  background-color: #263c94;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  width: 45%;
 }
 
 /*Responsividad*/
