@@ -287,69 +287,137 @@
         <div id="modulesContainer" class="row slide mb-4">
           <div class="col-md-3">
             <div class="card m-auto">
-              <img
-                style="
-                  width: auto;
-                  display: block;
-                  height: auto;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
-                src="Imagenes/flyer 5.png"
-                class="img-center"
-                alt="Yape QR"
-              />
+              <a
+                href="#!"
+                data-bs-toggle="modal"
+                data-bs-target="#modalModulo1"
+              >
+                <img
+                  style="
+                    width: auto;
+                    display: block;
+                    height: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                  src="Imagenes/m1c1.png"
+                  class="img-center"
+                  alt="Yape QR"
+                />
+              </a>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card m-auto">
-              <img
-                style="
-                  width: auto;
-                  display: block;
-                  height: auto;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
-                src="Imagenes/flyer 5.png"
-                class="img-center"
-                alt="Yape QR"
-              />
+              <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo2"
+                ><img
+                  style="
+                    width: auto;
+                    display: block;
+                    height: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                  src="Imagenes/m2c1.png"
+                  class="img-center"
+                  alt="Yape QR"
+              /></a>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card m-auto">
-              <img
-                style="
-                  width: auto;
-                  display: block;
-                  height: auto;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
-                src="Imagenes/flyer 5.png"
-                class="img-center"
-                alt="Yape QR"
-              />
+              <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo3"
+                ><img
+                  style="
+                    width: auto;
+                    display: block;
+                    height: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                  src="Imagenes/m3c1.png"
+                  class="img-center"
+                  alt="Yape QR"
+              /></a>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card m-auto">
-              <img
-                style="
-                  width: auto;
-                  display: block;
-                  height: auto;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
-                src="Imagenes/flyer 5.png"
-                class="img-center"
-                alt="Yape QR"
-              />
+              <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo4"
+                ><img
+                  style="
+                    width: auto;
+                    display: block;
+                    height: auto;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                  src="Imagenes/m4c1.png"
+                  class="img-center"
+                  alt="Yape QR"
+              /></a>
             </div>
           </div>
         </div>
+        <!--Código auxiliar para el modal de las imagenes de los modulos-->
+        <!--Imagen módulo 1-->
+        <div
+          tabindex="-1"
+          aria-labelledby="modalModulo1"
+          aria-hidden="true"
+          class="modal fade"
+          id="modalModulo1"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <img src="Imagenes/m1c1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--Imagen módulo 2-->
+        <div
+          tabindex="-1"
+          aria-labelledby="modalModulo2"
+          aria-hidden="true"
+          class="modal fade"
+          id="modalModulo2"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <img src="Imagenes/m2c1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--Imagen módulo 3-->
+        <div
+          tabindex="-1"
+          aria-labelledby="modalModulo3"
+          aria-hidden="true"
+          class="modal fade"
+          id="modalModulo3"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <img src="Imagenes/m3c1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--Imagen módulo 4-->
+        <div
+          tabindex="-1"
+          aria-labelledby="modalModulo4"
+          aria-hidden="true"
+          class="modal fade"
+          id="modalModulo4"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <img src="Imagenes/m4c1.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!--Botón de brochure-->
         <div class="row mt-5">
           <a
             class="btn m-auto"
@@ -815,134 +883,142 @@
       </div>
     </section>
     <!--Formularios-->
-    <div id="miModal" class="modal">
-      <div class="modal-content">
-        <!-- Formulario oculto por defecto -->
-        <div class="row g-5 py-4">
-          <form
-            id="form"
-            method="post"
-            class="form-control form1 text-center px-5 position-relative"
-            onsubmit="mostrarFormulario2(); return false;"
-          >
-            <div class="position-absolute top-0 end-0">
-              <button
-                type=""
-                class="close btnText"
-                onclick="cerrarFormulario()"
-              >
-                X
-              </button>
-            </div>
-            <div class="">
-              <h5 class="fw-bold display-6 py-3">
-                ¡Únete a la comunidad AECODE!
-              </h5>
-              <p class="text-muted text-secondary">
-                Ingresa tu nombre y correo electrónico, para recibir información
-                sobre nuestros cursos y mucho más!
-              </p>
-            </div>
-            <div class="mb-3 mt-3">
-              <input
-                type="text"
-                required
-                class="form-control input"
-                placeholder="Nombre y apellido"
-                name="Client Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                required
-                class="form-control input"
-                placeholder="Correo electrónico"
-                name="Email"
-              />
-            </div>
-            <div class="">
-              <button
-                type="submit"
-                id="submit-button"
-                class="btn btn-primary px-4"
-                style="background-color: #380489; border: #380489"
-              >
-                <strong>Enviar</strong>
-              </button>
-            </div>
-            <div>
-              <p class="small text-muted pt-3">
-                Al enviar tus datos, aceptas recibir información sobre noticias,
-                promociones, productos y servicios de AECODE.ai.
-              </p>
-            </div>
-            <div>
-              <p class="small text-muted">¡Bienvenido!</p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div id="miModal2" class="modal2">
-      <div class="modal-content2">
-        <!-- Formulario oculto por defecto -->
-        <div class="row g-5 py-4">
-          <form
-            id="form2"
-            method="post"
-            class="form-control form2 text-center px-5 position-relative"
-          >
-            <div class="position-absolute top-0 end-0">
-              <!-- Ajusta la posición del contenedor del botón -->
-              <button
-                type="button"
-                class="close2 btnText"
-                onclick="cerrarFormulario2()"
-              >
-                X
-              </button>
-            </div>
-            <div class="">
-              <div class="form2Title">
+    <div class="formularios">
+      <div id="miModal" class="modal">
+        <div class="modal-content">
+          <!-- Formulario oculto por defecto -->
+          <div class="row g-5 py-4">
+            <form
+              id="form"
+              method="post"
+              class="form-control form1 text-center px-5 position-relative"
+              onsubmit="mostrarFormulario2(); return false;"
+            >
+              <div class="position-absolute top-0 end-0">
+                <button
+                  type=""
+                  class="close btnText"
+                  onclick="cerrarFormulario()"
+                >
+                  X
+                </button>
+              </div>
+              <div class="">
                 <h5 class="fw-bold display-6 py-3">
-                  ¡Bienvenido a <br />
-                  la comunidad AECODE!
+                  ¡Únete a la comunidad AECODE!
                 </h5>
-              </div>
-              <div class="form2Text">
                 <p class="text-muted text-secondary">
-                  Estamos contentos de contar contigo, en unos instantes
-                  recibirás un correo de confirmación. Con esto podrás acceder a
-                  la información de cursos, novedades y mucho más. Si quieres
-                  pertenecer a una comunidad de networking más exclusiva:
+                  Ingresa tu nombre y correo electrónico, para recibir
+                  información sobre nuestros cursos y mucho más!
                 </p>
               </div>
-              <div class="form2Text2">
-                <p class="text-muted text-secondary">
-                  En unos instantes recibirás un correo de confirmación para
-                  acceder a novedades y mucho más. <br />
-                  Si quieres pertenecer a una comunidad más exclusiva:
+              <div class="mb-3 mt-3">
+                <input
+                  type="text"
+                  required
+                  class="form-control input"
+                  placeholder="Nombre y apellido"
+                  name="Client Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  required
+                  class="form-control input"
+                  placeholder="Correo electrónico"
+                  name="Email"
+                />
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  id="submit-button"
+                  class="btn btn-primary px-4"
+                  style="background-color: #380489; border: #380489"
+                >
+                  <strong>Enviar</strong>
+                </button>
+              </div>
+              <div>
+                <p class="small text-muted pt-3">
+                  Al enviar tus datos, aceptas recibir información sobre
+                  noticias, promociones, productos y servicios de AECODE.ai.
                 </p>
               </div>
-            </div>
-            <div class="text-center">
-              <a
-                href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
-                target="_blank"
-                class="btn btn-primary px-4"
-                style="background-color: #380489; border: #380489; color: white"
-              >
-                <strong>¡Únete al grupo de Whatsapp!</strong>
-              </a>
-            </div>
-            <div>
-              <p class="text-muted pt-3">¡Bienvenido!</p>
-            </div>
-          </form>
+              <div>
+                <p class="small text-muted">¡Bienvenido!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="miModal2" class="modal2">
+        <div class="modal-content2">
+          <!-- Formulario oculto por defecto -->
+          <div class="row g-5 py-4">
+            <form
+              id="form2"
+              method="post"
+              class="form-control form2 text-center px-5 position-relative"
+            >
+              <div class="position-absolute top-0 end-0">
+                <!-- Ajusta la posición del contenedor del botón -->
+                <button
+                  type="button"
+                  class="close2 btnText"
+                  onclick="cerrarFormulario2()"
+                >
+                  X
+                </button>
+              </div>
+              <div class="">
+                <div class="form2Title">
+                  <h5 class="fw-bold display-6 py-3">
+                    ¡Bienvenido a <br />
+                    la comunidad AECODE!
+                  </h5>
+                </div>
+                <div class="form2Text">
+                  <p class="text-muted text-secondary">
+                    Estamos contentos de contar contigo, en unos instantes
+                    recibirás un correo de confirmación. Con esto podrás acceder
+                    a la información de cursos, novedades y mucho más. Si
+                    quieres pertenecer a una comunidad de networking más
+                    exclusiva:
+                  </p>
+                </div>
+                <div class="form2Text2">
+                  <p class="text-muted text-secondary">
+                    En unos instantes recibirás un correo de confirmación para
+                    acceder a novedades y mucho más. <br />
+                    Si quieres pertenecer a una comunidad más exclusiva:
+                  </p>
+                </div>
+              </div>
+              <div class="text-center">
+                <a
+                  href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
+                  target="_blank"
+                  class="btn btn-primary px-4"
+                  style="
+                    background-color: #380489;
+                    border: #380489;
+                    color: white;
+                  "
+                >
+                  <strong>¡Únete al grupo de Whatsapp!</strong>
+                </a>
+              </div>
+              <div>
+                <p class="text-muted pt-3">¡Bienvenido!</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+
     <div
       id="message"
       style="

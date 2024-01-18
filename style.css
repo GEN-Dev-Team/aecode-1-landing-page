@@ -285,7 +285,7 @@ p {
   margin-top: 16px;
 }
 
-.modal,
+.formularios .modal,
 .modal2 {
   display: none;
   position: fixed;
@@ -308,7 +308,7 @@ p {
 }
 
 /* Estilo para el contenido del formulario */
-.modal-content,
+.formularios .modal-content,
 .modal-content2 {
   background-color: #fff;
   padding-right: 50px;
@@ -775,7 +775,7 @@ p {
 
 /*Responsividad*/
 @media (max-width: 1200px) {
-  .modal-content,
+  .formularios .modal-content,
   .modal-content2 {
     width: 80%;
   }
