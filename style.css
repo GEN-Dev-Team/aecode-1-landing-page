@@ -89,7 +89,6 @@ p {
 .fa-envelope,
 .fa-phone,
 .fa-circle-check {
-  opacity: 0.75;
   padding-right: 12px;
   font-size: 20px;
 }
@@ -125,7 +124,6 @@ p {
 }
 
 .logo {
-  margin-left: 5%;
   width: 22%;
 }
 
@@ -409,26 +407,11 @@ p {
 }
 
 .fa-circle-check {
-  color: #f3d533;
+  color: #263c94;
 }
 
 .row p {
   margin-top: -7px;
-}
-
-/*Estilos de desplegables generales*/
-.desplegables .btn {
-  background-color: #263c94;
-  color: white;
-  padding-top: 15px;
-  width: 100%;
-  display: flex;
-}
-
-.desplegables i {
-  margin-left: 10px;
-  margin-right: 4px;
-  font-size: 20px;
 }
 
 .content {
@@ -444,10 +427,6 @@ p {
   transition: max-height 0.5s ease;
 }
 
-.desplegables p {
-  font-size: 19px;
-}
-
 .module-content {
   border-radius: 0% 0% 7px 7px;
   background-color: #3152a1;
@@ -461,11 +440,6 @@ p {
 }
 
 .module-content .closing {
-  transition: none; /* Elimina la transición al cerrar */
-}
-
-/*Desplegables de módulos*/
-.module-content.closing {
   transition: none; /* Elimina la transición al cerrar */
 }
 
@@ -488,10 +462,6 @@ p {
 
 .fa-angle-up {
   display: none;
-}
-
-.desplegables .fa-dollar-sign {
-  font-size: 17px;
 }
 
 .imgLogo {
@@ -633,7 +603,7 @@ p {
   border-radius: 0% 0% 7px 7px;
   margin-top: -4px;
   border: 1px solid #ccc;
-  background-color: rgba(128, 128, 128, 0.041);
+  background-color: #cccccc33;
   border-top: none;
   padding: 0% 3% 0 3%;
   height: auto;
@@ -666,10 +636,6 @@ p {
 .contactTitle1 {
   display: none;
 }
-.desplegables .contentBtnModules {
-  margin-top: 6px;
-  display: none;
-}
 
 .swiper-wrapper .swiper-pagination {
   padding-bottom: 7%;
@@ -679,21 +645,73 @@ p {
   font-size: 19px;
 }
 
-.desplegables .checkBox {
-  margin-top: -0.6%;
+.checkBox input {
+  width: 22px;
+  height: 22px;
+  margin-top: 0;
+  margin-right: 10px;
 }
 
-.contenedorResumen {
-  padding-left: 5%;
-  padding-right: 5%;
+.elementosIzquierda {
+  padding-left: 25%;
 }
 
-.contenedorResumen .precios {
-  padding-right: 2%;
+.contenedorPreciosMod .texto {
+  padding-right: 25%;
 }
 
-.contenedorResumen .texto {
-  padding-left: 2%;
+.textoCupon {
+  margin-top: -12px;
+  width: 30%;
+  margin-left: 3%;
+}
+
+.form-check-input {
+  background-color: #cccccc63; /* Fondo gris por defecto */
+}
+
+.form-check-input:checked {
+  background-color: #263c94; /* Fondo azul cuando está marcado */
+  border-color: transparent;
+}
+
+.form-check-input:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.textoCupon .form-control {
+  background-color: #cccccc63; /* Fondo gris por defecto */
+  border-color: #cccccc; /* Color del borde por defecto */
+  font-family: "Plus Jakarta Sans", sans-serif; /* Aplica la fuente 'Plus Jakarta' al texto */
+}
+
+.textoCupon .form-control:checked {
+  background-color: #263c94; /* Fondo azul cuando está marcado */
+  border-color: transparent; /* Quita el borde cuando está marcado */
+}
+
+.textoCupon .form-control:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none; /* Quita la sombra en el estado de foco */
+  border-color: transparent; /* Quita el borde en el estado de foco */
+}
+
+.textoCupon .form-control:checked {
+  background-color: #263c94; /* Fondo azul cuando está marcado */
+  border-color: transparent; /* Quita el borde cuando está marcado */
+}
+
+.textoCupon .form-control:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none; /* Quita la sombra en el estado de foco */
+  border-color: transparent; /* Quita el borde en el estado de foco */
+}
+
+.contenedorDescuentos {
+  margin-top: -7px;
+  padding-left: 12%;
 }
 
 .contenedorMetodosP {
@@ -701,11 +719,6 @@ p {
   border: 1px solid #ccc;
   border-radius: 7px;
   height: 100%;
-}
-
-.contenedorResumen .btnResumenCompra {
-  justify-content: center;
-  width: 47%;
 }
 
 .contenedorMetodosP img {
@@ -765,12 +778,72 @@ p {
   margin: auto;
 }
 
-.contenedorResumenC {
-  color: white;
-  background-color: #263c94;
-  border-radius: 10px;
+.contenedorPreciosMod {
+  position: relative;
+  border: 1px solid #ccc;
+  border-top: 1px solid #263c94;
+  background-color: #cccccc33;
+  border-radius: 0px 0px 0px 10px;
   margin-bottom: 2%;
-  width: 45%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contenedorPreciosMod .vertical-line {
+  border-right: 5px solid #263c94; /* Establece el ancho y color de la línea vertical */
+  height: 100%; /* Hace que la línea tenga la misma altura que el contenedorPreciosMod */
+  position: absolute; /* Permite superponer la línea sobre los demás elementos */
+  top: 0; /* Ajusta según sea necesario para alinear con el principio del contenedorPreciosMod */
+  bottom: 0; /* Ajusta según sea necesario para alinear con el final del contenedorPreciosMod */
+  left: 50%; /* Coloca la línea en el medio del contenedorPreciosMod */
+}
+
+.card .imgBlur {
+  filter: blur(1px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 60, 148, 0.2); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #263c94; /* Color del texto */
+  /* Agregar resplandor al texto blanco */
+  text-shadow: 0 0 5px rgba(38, 60, 148, 0);
+  /* Agregar brillo al contenedor */
+  box-shadow: 0 0 500px rgba(255, 255, 255, 0.5);
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  border-radius: 5px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slider-content span {
+  display: none;
+}
+
+.slider-content span:first-child {
+  display: block;
+}
+
+.slider-content.active span {
+  display: block;
 }
 
 /*Responsividad*/
@@ -973,17 +1046,9 @@ p {
     padding-right: 5%;
   }
 
-  .desplegables .col-md-4 {
-    padding-bottom: 2%;
-  }
-
   .contenidoModulo .btn {
     background-color: #3152a1;
     width: 100%;
-  }
-
-  .desplegables .contentBtnModules {
-    background-color: white;
   }
 
   .contactTitle {
