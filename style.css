@@ -466,8 +466,8 @@ p {
 
 .imgLogo {
   position: absolute;
-  margin-top: 35%;
-  margin-left: 44%;
+  margin-top: 33%;
+  margin-left: 45%;
   z-index: 2;
 }
 
@@ -483,16 +483,16 @@ p {
 
 .imgLogo1 {
   position: absolute;
-  margin-top: 30%;
-  margin-left: 30%;
+  margin-top: 29%;
+  margin-left: 32%;
   z-index: 2;
 }
 
 .imgLogo1 img {
   background-color: rgba(255, 255, 255, 0.507);
   padding: 4px;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   margin-right: 4px;
   margin-bottom: 200px;
   border-radius: 50%;
@@ -562,25 +562,6 @@ p {
   border-radius: 5px;
 }
 
-.curso2 .btn {
-  background-color: #3e2c80;
-}
-.curso2 .btn:hover {
-  background-color: #370489da;
-}
-
-.curso2 .btnGeneral:hover {
-  background-color: #370489da;
-}
-
-.curso2 .content {
-  background-color: #370489f5;
-}
-
-.curso2 .module-content {
-  background-color: #370489f5;
-}
-
 .cuadroFecha p {
   font-weight: 600;
 }
@@ -600,6 +581,7 @@ p {
 }
 
 .CursoBeneficios {
+  display: none;
   border-radius: 0% 0% 7px 7px;
   margin-top: -4px;
   border: 1px solid #ccc;
@@ -607,6 +589,7 @@ p {
   border-top: none;
   padding: 0% 3% 0 3%;
   height: auto;
+  width: 98%;
 }
 
 .CursoBeneficios1 {
@@ -661,28 +644,35 @@ p {
 }
 
 .textoCupon {
-  margin-top: -12px;
+  margin-top: -17px;
   width: 30%;
   margin-left: 3%;
 }
 
 .form-check-input {
-  background-color: #cccccc63; /* Fondo gris por defecto */
+  background-color: transparent;
 }
 
 .form-check-input:checked {
   background-color: #263c94; /* Fondo azul cuando está marcado */
-  border-color: transparent;
+}
+
+.curso2 .form-check-input:checked {
+  background-color: #3e2c80; /* Fondo azul cuando está marcado */
+}
+
+.curso2 .fa-circle-check {
+  color: #3e2c80;
 }
 
 .form-check-input:focus {
   outline: none; /* Quita el borde de sombras en el estado de foco */
   box-shadow: none;
-  border-color: transparent;
+  border-color: #cccccc;
 }
 
 .textoCupon .form-control {
-  background-color: #cccccc63; /* Fondo gris por defecto */
+  background-color: transparent; /* Fondo gris por defecto */
   border-color: #cccccc; /* Color del borde por defecto */
   font-family: "Plus Jakarta Sans", sans-serif; /* Aplica la fuente 'Plus Jakarta' al texto */
 }
@@ -783,14 +773,14 @@ p {
   border: 1px solid #ccc;
   border-top: 1px solid #263c94;
   background-color: #cccccc33;
-  border-radius: 0px 0px 0px 10px;
+  border-radius: 0px 0px 10px 10px;
   margin-bottom: 2%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .contenedorPreciosMod .vertical-line {
-  border-right: 5px solid #263c94; /* Establece el ancho y color de la línea vertical */
+  border-right: 2px solid #c0c1c2; /* Establece el ancho y color de la línea vertical */
   height: 100%; /* Hace que la línea tenga la misma altura que el contenedorPreciosMod */
   position: absolute; /* Permite superponer la línea sobre los demás elementos */
   top: 0; /* Ajusta según sea necesario para alinear con el principio del contenedorPreciosMod */
@@ -813,17 +803,8 @@ p {
   align-items: center;
   justify-content: center;
   color: #263c94; /* Color del texto */
-  /* Agregar resplandor al texto blanco */
-  text-shadow: 0 0 5px rgba(38, 60, 148, 0);
-  /* Agregar brillo al contenedor */
-  box-shadow: 0 0 500px rgba(255, 255, 255, 0.5);
   font-size: 24px; /* Tamaño del texto */
-  font-weight: bold; /* Negrita */
   border-radius: 5px;
-}
-
-.card:hover .overlay {
-  opacity: 1;
 }
 
 .slider-content {
@@ -844,6 +825,21 @@ p {
 
 .slider-content.active span {
   display: block;
+}
+
+.curso2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 44, 128, 0.2); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3e2c80; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px;
 }
 
 /*Responsividad*/
@@ -1057,14 +1053,6 @@ p {
 
   .contactTitle1 {
     display: block;
-  }
-
-  .curso2 .contenidoModulo .btn {
-    background-color: #3e2c80ea;
-  }
-
-  .curso2 .module-content {
-    background-color: #3e2c80ea;
   }
 
   .cuadroFecha {
