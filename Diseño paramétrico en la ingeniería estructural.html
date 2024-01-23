@@ -131,7 +131,7 @@
               INGENIERÍA ESTRUCTURAL
             </h1>
             <div class="row">
-              <div class="cuadroFecha d-flex mt-1">
+              <div class="cuadroFecha d-flex my-4">
                 <h5 class="pt-3" style="font-size: 20px">Fecha de inicio:</h5>
                 <p
                   style="
@@ -177,10 +177,6 @@
         <!--Objetivo, dirigido a y beneficios del curso-->
         <div class="col-md-6" style="margin-top: -10px">
           <div class="row" style="color: #f0f1f2">
-            <h5 class="pt-3" style="margin-top: 10px; margin-bottom: 20px">
-              Únete a la 1era Edición del Programa de Diseño Paramétrico en la
-              Ingeniería Estructura
-            </h5>
             <p style="color: #f0f1f2; text-wrap: pretty">
               Aprenda de una manera dinámica desde lo más básico y fundamental
               sobre el diseño paramétrico estructural hasta un nivel avanzado
@@ -212,8 +208,8 @@
             <img
               class="Img-Referencia"
               style="
-                width: 730px;
-                height: 500px;
+                width: 690px;
+                height: 450px;
                 margin-top: -215px;
                 opacity: 0.75;
               "
@@ -228,7 +224,7 @@
     <!--Apartado de: Beneficios e Inversión-->
     <section class="bg-white py-5">
       <div class="container">
-        <div class="row pb-5">
+        <div class="row pb-4">
           <button
             class="btn m-auto d-flex justify-content-between"
             style="
@@ -245,7 +241,7 @@
               <i id="angleDown" class="fa-solid fa-angle-down"></i>
             </div>
           </button>
-          <div id="CursoBeneficios" class="CursoBeneficios">
+          <div id="CursoBeneficios" class="CursoBeneficios m-auto">
             <p style="margin-top: 20px">
               <i class="fa-solid fa-circle-check"></i> Aprendizaje dinámico y
               práctico partiendo desde lo más básico hasta un nivel avanzado
@@ -297,13 +293,14 @@
       <!--Módulos  -->
       <div class="container">
         <div id="modulesContainer" class="row slide mb-4">
-          <button
-            class="btn m-auto d-flex mb-4"
-            style="width: 98%; color: white; background-color: #3e2c80"
-            onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
-          >
-            <h5 class="pt-2" style="padding-left: 28px">MÓDULOS</h5>
-          </button>
+          <div class="py-3">
+            <h2 class="fw-bold py-1">MÓDULOS</h2>
+
+            <p>
+              Explora el contenido del primer módulo del curso y mantente atento
+              a la publicación de los próximos.
+            </p>
+          </div>
           <div class="col-md-3">
             <div class="card m-auto">
               <a
@@ -463,7 +460,7 @@
             class="btn m-auto"
             style="color: white; background-color: #3e2c80; width: 17%"
             target="_blank"
-            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
+            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
             ><h5 class="mt-2">Solicitar Brochure</h5></a
           >
         </div>
@@ -472,12 +469,14 @@
       <!--INVERSIÓN  -->
 
       <div id="inversionSection" class="container pb-3 pt-2">
-        <button
-          class="btn m-auto justify-content-between d-flex mt-5 mb-2"
-          style="width: 100%; color: white; background-color: #3e2c80"
-        >
-          <h5 class="pt-2">INVERSIÓN</h5>
-        </button>
+        <div class="py-3 mt-5">
+          <h2 class="fw-bold">INVERSIÓN</h2>
+
+          <p>
+            Selecciona los módulos de tu interes y aprovecha los descuento por
+            la selección de múltiples módulos.
+          </p>
+        </div>
         <div class="row d-flex grupoInversion m-auto">
           <button
             class="btn d-flex"
@@ -619,19 +618,16 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6 d-flex">
-                <i
-                  class="fas fa-ticket-alt"
-                  style="
-                    color: #3e2c80;
-                    font-size: 20px;
-                    margin-top: -10px;
-                    padding-left: 8%;
-                    margin-right: 9px;
-                  "
-                ></i>
-                <p style="margin-top: -13px">Aplicar cupón de descuento:</p>
-                <div class="textoCupon">
-                  <input id="cuponId" type="text" class="form-control" />
+                <div class="checkBox form-check contenedorDescuentos">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="descuento1Id"
+                    onchange="calcularDescuento1('descuento1Id')"
+                  />
+                  <label class="form-check-label" for="descuento1Id">
+                    <p>Dsct. pronto pago: 20% (válido hasta 15/01/2023)</p>
+                  </label>
                 </div>
               </div>
               <div class="col-md-3">
@@ -648,11 +644,11 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    id="descuento1Id"
-                    onchange="calcularDescuento1('descuento1Id')"
+                    id="descuento2Id"
+                    onchange="calcularDescuento2('descuento2Id')"
                   />
-                  <label class="form-check-label" for="descuento1Id">
-                    <p>Dsct. pronto pago: 20% (válido hasta 15/01/2023)</p>
+                  <label class="form-check-label" for="descuento2Id">
+                    <p>Dsct. corporativo: 10% (válido para 3 personas o más)</p>
                   </label>
                 </div>
               </div>
@@ -665,33 +661,41 @@
                   &nbsp;&nbsp;&nbsp;$<span id="precioFinalId">0.00</span>
                 </p>
               </div>
+              <hr />
             </div>
             <div class="row mt-3">
-              <div class="col-md-6">
-                <div class="checkBox form-check contenedorDescuentos">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="descuento2Id"
-                    onchange="calcularDescuento2('descuento2Id')"
-                  />
-                  <label class="form-check-label" for="descuento2Id">
-                    <p>Dsct. corporativo: 10% (válido para 3 personas o más)</p>
-                  </label>
+              <div class="col-md-6 d-flex">
+                <div
+                  style="
+                    border: 1px solid #dee2e6;
+                    color: #cccccc;
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 4px;
+                    margin-top: -11px;
+                    margin-left: 43px;
+                    margin-right: 11px;
+                  "
+                >
+                  <span style="margin-left: 4px">&#10003;</span>
+                </div>
+                <p style="margin-top: -13px">Aplicar cupón de descuento:</p>
+                <div class="textoCupon">
+                  <input id="cuponId" type="text" class="form-control" />
                 </div>
               </div>
               <div class="col-md-6 text-center">
                 <a
                   class="btn mb-3"
                   style="
-                    background-color: #3e2c80;
+                    background-color: #263c94;
                     color: white;
                     width: 25%;
                     height: 68%;
                     margin-left: 10%;
                   "
                   target="_blank"
-                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso."
+                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
                   ><p class="mt-1">Ir a pagar</p></a
                 >
               </div>
@@ -871,9 +875,9 @@
               </div>
               <div class="contenedorPaypal">
                 <img
-                  src="/Imagenes/qrYape.jpeg"
+                  src="/Imagenes/qrPaypal.jpeg"
                   class="card-img-top img-center"
-                  alt="Yape QR"
+                  alt="Paypal QR"
                 />
                 <p
                   style="
@@ -1077,7 +1081,7 @@
       function calcularSubtotal(productoId, precioId) {
         // URL del documento de Google Sheets
         let url =
-          "https://docs.google.com/spreadsheets/d/1x4iDb_QP5VBde2X1Elo4cg6L_PnE6n9BTxMDY0Cwgec/gviz/tq?";
+          "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS DISEÑO PARAM.";
 
         var checkbox = document.getElementById(productoId);
         var precio = parseFloat(document.getElementById(precioId).innerText);
@@ -1309,13 +1313,14 @@
     <script>
       // URL del documento de Google Sheets
       let url =
-        "https://docs.google.com/spreadsheets/d/1x4iDb_QP5VBde2X1Elo4cg6L_PnE6n9BTxMDY0Cwgec/gviz/tq?";
+        "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS DISEÑO PARAM.";
       // Realizar la solicitud fetch
       fetch(url)
         .then((res) => res.text())
         .then((rep) => {
           // Analizar la respuesta JSON
           const data = JSON.parse(rep.substr(47).slice(0, -2));
+          console.log(data);
           // Recorrer las filas de datos
           data.table.rows.forEach((main, rowIndex) => {
             const row = document.createElement("tr");

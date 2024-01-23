@@ -466,7 +466,7 @@ p {
 
 .imgLogo {
   position: absolute;
-  margin-top: 33%;
+  margin-top: 28%;
   margin-left: 45%;
   z-index: 2;
 }
@@ -679,24 +679,23 @@ p {
 
 .textoCupon .form-control:checked {
   background-color: #263c94; /* Fondo azul cuando está marcado */
-  border-color: transparent; /* Quita el borde cuando está marcado */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
 }
 
 .textoCupon .form-control:focus {
-  outline: none; /* Quita el borde de sombras en el estado de foco */
   box-shadow: none; /* Quita la sombra en el estado de foco */
-  border-color: transparent; /* Quita el borde en el estado de foco */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
 }
 
 .textoCupon .form-control:checked {
   background-color: #263c94; /* Fondo azul cuando está marcado */
-  border-color: transparent; /* Quita el borde cuando está marcado */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
 }
 
 .textoCupon .form-control:focus {
   outline: none; /* Quita el borde de sombras en el estado de foco */
   box-shadow: none; /* Quita la sombra en el estado de foco */
-  border-color: transparent; /* Quita el borde en el estado de foco */
+  border-color: #cccccc; /* Quita el borde en el estado de foco */
 }
 
 .contenedorDescuentos {

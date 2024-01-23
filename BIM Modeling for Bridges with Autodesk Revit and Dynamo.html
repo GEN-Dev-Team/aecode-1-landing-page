@@ -39,11 +39,7 @@
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
   </head>
-  <body
-    class="curso2"
-    background="Imagenes/Curso1Fondo.png"
-    style="background-size: cover"
-  >
+  <body background="Imagenes/Curso1Fondo.png" style="background-size: cover">
     <!--CURSO1-->
     <!--Cabecera-->
     <div class="navbar navbar-expand-lg bg-light fixed-top">
@@ -140,7 +136,7 @@
               AUTODESK REVIT AND DYNAMO
             </h1>
             <div class="row">
-              <div class="cuadroFecha d-flex mt-1">
+              <div class="cuadroFecha d-flex py-4">
                 <h5 class="pt-3" style="font-size: 20px">Start date:</h5>
                 <p
                   style="
@@ -186,10 +182,6 @@
         <!--Objetivo, dirigido a y beneficios del curso-->
         <div class="col-md-6" style="margin-top: -10px">
           <div class="row" style="color: #f0f1f2">
-            <h5 class="pt-3" style="margin-top: 10px; margin-bottom: 20px">
-              Join the 1st Edition of the BIM Engineering and Bridge Programming
-              Program
-            </h5>
             <p style="color: #f0f1f2; text-wrap: pretty">
               Immerse yourself in the exciting world of modeling in Revit and
               discover how to boost your skills through automation with Python
@@ -205,13 +197,13 @@
           <!-- Imagen de referencia -->
           <div
             class="Img-Referencia mb-5"
-            style="position: absolute; right: 0px; top: 290px"
+            style="position: absolute; right: 0px; top: 265px"
           >
             <div class="imgLogo1">
               <img src="Lenguajes_Plugins/Logo_C_sharp.svg.png" alt="" />
               <img src="/Softwares/logo_revit.png" alt="" />
               <img
-                style="width: 40px"
+                style="width: 30px"
                 src="/Softwares/logo_sofistik.png"
                 alt=""
               />
@@ -221,8 +213,8 @@
             <img
               class="Img-Referencia"
               style="
-                width: 640px;
-                height: 450px;
+                width: 620px;
+                height: 425px;
                 margin-top: -215px;
                 opacity: 0.75;
               "
@@ -237,10 +229,15 @@
     <!--Apartado de: Beneficios e Inversión-->
     <section class="bg-white py-5">
       <div class="container">
-        <div class="row pb-5">
+        <div class="row pb-4">
           <button
-            class="btn d-flex justify-content-between"
-            style="color: white; background-color: #263c94; margin-bottom: 4px"
+            class="btn d-flex m-auto justify-content-between"
+            style="
+              width: 98%;
+              color: white;
+              background-color: #263c94;
+              margin-bottom: 4px;
+            "
             onclick="toggleContent('CursoBeneficios', 'angleUp', 'angleDown')"
           >
             <h5 class="pt-2" style="padding-left: 28px">BENEFITS</h5>
@@ -249,7 +246,7 @@
               <i id="angleDown" class="fa-solid fa-angle-down"></i>
             </div>
           </button>
-          <div id="CursoBeneficios" class="CursoBeneficios">
+          <div id="CursoBeneficios" class="CursoBeneficios m-auto">
             <p style="margin-top: 20px">
               <i class="fa-solid fa-circle-check"></i> Dynamic learning and
               practical starting from the most basic to an advanced level under
@@ -301,13 +298,14 @@
       <!--Módulos  -->
       <div class="container">
         <div id="modulesContainer" class="row slide mb-4">
-          <button
-            class="btn d-flex mb-4"
-            style="color: white; background-color: #263c94"
-            onclick="toggleContent('presentacionContent', 'angleUp', 'angleDown')"
-          >
-            <h5 class="pt-2" style="padding-left: 28px">MODULES</h5>
-          </button>
+          <div class="py-3">
+            <h2 class="fw-bold py-1">MODULES</h2>
+
+            <p>
+              Explora el contenido del primer módulo del curso y mantente atento
+              a la publicación de los próximos.
+            </p>
+          </div>
           <div class="col-md-3">
             <div class="card m-auto">
               <a
@@ -467,21 +465,24 @@
             class="btn m-auto"
             style="color: white; background-color: #263c94; width: 17%"
             target="_blank"
-            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
+            href="https://api.whatsapp.com/send?phone=51900121245&text=Hello, I am interested in acquiring more information about the BIM MODELING OF BRIDGES WITH AUTODESK REVIT AND DYNAMO course."
             ><h5 class="mt-2">Request Brochure</h5></a
           >
         </div>
       </div>
 
       <!--INVERSIÓN  -->
-      <button
-        class="btn m-auto justify-content-between d-flex mt-5"
-        style="width: 88%; color: white; background-color: #263c94"
-      >
-        <h5 class="pt-2">INVESTMENT</h5>
-      </button>
       <div id="inversionSection" class="container pb-3 pt-2">
-        <div class="row d-flex grupoInversion">
+        <div class="py-3 mt-5">
+          <h2 class="fw-bold">INVESTMENT</h2>
+
+          <p>
+            Select the modules of your interest and take advantage of the
+            discounts for selecting multiple modules.
+          </p>
+        </div>
+
+        <div class="m-auto row d-flex grupoInversion">
           <button
             class="btn d-flex"
             style="
@@ -622,31 +623,6 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6 d-flex">
-                <i
-                  class="fas fa-ticket-alt"
-                  style="
-                    color: #263c94;
-                    font-size: 20px;
-                    margin-top: -10px;
-                    padding-left: 8%;
-                    margin-right: 9px;
-                  "
-                ></i>
-                <p style="margin-top: -13px">Apply discount coupon:</p>
-                <div class="textoCupon">
-                  <input id="cuponId" type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p class="elementosIzquierda">Discount Coupon:</p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">-$<span id="dsct3Id">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
                 <div class="checkBox form-check contenedorDescuentos">
                   <input
                     class="form-check-input"
@@ -659,15 +635,13 @@
                   </label>
                 </div>
               </div>
-
               <div class="col-md-3">
-                <p class="elementosIzquierda">Final price</p>
+                <p class="elementosIzquierda">Coupon discount</p>
               </div>
               <div class="col-md-3 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="precioFinalId">0.00</span>
-                </p>
+                <p class="texto">-$<span id="dsct3Id">0.00</span></p>
               </div>
+              <hr />
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
@@ -683,6 +657,38 @@
                   </label>
                 </div>
               </div>
+
+              <div class="col-md-3">
+                <p class="elementosIzquierda">Final price</p>
+              </div>
+              <div class="col-md-3 precios text-end">
+                <p class="texto">
+                  &nbsp;&nbsp;&nbsp;$<span id="precioFinalId">0.00</span>
+                </p>
+              </div>
+              <hr />
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6 d-flex">
+                <div
+                  style="
+                    border: 1px solid #dee2e6;
+                    color: #cccccc;
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 4px;
+                    margin-top: -11px;
+                    margin-left: 43px;
+                    margin-right: 11px;
+                  "
+                >
+                  <span style="margin-left: 4px">&#10003;</span>
+                </div>
+                <p style="margin-top: -13px">Apply discount coupon:</p>
+                <div class="textoCupon">
+                  <input id="cuponId" type="text" class="form-control" />
+                </div>
+              </div>
               <div class="col-md-6 text-center">
                 <a
                   class="btn mb-3"
@@ -694,7 +700,7 @@
                     margin-left: 10%;
                   "
                   target="_blank"
-                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hello, I am interested in purchasing the modules of the BIM MODELING FOR BRIDGES WITH AUTODESK REVIT AND DYNAMO course."
+                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hello, I am interested in acquiring the course modules."
                   ><p class="mt-1">Go to pay</p></a
                 >
               </div>
@@ -874,9 +880,9 @@
               </div>
               <div class="contenedorPaypal">
                 <img
-                  src="/Imagenes/qrYape.jpeg"
+                  src="/Imagenes/qrPaypal.jpeg"
                   class="card-img-top img-center"
-                  alt="Yape QR"
+                  alt="Paypal QR"
                 />
                 <p
                   style="
@@ -1079,7 +1085,7 @@
       function calcularSubtotal(productoId, precioId) {
         // URL del documento de Google Sheets
         let url =
-          "https://docs.google.com/spreadsheets/d/1x4iDb_QP5VBde2X1Elo4cg6L_PnE6n9BTxMDY0Cwgec/gviz/tq?";
+          "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?";
 
         var checkbox = document.getElementById(productoId);
         var precio = parseFloat(document.getElementById(precioId).innerText);
