@@ -623,7 +623,7 @@ p {
   width: 98%;
 }
 
-.CursoBeneficios1 {
+.CursoBeneficios2 {
   display: none;
 }
 
@@ -1039,11 +1039,11 @@ p {
     width: 45%;
   }
 
-  .CursoBeneficios {
+  .CursoBeneficios1 {
     display: none;
   }
 
-  .CursoBeneficios1 {
+  .CursoBeneficios2 {
     display: block;
   }
 
