@@ -938,6 +938,10 @@ p {
   display: none;
 }
 
+.grupoInversionMovil {
+  display: none;
+}
+
 /*Responsividad*/
 @media (max-width: 1200px) {
   .formularios .modal-content,
@@ -1187,6 +1191,8 @@ p {
     background-color: #263c94;
     display: block;
     width: 60%;
+    margin: auto;
+    margin-top: -70px;
   }
 
   .elementosIzquierda {
@@ -1218,5 +1224,13 @@ p {
 
   .contenedorPreciosMod hr {
     padding-bottom: 1px;
+  }
+
+  .grupoInversionPC {
+    display: none;
+  }
+
+  .grupoInversionMovil {
+    display: block;
   }
 }
