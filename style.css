@@ -663,7 +663,7 @@ p {
 .checkBox input {
   width: 22px;
   height: 22px;
-  margin-top: 0;
+  margin-bottom: 40px;
   margin-right: 10px;
 }
 
@@ -1190,12 +1190,11 @@ p {
   }
 
   .elementosIzquierda {
-    padding-left: 10%;
+    padding-left: 20%;
   }
 
   .contenedorPreciosMod .texto {
-    padding-right: 5%;
-    margin-top: -45px;
+    padding-right: 15%;
   }
 
   .textoCupon {
@@ -1211,5 +1210,13 @@ p {
   .contenedorQrs .card {
     width: 80%;
     margin-bottom: 25px;
+  }
+
+  .contenedorPreciosMod .col-md-6 {
+    width: 50%;
+  }
+
+  .contenedorPreciosMod hr {
+    padding-bottom: 1px;
   }
 }
