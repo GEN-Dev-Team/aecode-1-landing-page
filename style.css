@@ -321,6 +321,7 @@ p {
 .carousel-inner {
   padding: 1em;
 }
+
 .card {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -686,20 +687,40 @@ p {
 
 .form-check-input:checked {
   background-color: #263c94; /* Fondo azul cuando está marcado */
-}
-
-.curso2 .form-check-input:checked {
-  background-color: #3e2c80; /* Fondo azul cuando está marcado */
-}
-
-.curso2 .fa-circle-check {
-  color: #3e2c80;
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
 }
 
 .form-check-input:focus {
   outline: none; /* Quita el borde de sombras en el estado de foco */
   box-shadow: none;
   border-color: #cccccc;
+}
+
+.curso2 .form-check-input:checked {
+  background-color: #3e2c80; /* Fondo azul cuando está marcado */
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.curso2 .form-check-input:focus {
+  outline: none; /* Quita el borde de sombras en el estado de foco */
+  box-shadow: none;
+  border-color: #cccccc;
+}
+
+.curso3 .form-check-input:checked {
+  background-color: #00609b; /* Fondo azul cuando está marcado */
+}
+
+.curso3 .fa-circle-check {
+  color: #00609b;
+}
+
+.curso3 .fa-circle-check {
+  color: #00609b;
 }
 
 .textoCupon .form-control {
@@ -745,6 +766,7 @@ p {
   width: 28px;
   border-radius: 5px;
 }
+
 .contenedorMetodosP .bcpBox {
   background-color: #cccccc41;
   height: 45px;
@@ -765,6 +787,7 @@ p {
   width: 55%;
   height: 500px;
   padding-bottom: 10%;
+  margin: auto;
 }
 
 .contenedorYapePlin {
@@ -819,7 +842,7 @@ p {
 }
 
 .card .imgBlur {
-  filter: blur(1px);
+  filter: blur(2px);
 }
 
 .overlay {
@@ -872,8 +895,47 @@ p {
   border-radius: 5px;
 }
 
+.curso3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 96, 155, 0.2); /* Color gris semitransparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00609b; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px;
+}
+
 .card-body .btn {
   padding-inline: 7%;
+}
+
+.curso1 .carousel {
+  display: none;
+}
+
+.curso2 .carousel {
+  display: none;
+}
+
+.curso3 .carousel {
+  display: none;
+}
+
+.contenedorModulos {
+  display: flex;
+}
+
+.contenedorModulos .col-md-3 {
+  padding: 0 0.8em;
+}
+
+.btnBrochure1 {
+  display: none;
 }
 
 /*Responsividad*/
@@ -1093,11 +1155,61 @@ p {
     margin-top: 3%;
   }
 
-  .card-body {
-    display: flex;
-  }
-
   .card-body .btn {
     padding-inline: 0%;
+  }
+  .curso1 .carousel {
+    display: block;
+  }
+  .curso1 .contenedorModulos {
+    display: none;
+  }
+
+  .curso2 .carousel {
+    display: initial;
+  }
+  .curso2 .contenedorModulos {
+    display: none;
+  }
+  .curso3 .carousel {
+    display: initial;
+  }
+  .curso3 .contenedorModulos {
+    display: none;
+  }
+
+  .btnBrochure {
+    display: none;
+  }
+
+  .btnBrochure1 {
+    color: white;
+    background-color: #263c94;
+    display: block;
+    width: 60%;
+  }
+
+  .elementosIzquierda {
+    padding-left: 10%;
+  }
+
+  .contenedorPreciosMod .texto {
+    padding-right: 5%;
+    margin-top: -45px;
+  }
+
+  .textoCupon {
+    margin-top: -17px;
+    width: 30%;
+    margin-left: 3%;
+  }
+
+  .contenedorQrs .col-md-6 {
+    width: 100%;
+  }
+
+  .contenedorQrs .card {
+    width: 80%;
+    margin-bottom: 25px;
   }
 }

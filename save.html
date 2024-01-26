@@ -1,0 +1,310 @@
+<div class="col-md-3">
+  <div class="card m-auto">
+    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo1">
+      <img
+        style="
+          width: auto;
+          display: block;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        "
+        src="Imagenes/m1c2.png"
+        class="img-center"
+        alt="Yape QR"
+      />
+    </a>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card m-auto">
+    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo2">
+      <div class="imgBlur">
+        <img
+          style="
+            width: auto;
+            display: block;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          "
+          src="Imagenes/m2c2.png"
+          class="img-center"
+          alt="Yape QR"
+        /></div
+    ></a>
+    <div class="overlay">
+      <h4><strong>Próximamente...</strong></h4>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card m-auto">
+    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo3"
+      ><div class="imgBlur">
+        <img
+          style="
+            width: auto;
+            display: block;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          "
+          src="Imagenes/m3c2.png"
+          class="img-center"
+          alt="Yape QR"
+        /></div
+    ></a>
+    <div class="overlay">
+      <h4><strong>Próximamente...</strong></h4>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card m-auto">
+    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalModulo4"
+      ><div class="imgBlur">
+        <img
+          style="
+            width: auto;
+            display: block;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          "
+          src="Imagenes/m4c2.png"
+          class="img-center"
+          alt="Yape QR"
+        /></div
+    ></a>
+    <div class="overlay">
+      <h4><strong>Próximamente...</strong></h4>
+    </div>
+  </div>
+</div>
+
+<div class="m-auto row d-flex grupoInversion">
+  <button
+    class="btn d-flex"
+    style="
+      color: white;
+      background-color: #263c94;
+      margin-bottom: -16px;
+      border-radius: 10px 10px 0px 0px;
+    "
+  >
+    <div class="col-md-6">
+      <h5 class="pt-2 text-center">SELECCIONAR MÓDULOS</h5>
+    </div>
+    <div class="col-md-6">
+      <h5 class="pt-2 text-center">COMPRAR MÓDULOS</h5>
+    </div>
+  </button>
+  <!--Módulos, precios y Resumen de compra-->
+  <div class="mt-3 contenedorPreciosMod">
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <h5 class="elementosIzquierda">Producto</h5>
+      </div>
+      <div class="col-md-3 text-end">
+        <h5 class="texto">Precio</h5>
+      </div>
+      <div class="col-md-3">
+        <h5 class="elementosIzquierda">Resumen</h5>
+      </div>
+      <div class="col-md-3 text-end">
+        <h5 class="texto">Total</h5>
+      </div>
+      <hr />
+    </div>
+    <div class="row mt-3">
+      <div class="checkBox col-md-3">
+        <div class="form-check elementosIzquierda">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="producto1"
+            onchange="calcularSubtotal('producto1', 'precio1')"
+          />
+          <label class="form-check-label" for="producto1">
+            <p>Módulo 1</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="mb-0 text-end texto">$<span id="precio1"></span></p>
+      </div>
+      <div class="col-md-3">
+        <p class="elementosIzquierda">Precio base</p>
+      </div>
+      <div class="col-md-3 precios text-end">
+        <p class="texto">
+          &nbsp;&nbsp;&nbsp;$<span id="subtotalId">0.00</span>
+        </p>
+      </div>
+      <hr />
+    </div>
+    <div class="row mt-3">
+      <div class="checkBox col-md-3">
+        <div class="form-check elementosIzquierda">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="producto2"
+            onchange="calcularSubtotal('producto2', 'precio2')"
+          />
+          <label class="form-check-label" for="producto2">
+            <p>Módulo 2</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="mb-0 text-end texto">$<span id="precio2"></span></p>
+      </div>
+      <div class="col-md-3">
+        <p class="elementosIzquierda">Precio reducido</p>
+      </div>
+      <div class="col-md-3 precios text-end">
+        <p class="texto">
+          &nbsp;&nbsp;&nbsp;$<span id="dsctModulosId">0.00</span>
+        </p>
+      </div>
+      <hr />
+    </div>
+    <div class="row mt-3">
+      <div class="checkBox col-md-3">
+        <div class="form-check elementosIzquierda">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="producto3"
+            onchange="calcularSubtotal('producto3', 'precio3')"
+          />
+          <label class="form-check-label" for="producto3">
+            <p>Módulo 3</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="mb-0 text-end texto">$<span id="precio3"></span></p>
+      </div>
+      <div class="col-md-3">
+        <p class="elementosIzquierda">Descuento Pronto Pago</p>
+      </div>
+      <div class="col-md-3 precios text-end">
+        <p class="texto">-$<span id="dsct1Id">0.00</span></p>
+      </div>
+      <hr />
+    </div>
+    <div class="vertical-line"></div>
+    <div class="row mt-3">
+      <div class="checkBox col-md-3">
+        <div class="form-check elementosIzquierda">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="producto4"
+            onchange="calcularSubtotal('producto4', 'precio4')"
+          />
+          <label class="form-check-label" for="producto4">
+            <p>Módulo 4</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="mb-0 text-end texto">$<span id="precio4"></span></p>
+      </div>
+      <div class="col-md-3">
+        <p class="elementosIzquierda">Descuento Corporativo</p>
+      </div>
+      <div class="col-md-3 precios text-end">
+        <p class="texto">-$<span id="dsct2Id">0.00</span></p>
+      </div>
+      <hr />
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6 d-flex">
+        <div class="checkBox form-check contenedorDescuentos">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="descuento1Id"
+            onchange="calcularDescuento1('descuento1Id')"
+          />
+          <label class="form-check-label" for="descuento1Id">
+            <p>Dsct. pronto pago: 20% (válido hasta 28/01/2024)</p>
+          </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="elementosIzquierda">Descuento Cupón</p>
+      </div>
+      <div class="col-md-3 precios text-end">
+        <p class="texto">-$<span id="dsct3Id">0.00</span></p>
+      </div>
+      <hr />
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="checkBox form-check contenedorDescuentos">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="descuento2Id"
+            onchange="calcularDescuento2('descuento2Id')"
+          />
+          <label class="form-check-label" for="descuento2Id">
+            <p>Dsct. corporativo: 10% (válido para 3 personas o más)</p>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <p class="elementosIzquierda">Precio Final</p>
+      </div>
+      <div class="col-md-3 precios text-end">
+        <p class="texto">
+          &nbsp;&nbsp;&nbsp;$<span id="precioFinalId">0.00</span>
+        </p>
+      </div>
+      <hr />
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6 d-flex">
+        <div
+          style="
+            border: 1px solid #dee2e6;
+            color: #cccccc;
+            width: 23px;
+            height: 23px;
+            border-radius: 4px;
+            margin-top: -11px;
+            margin-left: 43px;
+            margin-right: 11px;
+          "
+        >
+          <span style="margin-left: 4px">&#10003;</span>
+        </div>
+        <p style="margin-top: -13px">Aplicar cupón de descuento:</p>
+        <div class="textoCupon">
+          <input id="cuponId" type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <a
+          class="btn mb-3"
+          style="
+            background-color: #263c94;
+            color: white;
+            width: 25%;
+            height: 68%;
+            margin-left: 10%;
+          "
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
+          ><p class="mt-1">Ir a pagar</p></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
