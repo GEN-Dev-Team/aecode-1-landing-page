@@ -1,8 +1,8 @@
 // URL del documento de Google Sheets
 let url =
-  "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?";
+  "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS DISEÑO PARAM.";
 let url1 =
-  "https://docs.google.com/spreadsheets/d/1pcQYVzXvtcPinbKbbGcFmgIq40wNRJLuhs6dNaOtmDE/gviz/tq?sheet=CUPONESWEB";
+  "https://docs.google.com/spreadsheets/d/1I7RkvgnhIlkFTEMM0pWGjOgZqrYlZUv91a0KnZvXOP0/gviz/tq?sheet=CUPONESWEB";
 // Realizar la solicitud fetch
 fetch(url)
   .then((res) => res.text())
@@ -53,7 +53,7 @@ fetch(url)
 function calcularSubtotal1(productoId, precioId) {
   // URL del documento de Google Sheets
   let url =
-    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS REVIT";
+    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS DISEÑO PARAM.";
 
   var checkbox = document.getElementById(productoId);
   var precio = parseFloat(document.getElementById(precioId).innerText);
@@ -317,7 +317,7 @@ function calcularPrecioFinal1() {
 function calcularSubtotal(productoId, precioId) {
   // URL del documento de Google Sheets
   let url =
-    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS REVIT";
+    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS DISEÑO PARAM.";
 
   var checkbox = document.getElementById(productoId);
   var precio = parseFloat(document.getElementById(precioId).innerText);

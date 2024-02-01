@@ -850,7 +850,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Precio Final</p>
+                <p class="elementosIzquierda">Precio Final (no incluye IGV)</p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">
@@ -1054,7 +1054,9 @@
               </div>
 
               <div class="col-md-3">
-                <p class="elementosIzquierda">Precio Final</p>
+                <p class="elementosIzquierda" style="width: 500px">
+                  Precio Final (no incluye IGV)
+                </p>
               </div>
               <div class="col-md-3 precios text-end">
                 <p class="texto">
@@ -1064,24 +1066,21 @@
               <hr />
             </div>
             <div class="row mt-3">
-              <div class="col-md-6 d-flex">
-                <div
-                  style="
-                    border: 1px solid #dee2e6;
-                    color: #cccccc;
-                    width: 23px;
-                    height: 23px;
-                    border-radius: 4px;
-                    margin-top: -11px;
-                    margin-left: 43px;
-                    margin-right: 11px;
-                  "
-                >
-                  <span style="margin-left: 4px">&#10003;</span>
-                </div>
-                <p style="margin-top: -13px">Aplicar cupón de descuento:</p>
-                <div class="textoCupon">
-                  <input id="cuponId1" type="text" class="form-control" />
+              <div class="col-md-6">
+                <div class="checkBox form-check contenedorDescuentos d-flex">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="descuento3Id1"
+                    onchange="calcularDescuento3('descuento3Id1')"
+                  />
+                  <label class="form-check-label" for="descuento3Id1">
+                    <p>Aplicar cupón de descuento:</p>
+                  </label>
+
+                  <div class="textoCupon">
+                    <input id="cuponId1" type="text" class="form-control" />
+                  </div>
                 </div>
               </div>
               <div class="col-md-6 text-center">
@@ -1574,6 +1573,7 @@
     </script>
 
     <script src="calculadoraCurso1.js"></script>
+
     <!--Script para el uso de bootstrap 5-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

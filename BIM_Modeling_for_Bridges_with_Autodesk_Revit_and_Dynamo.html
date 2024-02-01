@@ -639,15 +639,15 @@
               border-radius: 10px 10px 0px 0px;
             "
           >
-            <h5 class="pt-2 text-center">SELECCIONAR MÓDULOS</h5>
+            <h5 class="pt-2 text-center">SELECT MODULES</h5>
           </button>
           <div class="mt-3 contenedorPreciosMod">
             <div class="row mt-3">
               <div class="col-md-6">
-                <h5 class="elementosIzquierda mb-3">Producto</h5>
+                <h5 class="elementosIzquierda mb-3">PRODUCT</h5>
               </div>
               <div class="col-md-6 text-end">
-                <h5 class="texto">Precio</h5>
+                <h5 class="texto">PRICES</h5>
               </div>
               <hr />
             </div>
@@ -661,7 +661,7 @@
                     onchange="calcularSubtotal('producto1', 'precio1')"
                   />
                   <label class="form-check-label mt-2" for="producto1">
-                    <p>Módulo 1</p>
+                    <p>Module 1</p>
                   </label>
                 </div>
               </div>
@@ -681,7 +681,7 @@
                     onchange="calcularSubtotal('producto2', 'precio2')"
                   />
                   <label class="form-check-label mt-2" for="producto2">
-                    <p>Módulo 2</p>
+                    <p>Module 2</p>
                   </label>
                 </div>
               </div>
@@ -701,7 +701,7 @@
                     onchange="calcularSubtotal('producto3', 'precio3')"
                   />
                   <label class="form-check-label mt-2" for="producto3">
-                    <p>Módulo 3</p>
+                    <p>Module 3</p>
                   </label>
                 </div>
               </div>
@@ -720,7 +720,7 @@
                     onchange="calcularSubtotal('producto4', 'precio4')"
                   />
                   <label class="form-check-label mt-2" for="producto4">
-                    <p>Módulo 4</p>
+                    <p>Module 4</p>
                   </label>
                 </div>
               </div>
@@ -739,7 +739,7 @@
                   onchange="calcularDescuento1('descuento1Id')"
                 />
                 <label class="form-check-label" for="descuento1Id">
-                  <p>Dsct. pronto pago: 20% (válido hasta 28/01/2024)</p>
+                  <p>Prompt payment discount: 20% (valid until 01/28/2024)</p>
                 </label>
               </div>
 
@@ -754,29 +754,24 @@
                   onchange="calcularDescuento2('descuento2Id')"
                 />
                 <label class="form-check-label" for="descuento2Id">
-                  <p>Dsct. corporativo: 10% (válido para 3 personas o más)</p>
+                  <p>Corporate discount: 10% (valid for 3 people or more)</p>
                 </label>
               </div>
 
               <hr />
             </div>
             <div class="row mt-1">
-              <div class="d-flex">
-                <div
-                  style="
-                    border: 1px solid #dee2e6;
-                    color: #cccccc;
-                    width: 23px;
-                    height: 23px;
-                    border-radius: 4px;
-                    margin-top: -11px;
-                    margin-left: 10px;
-                    margin-right: 11px;
-                  "
-                >
-                  <span style="margin-left: 4px">&#10003;</span>
-                </div>
-                <p style="margin-top: -13px">Aplicar cupón de descuento:</p>
+              <div class="checkBox form-check contenedorDescuentos d-flex">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="descuento3Id"
+                  onchange="calcularDescuento3('descuento3Id')"
+                />
+                <label class="form-check-label" for="descuento3Id">
+                  <p>Coupon:</p>
+                </label>
+
                 <div class="textoCupon">
                   <input id="cuponId" type="text" class="form-control" />
                 </div>
@@ -794,12 +789,12 @@
               border-radius: 10px 10px 0px 0px;
             "
           >
-            <h5 class="pt-3 pb-1 text-center">COMPRAR MÓDULOS</h5>
+            <h5 class="pt-3 pb-1 text-center">BUY MODULES</h5>
           </button>
           <div class="mt-3 contenedorPreciosMod">
             <div class="row mt-3">
               <div class="col-md-6">
-                <h5 class="elementosIzquierda mb-3">Resumen</h5>
+                <h5 class="elementosIzquierda mb-3">Summary</h5>
               </div>
               <div class="col-md-6 text-end">
                 <h5 class="texto">Total</h5>
@@ -808,7 +803,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Precio base</p>
+                <p class="elementosIzquierda">Base price</p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">
@@ -819,7 +814,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Precio reducido</p>
+                <p class="elementosIzquierda">Reduced price</p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">
@@ -830,7 +825,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Dsct. Pronto Pago</p>
+                <p class="elementosIzquierda">Prompt Payment Discount</p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">-$<span id="dsct1Id">0.00</span></p>
@@ -839,7 +834,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Dsct. Corporativo</p>
+                <p class="elementosIzquierda">Corporate Discount</p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">-$<span id="dsct2Id">0.00</span></p>
@@ -848,7 +843,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Cupón</p>
+                <p class="elementosIzquierda">Coupon</p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">-$<span id="dsct3Id">0.00</span></p>
@@ -857,7 +852,9 @@
             </div>
             <div class="row mt-3">
               <div class="col-md-6">
-                <p class="elementosIzquierda">Precio Final</p>
+                <p class="elementosIzquierda">
+                  Final Price (does not include VAT)
+                </p>
               </div>
               <div class="col-md-6 precios text-end">
                 <p class="texto">
@@ -877,8 +874,8 @@
                   margin-left: 10%;
                 "
                 target="_blank"
-                href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
-                ><p class="mt-1">Ir a pagar</p></a
+                href="https://api.whatsapp.com/send?phone=51900121245&text=Hello, I am interested in acquiring the modules of the BIM MODELING OF BRIDGES WITH AUTODESK REVIT AND DYNAMO course."
+                ><p class="mt-1">Go to pay</p></a
               >
             </div>
           </div>
@@ -1061,7 +1058,9 @@
               </div>
 
               <div class="col-md-3">
-                <p class="elementosIzquierda">Final price</p>
+                <p class="elementosIzquierda">
+                  Final Price (does not include VAT)
+                </p>
               </div>
               <div class="col-md-3 precios text-end">
                 <p class="texto">
@@ -1071,24 +1070,21 @@
               <hr />
             </div>
             <div class="row mt-3">
-              <div class="col-md-6 d-flex">
-                <div
-                  style="
-                    border: 1px solid #dee2e6;
-                    color: #cccccc;
-                    width: 23px;
-                    height: 23px;
-                    border-radius: 4px;
-                    margin-top: -11px;
-                    margin-left: 43px;
-                    margin-right: 11px;
-                  "
-                >
-                  <span style="margin-left: 4px">&#10003;</span>
-                </div>
-                <p style="margin-top: -13px">Apply discount coupon:</p>
-                <div class="textoCupon">
-                  <input id="cuponId1" type="text" class="form-control" />
+              <div class="col-md-6">
+                <div class="checkBox form-check contenedorDescuentos d-flex">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="descuento3Id1"
+                    onchange="calcularDescuento3('descuento3Id1')"
+                  />
+                  <label class="form-check-label" for="descuento3Id1">
+                    <p>Apply discount coupon:</p>
+                  </label>
+
+                  <div class="textoCupon">
+                    <input id="cuponId1" type="text" class="form-control" />
+                  </div>
                 </div>
               </div>
               <div class="col-md-6 text-center">

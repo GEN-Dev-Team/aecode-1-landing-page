@@ -667,6 +667,10 @@ p {
   margin-right: 10px;
 }
 
+.checkBox label {
+  margin-top: 10px;
+}
+
 .elementosIzquierda {
   padding-left: 25%;
 }
@@ -675,10 +679,10 @@ p {
   padding-right: 25%;
 }
 
-.textoCupon {
-  margin-top: -17px;
-  width: 30%;
+.textoCupon input {
+  width: 100%;
   margin-left: 3%;
+  height: 50%;
 }
 
 .form-check-input {
