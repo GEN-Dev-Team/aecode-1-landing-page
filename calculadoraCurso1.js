@@ -271,7 +271,6 @@ function calcularDescuento3(descuentoId) {
     .then((rep) => {
       // Analizar la respuesta JSON
       const data = JSON.parse(rep.substr(47).slice(0, -2));
-      console.log(data);
       // Recorrer las filas de datos
       data.table.rows.forEach((main, rowIndex) => {
         const row = document.createElement("tr");

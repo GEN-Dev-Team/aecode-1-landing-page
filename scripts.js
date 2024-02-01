@@ -155,3 +155,37 @@ function toggleContent1(angleUpId, angleDownId) {
     }
   });
 }
+
+function handleInputChange() {
+  var checkbox = document.getElementById("descuento3Id1");
+
+  if (checkbox.checked) {
+    fetch(url1)
+      .then((res) => res.text())
+      .then((rep) => {
+        // Analizar la respuesta JSON
+        const data = JSON.parse(rep.substr(47).slice(0, -2));
+        // Recorrer las filas de datos
+        data.table.rows.forEach((main, rowIndex) => {
+          const row = document.createElement("tr");
+
+          // Recorrer las celdas de la fila actual
+          main.c.forEach((ele, colIndex) => {
+            const cell = document.createElement("td");
+            cell.textContent = ele.v;
+            row.append(cell);
+
+            // Verificar si estamos en la columna y fila que queremos
+            if (colIndex == 2) {
+              if (document.getElementById("cuponId1").value == ele.v) {
+                calcularDescuento3("descuento3Id1");
+              }
+              calcularPrecioFinal1();
+            } else {
+              document.getElementById("dsct3Id1").textContent = (0).toFixed(2);
+            }
+          });
+        });
+      });
+  }
+}

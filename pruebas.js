@@ -1,6 +1,6 @@
 // URL del documento de Google Sheets
 let url =
-  "https://docs.google.com/spreadsheets/d/1pcQYVzXvtcPinbKbbGcFmgIq40wNRJLuhs6dNaOtmDE/gviz/tq?sheet=CUPONES";
+  "https://docs.google.com/spreadsheets/d/1pcQYVzXvtcPinbKbbGcFmgIq40wNRJLuhs6dNaOtmDE/gviz/tq?sheet=CUPONESWEB";
 // Realizar la solicitud fetch
 fetch(url)
   .then((res) => res.text())
@@ -19,7 +19,7 @@ fetch(url)
         row.append(cell);
 
         // Verificar si estamos en la columna y fila que queremos
-        if (rowIndex == 1 && colIndex == 16) {
+        if (rowIndex == 1 && colIndex == 3) {
           document.getElementById("cupon").textContent = ele.v;
         }
       });
