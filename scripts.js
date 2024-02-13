@@ -1,6 +1,3 @@
-function establecerCookie() {
-  document.cookie = "miCookie=miValor; SameSite=None; Secure";
-}
 function mostrarFormulario() {
   // Obtener la capa modal por su ID
   var modal = document.getElementById("miModal");
