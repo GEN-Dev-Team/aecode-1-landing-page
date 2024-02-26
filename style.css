@@ -439,7 +439,11 @@ p {
 }
 
 .fa-circle-check {
-  color: #263c94;
+  color: #203aa5;
+}
+
+.curso2 .fa-circle-check {
+  color: #3e2c80;
 }
 
 .row p {
@@ -570,7 +574,7 @@ p {
   padding: 5px;
   padding-right: 8px;
   background-color: white; /* Color de fondo */
-  color: #263c94; /* Color del ícono */
+  color: #203aa5; /* Color del ícono */
   border-radius: 5px; /* Bordes redondeados */
   text-decoration: none; /* Quita el subrayado del enlace */
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
@@ -644,10 +648,6 @@ p {
   width: 120px;
 }
 
-.CourseContent1 {
-  display: none;
-}
-
 .contactTitle1 {
   display: none;
 }
@@ -690,7 +690,7 @@ p {
 }
 
 .form-check-input:checked {
-  background-color: #263c94; /* Fondo azul cuando está marcado */
+  background-color: #203aa5; /* Fondo azul cuando está marcado */
   outline: none; /* Quita el borde de sombras en el estado de foco */
   box-shadow: none;
   border-color: #cccccc;
@@ -716,15 +716,15 @@ p {
 }
 
 .curso3 .form-check-input:checked {
-  background-color: #00609b; /* Fondo azul cuando está marcado */
+  background-color: #0066a6; /* Fondo azul cuando está marcado */
 }
 
 .curso3 .fa-circle-check {
-  color: #00609b;
+  color: #0066a6;
 }
 
 .curso3 .fa-circle-check {
-  color: #00609b;
+  color: #0066a6;
 }
 
 .textoCupon .form-control {
@@ -734,7 +734,7 @@ p {
 }
 
 .textoCupon .form-control:checked {
-  background-color: #263c94; /* Fondo azul cuando está marcado */
+  background-color: #203aa5; /* Fondo azul cuando está marcado */
   border-color: #cccccc; /* Quita el borde en el estado de foco */
 }
 
@@ -744,7 +744,7 @@ p {
 }
 
 .textoCupon .form-control:checked {
-  background-color: #263c94; /* Fondo azul cuando está marcado */
+  background-color: #203aa5; /* Fondo azul cuando está marcado */
   border-color: #cccccc; /* Quita el borde en el estado de foco */
 }
 
@@ -828,7 +828,7 @@ p {
 .contenedorPreciosMod {
   position: relative;
   border: 1px solid #ccc;
-  border-top: 1px solid #263c94;
+  border-top: 1px solid #203aa5;
   background-color: #cccccc33;
   border-radius: 0px 0px 10px 10px;
   margin-bottom: 2%;
@@ -859,7 +859,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #263c94; /* Color del texto */
+  color: #203aa5; /* Color del texto */
   font-size: 24px; /* Tamaño del texto */
   border-radius: 5px;
 }
@@ -909,7 +909,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #00609b; /* Color del texto */
+  color: #0066a6; /* Color del texto */
   font-size: 24px; /* Tamaño del texto */
   border-radius: 5px;
 }
@@ -1137,10 +1137,6 @@ p {
     display: none;
   }
 
-  .CourseContent1 {
-    display: block;
-  }
-
   .courseDetailsContainer {
     padding-left: 4%;
     padding-right: 5%;
@@ -1192,7 +1188,7 @@ p {
 
   .btnBrochure1 {
     color: white;
-    background-color: #263c94;
+    background-color: #203aa5;
     display: block;
     width: 60%;
     margin: auto;
