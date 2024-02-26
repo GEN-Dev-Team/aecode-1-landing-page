@@ -855,7 +855,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(38, 60, 148, 0.2); /* Color gris semitransparente */
+  background-color: rgba(38, 60, 148, 0.15); /* Color gris semitransparente */
   display: flex;
   align-items: center;
   justify-content: center;
