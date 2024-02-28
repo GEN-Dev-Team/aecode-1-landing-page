@@ -596,6 +596,7 @@ p {
   width: auto;
   height: auto;
   border-radius: 5px;
+  padding-bottom: 0.5%;
 }
 
 .cuadroFecha p {
@@ -864,6 +865,26 @@ p {
   border-radius: 5px;
 }
 
+.overlayModuleCompleted {
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: #0066a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayModuleCompleted .btnModules {
+  display: none;
+}
+
+.col-md-3:hover .btnModules {
+  display: block;
+  /* Posicionamiento y estilos adicionales para el botón */
+}
+
 .slider-content {
   position: absolute;
   top: 50%;
@@ -938,8 +959,17 @@ p {
   padding: 0 0.8em;
 }
 
-.btnBrochure1 {
-  display: none;
+.btnModules {
+  position: absolute;
+  width: 55%;
+  bottom: 5%;
+  font-size: 12px;
+}
+
+.moduleTitle {
+  padding-bottom: 3%;
+  text-align: center;
+  font-weight: bold;
 }
 
 .grupoInversionMovil {
@@ -1180,19 +1210,6 @@ p {
   }
   .curso3 .contenedorModulos {
     display: none;
-  }
-
-  .btnBrochure {
-    display: none;
-  }
-
-  .btnBrochure1 {
-    color: white;
-    background-color: #203aa5;
-    display: block;
-    width: 60%;
-    margin: auto;
-    margin-top: -70px;
   }
 
   .elementosIzquierda {

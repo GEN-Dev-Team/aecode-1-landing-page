@@ -38,6 +38,21 @@
     <!--Ícono de navegador-->
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0JS1DX7KR0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0JS1DX7KR0");
+    </script>
   </head>
   <body
     background="Imagenes/Curso3Fondo.png"
@@ -425,6 +440,34 @@
             </div>
           </div>
         </div>
+        <!--Imagen módulo 3-->
+        <div
+          tabindex="-1"
+          aria-labelledby="modalModulo3"
+          aria-hidden="true"
+          class="modal fade"
+          id="modalModulo3"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <img src="Imagenes/m3c1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--Imagen módulo 4-->
+        <div
+          tabindex="-1"
+          aria-labelledby="modalModulo4"
+          aria-hidden="true"
+          class="modal fade"
+          id="modalModulo4"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <img src="Imagenes/m4c1.png" alt="" />
+            </div>
+          </div>
+        </div>
 
         <!--Botón de brochure-->
         <div class="row mt-5">
@@ -527,7 +570,7 @@
                   onchange="calcularDescuento1('descuento1Id')"
                 />
                 <label class="form-check-label" for="descuento1Id">
-                  <p>Dsct. pronto pago: 20% (válido hasta 28/01/2024)</p>
+                  <p>Dsct. pronto pago: 20% (válido hasta 19/02/2024)</p>
                 </label>
               </div>
 
@@ -775,7 +818,7 @@
                     onchange="calcularDescuento11('descuento1Id1')"
                   />
                   <label class="form-check-label" for="descuento1Id1">
-                    <p>Dsct. pronto pago: 20% (válido hasta 28/01/2024)</p>
+                    <p>Dsct. pronto pago: 20% (válido hasta 19/02/2024)</p>
                   </label>
                 </div>
               </div>
