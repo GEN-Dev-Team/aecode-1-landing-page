@@ -146,14 +146,16 @@
               INGENIERÍA ESTRUCTURAL
             </h1>
             <div class="row">
-              <div class="cuadroFecha d-flex my-4">
-                <h5 class="pt-3" style="font-size: 20px">
-                  Fecha de inicio:
-                  <span
-                    id="courseDate"
-                    style="font-size: 18px; color: white; opacity: 0.95"
-                  ></span>
-                </h5>
+              <div class="cuadroFecha my-4">
+                <h5 class="pt-3" style="font-size: 20px">Fechas de inicio:</h5>
+                <div class="d-flex">
+                  <h6 class="pe-3" style="color: white">
+                    M1: <span id="courseDate1"></span> - M2:
+                    <span id="courseDate2"></span> - M3:
+                    <span id="courseDate3"></span> - M4:
+                    <span id="courseDate4"></span>
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +183,7 @@
           <!-- Imagen de referencia -->
           <div
             class="Img-Referencia mb-5"
-            style="position: absolute; right: 0px; top: 297px"
+            style="position: absolute; right: 0px; top: 279px"
           >
             <div class="imgLogo">
               <img src="/Softwares/grasshopper1-388x388.png" alt="" />
@@ -293,6 +295,7 @@
           </div>
           <div class="contenedorModulos">
             <div class="col-md-3">
+              <h6 class="moduleTitle" style="color: #380489">MÓDULO 1</h6>
               <div class="card m-auto">
                 <a
                   href="#!"
@@ -312,9 +315,21 @@
                     alt="Yape QR"
                   />
                 </a>
+                <div class="overlayModuleCompleted">
+                  <a
+                    class="btn btnModules"
+                    style="color: white; background-color: #380489"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51900121245&text=Hola, estoy interesado en adquirir el módulo 1 del curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
+                  >
+                    Adquirir curso
+                  </a>
+                </div>
               </div>
             </div>
             <div class="col-md-3">
+              <h6 class="moduleTitle" style="color: #380489">MÓDULO 2</h6>
+
               <div class="card m-auto">
                 <a
                   href="#!"
@@ -336,11 +351,28 @@
                     /></div
                 ></a>
                 <div class="overlay">
-                  <h4><strong>Próximamente...</strong></h4>
+                  <div class="ms-2 d-flex justify-content-center">
+                    <h5><strong>PRÓXIMAMENTE...</strong></h5>
+                    <img
+                      style="width: 17%; height: 17%; margin-top: -5px"
+                      src="Imagenes/numeros morado.gif"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btnModules"
+                    style="color: white; background-color: #380489"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51900121245&text=Hola, estoy interesado en adquirir más información sobre el módulo 2 del curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
+                  >
+                    Solicitar Información
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
+              <h6 class="moduleTitle" style="color: #380489">MÓDULO 3</h6>
+
               <div class="card m-auto">
                 <a
                   href="#!"
@@ -361,11 +393,28 @@
                     /></div
                 ></a>
                 <div class="overlay">
-                  <h4><strong>Próximamente...</strong></h4>
+                  <div class="ms-2 d-flex justify-content-center">
+                    <h5><strong>PRÓXIMAMENTE...</strong></h5>
+                    <img
+                      style="width: 17%; height: 17%; margin-top: -5px"
+                      src="Imagenes/numeros morado.gif"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btnModules"
+                    style="color: white; background-color: #380489"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51900121245&text=Hola, estoy interesado en adquirir más información sobre el módulo 3 del curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
+                  >
+                    Solicitar Información
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-md-3">
+              <h6 class="moduleTitle" style="color: #380489">MÓDULO 4</h6>
+
               <div class="card m-auto">
                 <a
                   href="#!"
@@ -386,7 +435,22 @@
                     /></div
                 ></a>
                 <div class="overlay">
-                  <h4><strong>Próximamente...</strong></h4>
+                  <div class="ms-2 d-flex justify-content-center">
+                    <h5><strong>PRÓXIMAMENTE...</strong></h5>
+                    <img
+                      style="width: 17%; height: 17%; margin-top: -5px"
+                      src="Imagenes/numeros morado.gif"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    class="btn btnModules"
+                    style="color: white; background-color: #380489"
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=51900121245&text=Hola, estoy interesado en adquirir más información sobre el módulo 4 del curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
+                  >
+                    Solicitar Información
+                  </a>
                 </div>
               </div>
             </div>
@@ -578,23 +642,6 @@
               <img src="Imagenes/m4c2.png" alt="" />
             </div>
           </div>
-        </div>
-
-        <!--Botón de brochure-->
-        <div class="row mt-5">
-          <a
-            class="btn btnBrochure m-auto"
-            style="color: white; background-color: #3e2c80; width: 17%"
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
-            ><h5 class="mt-2">Solicitar Brochure</h5></a
-          >
-          <a
-            class="btn btnBrochure1 m-auto"
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
-            ><h5 class="mt-2">Solicitar Brochure</h5></a
-          >
         </div>
       </div>
 
@@ -863,7 +910,7 @@
                   margin-left: 10%;
                 "
                 target="_blank"
-                href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
+                href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
                 ><p class="mt-1">Ir a pagar</p></a
               >
             </div>
@@ -1090,7 +1137,7 @@
                     margin-left: 10%;
                   "
                   target="_blank"
-                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
+                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de DISEÑO PARAMÉTRICO EN LA INGENIERÍA ESTRUCTURAL."
                   ><p class="mt-1">Ir a pagar</p></a
                 >
               </div>

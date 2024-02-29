@@ -9,6 +9,7 @@ h3,
 h2,
 h5,
 h4,
+h6,
 .nav-link,
 .btn,
 .mi-boton {
@@ -26,7 +27,7 @@ body {
 p {
   font-family: "Plus Jakarta Sans";
   /*font-family: 'Mulish';*/
-  font-size: large;
+  font-size: medium;
 }
 
 .btn {
@@ -597,6 +598,7 @@ p {
   height: auto;
   border-radius: 5px;
   padding-bottom: 0.5%;
+  opacity: 0.94;
 }
 
 .cuadroFecha p {
@@ -880,7 +882,16 @@ p {
   display: none;
 }
 
+.overlay h5 {
+  font-size: 17px;
+}
+
 .col-md-3:hover .btnModules {
+  display: block;
+  /* Posicionamiento y estilos adicionales para el botón */
+}
+
+.col-md-4:hover .btnModules {
   display: block;
   /* Posicionamiento y estilos adicionales para el botón */
 }
@@ -957,6 +968,10 @@ p {
 
 .contenedorModulos .col-md-3 {
   padding: 0 0.8em;
+}
+
+.contenedorModulos .card {
+  height: 90%;
 }
 
 .btnModules {

@@ -109,7 +109,7 @@
                   type="button"
                   onclick="mostrarFormulario()"
                   class="btn btn-primary"
-                  style="background-color: #380489; border: #380489"
+                  style="background-color: #0066a6; border: #0066a6"
                 >
                   Registrate
                 </button>
@@ -146,14 +146,14 @@
               Y DISEÑO ESTRUCTURAL
             </h1>
             <div class="row">
-              <div class="cuadroFecha d-flex my-4">
-                <h5 class="pt-3" style="font-size: 20px">
-                  Fecha de inicio:
-                  <span
-                    id="courseDate"
-                    style="font-size: 18px; color: white; opacity: 0.95"
-                  ></span>
-                </h5>
+              <div class="cuadroFecha my-4">
+                <h5 class="pt-3" style="font-size: 20px">Fechas de inicio:</h5>
+                <div class="d-flex">
+                  <h6 class="pe-3" style="color: white">
+                    M1: <span id="courseDate1"></span> - M2:
+                    <span id="courseDate2"></span>
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
           <!-- Imagen de referencia -->
           <div
             class="Img-Referencia mb-5"
-            style="position: absolute; right: 0px; top: 309px"
+            style="position: absolute; right: 0px; top: 319px"
           >
             <img
               class="Img-Referencia"
@@ -282,6 +282,9 @@
             </p>
             <div class="contenedorModulos">
               <div class="col-md-4 m-auto">
+                <h6 class="moduleTitle pt-3" style="color: #0066a6">
+                  MÓDULO 1
+                </h6>
                 <div class="card m-auto">
                   <a
                     href="#!"
@@ -301,9 +304,22 @@
                       alt="Yape QR"
                     />
                   </a>
+                  <div class="overlayModuleCompleted">
+                    <a
+                      class="btn btnModules"
+                      style="color: white; background-color: #0066a6"
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=51900121245&text=Hola, estoy interesado en adquirir el módulo 1 del curso de AUTOMATIZACIÓN DEL ANÁLISIS Y DISEÑO ESTRUCTURAL."
+                    >
+                      Adquirir curso
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4 m-auto">
+                <h6 class="moduleTitle pt-3" style="color: #0066a6">
+                  MÓDULO 2
+                </h6>
                 <div class="card m-auto">
                   <a
                     href="#!"
@@ -325,7 +341,22 @@
                       /></div
                   ></a>
                   <div class="overlay">
-                    <h4><strong>Próximamente...</strong></h4>
+                    <div class="ms-2 d-flex justify-content-center">
+                      <h5><strong>PRÓXIMAMENTE...</strong></h5>
+                      <img
+                        style="width: 13%; height: 13%; margin-top: -5px"
+                        src="Imagenes/numeros celeste.gif"
+                        alt=""
+                      />
+                    </div>
+                    <a
+                      class="btn btnModules"
+                      style="color: white; background-color: #0066a6"
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=51900121245&text=Hola, estoy interesado en adquirir más información sobre el módulo 2 del curso de AUTOMATIZACIÓN DEL ANÁLISIS Y DISEÑO ESTRUCTURAL."
+                    >
+                      Solicitar Información
+                    </a>
                   </div>
                 </div>
               </div>
@@ -467,23 +498,6 @@
               <img src="Imagenes/m4c1.png" alt="" />
             </div>
           </div>
-        </div>
-
-        <!--Botón de brochure-->
-        <div class="row mt-5">
-          <a
-            class="btn btnBrochure m-auto"
-            style="color: white; background-color: #0066a6; width: 17%"
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de AUTOMATIZACIÓN DEL ANÁLISIS Y DISEÑO ESTRUCTURAL."
-            ><h5 class="mt-2">Solicitar Brochure</h5></a
-          >
-          <a
-            class="btn btnBrochure1 m-auto"
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=51900121245&text=Hola estoy interesado en adquirir más información sobre el curso de AUTOMATIZACIÓN DEL ANÁLISIS Y DISEÑO ESTRUCTURAL."
-            ><h5 class="mt-2">Solicitar Brochure</h5></a
-          >
         </div>
       </div>
 
@@ -1194,7 +1208,7 @@
                   type="submit"
                   id="submit-button"
                   class="btn btn-primary px-4"
-                  style="background-color: #380489; border: #380489"
+                  style="background-color: #0066a6; border: #0066a6"
                 >
                   <strong>Enviar</strong>
                 </button>
@@ -1261,8 +1275,8 @@
                   target="_blank"
                   class="btn btn-primary px-4"
                   style="
-                    background-color: #380489;
-                    border: #380489;
+                    background-color: #0066a6;
+                    border: #0066a6;
                     color: white;
                   "
                 >
