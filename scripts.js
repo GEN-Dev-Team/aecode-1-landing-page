@@ -106,8 +106,6 @@ function toggleContent(contentId, angleUpId, angleDownId) {
   var angleUp = document.getElementById(angleUpId);
   var angleDown = document.getElementById(angleDownId);
 
-  button.classList.toggle("active");
-
   if (button.classList.contains("active")) {
     content.style.maxHeight = "none";
     content.style.display = "block";
@@ -119,6 +117,8 @@ function toggleContent(contentId, angleUpId, angleDownId) {
     angleUp.style.display = "none";
     angleDown.style.display = "block";
   }
+
+  button.classList.toggle("active");
 }
 
 function toggleContent1(angleUpId, angleDownId) {

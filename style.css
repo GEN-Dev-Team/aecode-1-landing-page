@@ -497,7 +497,7 @@ p {
   color: #fdd406;
 }
 
-.fa-angle-up {
+.fa-angle-down {
   display: none;
 }
 
@@ -511,8 +511,8 @@ p {
 .imgLogo img {
   background-color: rgba(255, 255, 255, 0.507);
   padding: 4px;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   margin-right: 7px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -528,8 +528,8 @@ p {
 .imgLogo1 img {
   background-color: rgba(255, 255, 255, 0.507);
   padding: 4px;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 4px;
   margin-bottom: 200px;
   border-radius: 50%;
@@ -620,7 +620,6 @@ p {
 }
 
 .CursoBeneficios {
-  display: none;
   border-radius: 0% 0% 7px 7px;
   margin-top: -4px;
   border: 1px solid #ccc;
