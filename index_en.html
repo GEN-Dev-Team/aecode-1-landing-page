@@ -615,15 +615,28 @@
               />
               <div class="card-body">
                 <a
-                  href="/index.html#Capacitaciones"
-                  class="btn btn-primary m-auto mb-3"
+                  href="/Artificial_Intelligence_Applied_to_Civil_Engineering.html"
+                  class="btn btn-primary mb-3"
                   style="
                     background-color: #380489;
                     border: #380489;
-                    width: 240px;
+                    color: white;
+                    margin-right: 5%;
                   "
-                  >Coming soon!</a
                 >
+                  <strong>See details!</strong>
+                </a>
+                <a
+                  href="/Artificial_Intelligence_Applied_to_Civil_Engineering.html#inversionSection"
+                  class="btn btn-primary px-4 mb-3"
+                  style="
+                    background-color: #380489;
+                    border: #380489;
+                    color: white;
+                  "
+                >
+                  <strong>Buy course!</strong>
+                </a>
               </div>
             </div>
           </div>
@@ -761,136 +774,138 @@
       </div>
     </section>
 
-    <div id="miModal" class="modal">
-      <div class="modal-content">
-        <!-- Formulario oculto por defecto -->
-        <div class="row g-5 py-4">
-          <form
-            id="form"
-            method="post"
-            class="form-control text-center px-5 position-relative"
-            onsubmit="mostrarFormulario2(); return false;"
-          >
-            <div class="position-absolute top-0 end-0">
-              <button
-                type=""
-                class="close btnText"
-                onclick="cerrarFormulario()"
-              >
-                X
-              </button>
-            </div>
-            <div>
-              <h5 class="fw-bold display-6 py-3">Join the AECODE community!</h5>
-              <div class="txtInicialForm">
+    <!--Formularios-->
+    <div class="formularios">
+      <div id="miModal" class="modal">
+        <div class="modal-content">
+          <!-- Formulario oculto por defecto -->
+          <div class="row g-5 py-4">
+            <form
+              id="form"
+              method="post"
+              class="form-control form1 text-center px-5 position-relative"
+              onsubmit="mostrarFormulario2(); return false;"
+            >
+              <div class="position-absolute top-0 end-0">
+                <button
+                  type=""
+                  class="close btnText"
+                  onclick="cerrarFormulario()"
+                >
+                  X
+                </button>
+              </div>
+              <div class="">
+                <h5 class="fw-bold display-6 py-3">
+                  Join the AECODE community!
+                </h5>
                 <p class="text-muted text-secondary">
                   Enter your name and email to receive information about our
                   courses and much more!
                 </p>
               </div>
-              <div class="txtInicialForm1 just">
-                <p class="text-muted text-secondary">
-                  Enter your information to receive more information!
+              <div class="mb-3 mt-3">
+                <input
+                  type="text"
+                  required
+                  class="form-control input"
+                  placeholder="Name and surname"
+                  name="Client Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  required
+                  class="form-control input"
+                  placeholder="E-mail"
+                  name="Email"
+                />
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  id="submit-button"
+                  class="btn btn-primary px-4"
+                  style="background-color: #380489; border: #380489"
+                >
+                  <strong>Send</strong>
+                </button>
+              </div>
+              <div>
+                <p class="small text-muted pt-3">
+                  By submitting your data, you agree to receive information
+                  about news, promotions, products and services from AECODE.ai.
                 </p>
               </div>
-            </div>
-            <div class="mb-3 mt-3">
-              <input
-                type="text"
-                required
-                class="form-control input"
-                placeholder="Name and surname"
-                name="Client Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                required
-                class="form-control input"
-                placeholder="E-mail"
-                name="Email"
-              />
-            </div>
-            <div>
-              <button
-                type="submit"
-                id="submit-button"
-                class="btn btn-primary px-4"
-                style="background-color: #380489; border: #380489"
-              >
-                <strong>Enviar</strong>
-              </button>
-            </div>
-            <div>
-              <p class="small text-muted pt-3">
-                By submitting your data, you agree to receive information about
-                news, promotions, products and services from AECODE.ai.
-              </p>
-            </div>
-            <div>
-              <p class="small text-muted">Welcome!</p>
-            </div>
-          </form>
+              <div>
+                <p class="small text-muted">welcome!</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="miModal2" class="modal2">
-      <div class="modal-content2">
-        <!-- Formulario oculto por defecto -->
-        <div class="row g-5 py-4">
-          <form
-            id="form2"
-            method="post"
-            class="form-control form2 text-center px-5 position-relative"
-          >
-            <div class="position-absolute top-0 end-0">
-              <!-- Ajusta la posición del contenedor del botón -->
-              <button
-                type="button"
-                class="close2 btnText"
-                onclick="cerrarFormulario2()"
-              >
-                X
-              </button>
-            </div>
-            <div class="">
-              <div class="form2Title">
-                <h5 class="fw-bold display-6 py-3">
-                  welcome to the<br />
-                  AECODE community!
-                </h5>
+      <div id="miModal2" class="modal2">
+        <div class="modal-content2">
+          <!-- Formulario oculto por defecto -->
+          <div class="row g-5 py-4">
+            <form
+              id="form2"
+              method="post"
+              class="form-control form2 text-center px-5 position-relative"
+            >
+              <div class="position-absolute top-0 end-0">
+                <!-- Ajusta la posición del contenedor del botón -->
+                <button
+                  type="button"
+                  class="close2 btnText"
+                  onclick="cerrarFormulario2()"
+                >
+                  X
+                </button>
               </div>
-              <div class="form2Text">
-                <p class="text-muted text-secondary">
-                  We are happy to have you, in a few moments you will receive a
-                  confirmation email. With this you will be able to access
-                  information on courses, news and much more. If you want to
-                  belong to a more exclusive networking community:
-                </p>
+              <div class="">
+                <div class="form2Title">
+                  <h5 class="fw-bold display-6 py-3">
+                    Welcome to <br />
+                    the AECODE community!
+                  </h5>
+                </div>
+                <div class="form2Text">
+                  <p class="text-muted text-secondary">
+                    We are happy to have you, in a few moments you will receive
+                    a confirmation email. With this you will be able to access
+                    information on courses, news and much more. If you want to
+                    belong to a more exclusive networking community:
+                  </p>
+                </div>
+                <div class="form2Text2">
+                  <p class="text-muted text-secondary">
+                    In a few moments you will receive a confirmation email to
+                    access news and much more. <br />
+                    If you want to belong to a more exclusive community:
+                  </p>
+                </div>
               </div>
-              <div class="form2Text2">
-                <p class="text-muted text-secondary">
-                  In a few moments you will receive a confirmation email to
-                  access news and much more. <br />
-                  If you want to belong to a more exclusive community:
-                </p>
+              <div class="text-center">
+                <a
+                  href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
+                  target="_blank"
+                  class="btn btn-primary px-4"
+                  style="
+                    background-color: #380489;
+                    border: #380489;
+                    color: white;
+                  "
+                >
+                  <strong>Join the WhatsApp group!</strong>
+                </a>
               </div>
-            </div>
-            <div class="text-center">
-              <a
-                href="https://chat.whatsapp.com/DAJRQLAW7VB6ylyqDmLY4x"
-                target="_blank"
-                class="btn btn-primary px-4"
-                style="background-color: #380489; border: #380489; color: white"
-              >
-                <strong>Join the WhatsApp group!</strong>
-              </a>
-            </div>
-            <div>
-              <p class="text-muted pt-3">Welcome!</p>
-            </div>
-          </form>
+              <div>
+                <p class="text-muted pt-3">Welcome!</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

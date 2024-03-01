@@ -16,7 +16,7 @@ fetch(url)
       // Recorrer las celdas de la fila actual
       main.c.forEach((ele, colIndex) => {
         const cell = document.createElement("td");
-        cell.textContent = ele.v;
+
         row.append(cell);
 
         // Verificar si estamos en la columna y fila que queremos

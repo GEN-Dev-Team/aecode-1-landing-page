@@ -1,6 +1,6 @@
 // URL del documento de Google Sheets
 let url =
-  "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS AUTOMATIZACIÓN";
+  "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS IA";
 let url1 =
   "https://docs.google.com/spreadsheets/d/1zyBTywoAd1-G72o33fq8xdQOI0LxFg44Qnp91xRU_as/gviz/tq?sheet=CUPONESWEB";
 // Realizar la solicitud fetch
@@ -16,7 +16,6 @@ fetch(url)
       // Recorrer las celdas de la fila actual
       main.c.forEach((ele, colIndex) => {
         const cell = document.createElement("td");
-
         row.append(cell);
 
         // Verificar si estamos en la columna y fila que queremos
@@ -40,7 +39,7 @@ fetch(url)
 function calcularSubtotal1(productoId, precioId) {
   // URL del documento de Google Sheets
   let url =
-    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS AUTOMATIZACIÓN";
+    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS IA";
 
   var checkbox = document.getElementById(productoId);
   var precio = parseFloat(document.getElementById(precioId).innerText);
@@ -75,7 +74,7 @@ function calcularSubtotal1(productoId, precioId) {
         // Recorrer las celdas de la fila actual
         main.c.forEach((ele, colIndex) => {
           const cell = document.createElement("td");
-          cell.textContent = ele.v;
+
           row.append(cell);
 
           if (colIndex == 1) {
@@ -146,7 +145,7 @@ function calcularDescuento3(descuentoId) {
         // Recorrer las celdas de la fila actual
         main.c.forEach((ele, colIndex) => {
           const cell = document.createElement("td");
-          cell.textContent = ele.v;
+
           row.append(cell);
 
           // Verificar si estamos en la columna y fila que queremos
@@ -184,7 +183,7 @@ function calcularPrecioFinal1() {
 function calcularSubtotal(productoId, precioId) {
   // URL del documento de Google Sheets
   let url =
-    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS AUTOMATIZACIÓN";
+    "https://docs.google.com/spreadsheets/d/1bu8nhjEb_D4-d3YFJUf9AzWO0puNPLA-E2KabyhIC00/gviz/tq?sheet=PRECIOS IA";
 
   var checkbox = document.getElementById(productoId);
   var precio = parseFloat(document.getElementById(precioId).innerText);
@@ -219,7 +218,7 @@ function calcularSubtotal(productoId, precioId) {
         // Recorrer las celdas de la fila actual
         main.c.forEach((ele, colIndex) => {
           const cell = document.createElement("td");
-          cell.textContent = ele.v;
+
           row.append(cell);
 
           if (colIndex == 1) {

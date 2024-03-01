@@ -27,11 +27,13 @@ fetch(urlDate)
           rowValue = 1;
           modules = 2;
         }
-        if (course == "curso4") rowValue = 3;
+        if (course == "curso4") {
+          rowValue = 3;
+          modules = 2;
+        }
         if (course == "curso5") rowValue = 4;
 
         for (let i = 0; i < modules; i++) {
-          console.log("XD");
           if (colIndex === 1 + i && rowIndex === rowValue) {
             const fecha = new Date(ele.f.split("/").reverse().join("-"));
             const today = new Date();
@@ -41,6 +43,10 @@ fetch(urlDate)
             if (fecha < today) {
               document.getElementById("courseDate" + (1 + i)).style.color =
                 "#f3d533";
+              if (course === "curso4") {
+                document.getElementById("courseDate" + (1 + i)).style.color =
+                  "#8bc751";
+              }
             }
           }
         }
