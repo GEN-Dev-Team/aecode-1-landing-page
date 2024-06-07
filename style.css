@@ -24,7 +24,8 @@ body {
   overflow-x: hidden;
 }
 
-p {
+p,
+li {
   font-family: "Plus Jakarta Sans";
   /*font-family: 'Mulish';*/
   font-size: medium;
@@ -1019,6 +1020,19 @@ p {
 
 .grupoInversionMovil {
   display: none;
+}
+
+.brochure-buttom {
+  width: 700px;
+}
+
+.details-container {
+  margin-inline: auto;
+  width: 1320px;
+}
+
+.details-container img {
+  width: 650px;
 }
 
 /*Responsividad*/
