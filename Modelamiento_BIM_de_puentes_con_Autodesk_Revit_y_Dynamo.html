@@ -63,7 +63,9 @@
     <!--Cabecera-->
     <div class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
-        <a href="/index.html#Home" class="navbar-brand fs-3 pb-2 ms-auto"
+        <a
+          href="aecode-programas.html#Home"
+          class="navbar-brand fs-3 pb-2 ms-auto"
           ><img
             src="/Imagenes/aecode-logo.png"
             alt=""
@@ -83,15 +85,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="/#Home" class="nav-link mt-2"><strong>Inicio</strong></a>
+              <a href="/aecode-programas.html#Home" class="nav-link mt-2"
+                ><strong>Inicio</strong></a
+              >
             </li>
             <li class="nav-item">
-              <a href="/#Capacitaciones" class="nav-link mt-2"
+              <a
+                href="/aecode-programas.html#Capacitaciones"
+                class="nav-link mt-2"
                 ><strong>Capacitaciones</strong></a
               >
             </li>
             <li class="nav-item">
-              <a href="/#Contáctanos" class="nav-link mt-2"
+              <a href="/aecode-programas.html#Contáctanos" class="nav-link mt-2"
                 ><strong>Contáctanos</strong></a
               >
             </li>
@@ -322,6 +328,7 @@
           <div class="contenedorModulos">
             <div class="col-md-3">
               <h6 class="moduleTitle" style="color: #203aa5">MÓDULO 1</h6>
+              <div class="course-modality">Modalidad Asincrónica</div>
               <div class="card m-auto">
                 <a
                   href="#!"
@@ -352,9 +359,16 @@
                   </a>
                 </div>
               </div>
+              <a
+                class="brochure-button"
+                href="https://acortar.link/NN4Ieh"
+                target="_blank"
+                >Brochure</a
+              >
             </div>
             <div class="col-md-3">
               <h6 class="moduleTitle" style="color: #203aa5">MÓDULO 2</h6>
+              <div class="course-modality">Modalidad Asincrónica y en Vivo</div>
 
               <div class="card m-auto">
                 <a
@@ -385,9 +399,16 @@
                   </a>
                 </div>
               </div>
+              <a
+                class="brochure-button"
+                href="https://acortar.link/Myqv7f"
+                target="_blank"
+                >Brochure</a
+              >
             </div>
             <div class="col-md-3">
               <h6 class="moduleTitle" style="color: #203aa5">MÓDULO 3</h6>
+              <div class="course-modality">Próximamente</div>
 
               <div class="card m-auto">
                 <a
@@ -430,6 +451,7 @@
             </div>
             <div class="col-md-3">
               <h6 class="moduleTitle" style="color: #203aa5">MÓDULO 4</h6>
+              <div class="course-modality">Próximamente</div>
 
               <div class="card m-auto">
                 <a
@@ -702,501 +724,21 @@
       <div id="inversionSection" class="container pb-3 pt-2">
         <div class="py-3 mt-5">
           <h2 class="fw-bold">INVERSIÓN</h2>
-
-          <p>
-            Selecciona los módulos de tu interes y aprovecha los descuento por
-            la selección de múltiples módulos.
-          </p>
-        </div>
-        <!--Apartado para celular o móvil - selección de módulos-->
-        <div class="m-auto row grupoInversionMovil">
-          <button
-            class="btn"
-            style="
-              color: white;
-              background-color: #203aa5;
-              margin-bottom: -16px;
-              border-radius: 10px 10px 0px 0px;
-            "
-          >
-            <h5 class="pt-2 text-center">SELECCIONAR MÓDULOS</h5>
-          </button>
-          <div class="mt-3 contenedorPreciosMod">
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <h5 class="elementosIzquierda mb-3">Producto</h5>
-              </div>
-              <div class="col-md-6 text-end">
-                <h5 class="texto">Precio</h5>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-2">
-              <div class="checkBox col-md-6">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto1"
-                    onchange="calcularSubtotal('producto1', 'precio1')"
-                  />
-                  <label class="form-check-label mt-2" for="producto1">
-                    <p>Módulo 1</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-0 text-end texto">$<span id="precio1"></span></p>
-              </div>
-
-              <hr />
-            </div>
-            <div class="row mt-2">
-              <div class="checkBox col-md-6">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto2"
-                    onchange="calcularSubtotal('producto2', 'precio2')"
-                  />
-                  <label class="form-check-label mt-2" for="producto2">
-                    <p>Módulo 2</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-0 text-end texto">$<span id="precio2"></span></p>
-              </div>
-
-              <hr />
-            </div>
-            <div class="row mt-2">
-              <div class="checkBox col-md-6">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto3"
-                    onchange="calcularSubtotal('producto3', 'precio3')"
-                  />
-                  <label class="form-check-label mt-2" for="producto3">
-                    <p>Módulo 3</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-0 text-end texto">$<span id="precio3"></span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-2">
-              <div class="col-md-6 checkBox">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto4"
-                    onchange="calcularSubtotal('producto4', 'precio4')"
-                  />
-                  <label class="form-check-label mt-2" for="producto4">
-                    <p>Módulo 4</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-0 text-end texto">$<span id="precio4"></span></p>
-              </div>
-
-              <hr />
-            </div>
-            <div class="row mt-2">
-              <div class="checkBox form-check contenedorDescuentos d-flex">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="descuento1Id"
-                  onchange="calcularDescuento1('descuento1Id')"
-                />
-                <label class="form-check-label" for="descuento1Id">
-                  <p>Dsct. pronto pago: 20% (válido hasta 28/01/2024)</p>
-                </label>
-              </div>
-
-              <hr />
-            </div>
-            <div class="row mt-2">
-              <div class="checkBox form-check contenedorDescuentos d-flex">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="descuento2Id"
-                  onchange="calcularDescuento2('descuento2Id')"
-                />
-                <label class="form-check-label" for="descuento2Id">
-                  <p>Dsct. corporativo: 10% (válido para 3 personas o más)</p>
-                </label>
-              </div>
-
-              <hr />
-            </div>
-            <div class="row mt-1">
-              <div class="d-flex">
-                <div
-                  style="
-                    border: 1px solid #dee2e6;
-                    color: #cccccc;
-                    width: 23px;
-                    height: 23px;
-                    border-radius: 4px;
-                    margin-top: -11px;
-                    margin-left: 10px;
-                    margin-right: 11px;
-                  "
-                >
-                  <span style="margin-left: 4px">&#10003;</span>
-                </div>
-                <p style="margin-top: -13px">Aplicar cupón de descuento:</p>
-                <div class="textoCupon">
-                  <input
-                    id="cuponId"
-                    type="text"
-                    class="form-control"
-                    oninput="handleInputChange()"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Apartado para celular o móvil - compra de módulos-->
-        <div class="row m-auto grupoInversionMovil pt-3">
-          <button
-            style="
-              color: white;
-              background-color: #203aa5;
-              margin-bottom: -16px;
-              border-radius: 10px 10px 0px 0px;
-            "
-          >
-            <h5 class="pt-3 pb-1 text-center">COMPRAR MÓDULOS</h5>
-          </button>
-          <div class="mt-3 contenedorPreciosMod">
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <h5 class="elementosIzquierda mb-3">Resumen</h5>
-              </div>
-              <div class="col-md-6 text-end">
-                <h5 class="texto">Total</h5>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <p class="elementosIzquierda">Precio base</p>
-              </div>
-              <div class="col-md-6 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="subtotalId">0.00</span>
-                </p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <p class="elementosIzquierda">Precio reducido</p>
-              </div>
-              <div class="col-md-6 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="dsctModulosId">0.00</span>
-                </p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <p class="elementosIzquierda">Dsct. Pronto Pago</p>
-              </div>
-              <div class="col-md-6 precios text-end">
-                <p class="texto">-$<span id="dsct1Id">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <p class="elementosIzquierda">Dsct. Corporativo</p>
-              </div>
-              <div class="col-md-6 precios text-end">
-                <p class="texto">-$<span id="dsct2Id">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <p class="elementosIzquierda">Cupón</p>
-              </div>
-              <div class="col-md-6 precios text-end">
-                <p class="texto">-$<span id="dsct3Id">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <p class="elementosIzquierda">Precio Final (no incluye IGV)</p>
-              </div>
-              <div class="col-md-6 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="precioFinalId">0.00</span>
-                </p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <a
-                class="btn m-auto mb-3"
-                style="
-                  background-color: #203aa5;
-                  color: white;
-                  width: 35%;
-                  height: 50px;
-                  margin-left: 10%;
-                "
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
-                ><p class="mt-1">Ir a pagar</p></a
-              >
-            </div>
-          </div>
-        </div>
-        <!--Apartado de selección y compra de módulos PC-->
-        <div class="m-auto row grupoInversionPC">
-          <button
-            class="btn d-flex"
-            style="
-              color: white;
-              background-color: #203aa5;
-              margin-bottom: -16px;
-              border-radius: 10px 10px 0px 0px;
-            "
-          >
-            <div class="col-md-6">
-              <h5 class="pt-2 text-center">SELECCIONAR MÓDULOS</h5>
-            </div>
-            <div class="col-md-6">
-              <h5 class="pt-2 text-center">COMPRAR MÓDULOS</h5>
-            </div>
-          </button>
-          <!--Módulos, precios y Resumen de compra-->
-          <div class="mt-3 contenedorPreciosMod">
-            <div class="row mt-3">
-              <div class="col-md-3">
-                <h5 class="elementosIzquierda">Producto</h5>
-              </div>
-              <div class="col-md-3 text-end">
-                <h5 class="texto">Precio</h5>
-              </div>
-              <div class="col-md-3">
-                <h5 class="elementosIzquierda">Resumen</h5>
-              </div>
-              <div class="col-md-3 text-end">
-                <h5 class="texto">Total</h5>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="checkBox col-md-3">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto11"
-                    onchange="calcularSubtotal1('producto11', 'precio11')"
-                  />
-                  <label class="form-check-label" for="producto11">
-                    <p>Módulo 1</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p class="mb-0 text-end texto">$<span id="precio11"></span></p>
-              </div>
-              <div class="col-md-3">
-                <p class="elementosIzquierda">Precio base</p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="subtotalId1">0.00</span>
-                </p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="checkBox col-md-3">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto21"
-                    onchange="calcularSubtotal1('producto21', 'precio21')"
-                  />
-                  <label class="form-check-label" for="producto21">
-                    <p>Módulo 2</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p class="mb-0 text-end texto">$<span id="precio21"></span></p>
-              </div>
-              <div class="col-md-3">
-                <p class="elementosIzquierda">Precio reducido</p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="dsctModulosId1">0.00</span>
-                </p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="checkBox col-md-3">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto31"
-                    onchange="calcularSubtotal1('producto31', 'precio31')"
-                  />
-                  <label class="form-check-label" for="producto31">
-                    <p>Módulo 3</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p class="mb-0 text-end texto">$<span id="precio31"></span></p>
-              </div>
-              <div class="col-md-3">
-                <p class="elementosIzquierda">Descuento Pronto Pago</p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">-$<span id="dsct1Id1">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="vertical-line"></div>
-            <div class="row mt-3">
-              <div class="checkBox col-md-3">
-                <div class="form-check elementosIzquierda">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="producto41"
-                    onchange="calcularSubtotal1('producto41', 'precio41')"
-                  />
-                  <label class="form-check-label" for="producto41">
-                    <p>Módulo 4</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p class="mb-0 text-end texto">$<span id="precio41"></span></p>
-              </div>
-              <div class="col-md-3">
-                <p class="elementosIzquierda">Descuento Corporativo</p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">-$<span id="dsct2Id1">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6 d-flex">
-                <div class="checkBox form-check contenedorDescuentos">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="descuento1Id1"
-                    onchange="calcularDescuento11('descuento1Id1')"
-                  />
-                  <label class="form-check-label" for="descuento1Id1">
-                    <p>Dsct. pronto pago: 20% (válido hasta 28/01/2024)</p>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <p class="elementosIzquierda">Descuento Cupón</p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">-$<span id="dsct3Id1">0.00</span></p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <div class="checkBox form-check contenedorDescuentos">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="descuento2Id1"
-                    onchange="calcularDescuento21('descuento2Id1')"
-                  />
-                  <label class="form-check-label" for="descuento2Id1">
-                    <p>Dsct. corporativo: 10% (válido para 3 personas o más)</p>
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <p class="elementosIzquierda" style="width: 500px">
-                  Precio Final (no incluye IGV)
-                </p>
-              </div>
-              <div class="col-md-3 precios text-end">
-                <p class="texto">
-                  &nbsp;&nbsp;&nbsp;$<span id="precioFinalId1">0.00</span>
-                </p>
-              </div>
-              <hr />
-            </div>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <div class="checkBox form-check contenedorDescuentos d-flex">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="descuento3Id1"
-                    onchange="calcularDescuento3('descuento3Id1')"
-                  />
-                  <label class="form-check-label" for="descuento3Id1">
-                    <p>Aplicar cupón de descuento:</p>
-                  </label>
-
-                  <div class="textoCupon">
-                    <input
-                      id="cuponId1"
-                      type="text"
-                      class="form-control"
-                      oninput="handleInputChange()"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 text-center">
-                <a
-                  class="btn mb-3"
-                  style="
-                    background-color: #203aa5;
-                    color: white;
-                    width: 25%;
-                    height: 68%;
-                    margin-left: 10%;
-                  "
-                  target="_blank"
-                  href="https://api.whatsapp.com/send?phone=51900121245&text=Hola,%20estoy%20interesado%20en%20adquirir%20los%20módulos%20del%20curso de MODELAMIENTO BIM DE PUENTES CON AUTODESK REVIT Y DYNAMO."
-                  ><p class="mt-1">Ir a pagar</p></a
-                >
-              </div>
-            </div>
-          </div>
+          <p class="mb-1">Consulta por:</p>
+          <ul>
+            <li>Descuento por haber llevado algunos de los otros modulos</li>
+            <li>
+              Descuento por participar en alguno de los programas de AECODE
+            </li>
+            <li>
+              Descuento a los perfiles mas interesantes o red de colaboradores
+              de AECODE
+            </li>
+            <li>
+              Becas a estudiantes pertenecientes a asociaciones o empresas con
+              convenio AECODE
+            </li>
+          </ul>
         </div>
       </div>
       <!--Métodos de pago-->
@@ -1669,7 +1211,6 @@
       });
     </script>
 
-    <script src="calculadoraCurso1.js"></script>
     <script src="automaticDate.js"></script>
     <!--Script para el uso de bootstrap 5-->
     <script
