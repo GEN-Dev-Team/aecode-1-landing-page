@@ -15,21 +15,14 @@ h3 {
   margin-bottom: 22px;
 }
 
-.container-full {
-  width: 1600px;
+.main-container {
+  width: 1440px;
   height: 100vh;
-  display: flex;
   margin-inline: auto;
   background-image: url("https://github.com/Sthepen-EA/Media-files/blob/main/aecode-1-landing-page/model-view-bg.png?raw=true");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 100%;
-}
-
-.main-container {
-  width: 1440px;
-  height: 100vh;
-  margin-inline: auto;
 }
 
 .background-video {
