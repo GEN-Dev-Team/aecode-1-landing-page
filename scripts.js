@@ -1,3 +1,22 @@
+function redirectAecode() {
+  // Configurar una variable en localStorage para indicar que se debe mostrar el formulario
+  localStorage.setItem("showForm", "true");
+
+  // Redirigir a la nueva página
+  window.location.href = "aecode-programas.html";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Verificar la variable en localStorage
+  if (localStorage.getItem("showForm") === "true") {
+    // Llamar a la función para mostrar el formulario
+    mostrarFormulario();
+
+    // Limpiar la variable en localStorage para evitar mostrar el formulario en futuras visitas
+    localStorage.removeItem("showForm");
+  }
+});
+
 function mostrarFormulario() {
   // Obtener la capa modal por su ID
   var modal = document.getElementById("miModal");
