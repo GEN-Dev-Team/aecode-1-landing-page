@@ -18,7 +18,7 @@
   .header {
     width: 1440px;
     display: flex;
-    padding: 21px 45px;
+    padding: 14px 45px 11px;
     justify-content: space-between;
     align-items: center;
     margin-inline: auto;
@@ -56,7 +56,7 @@
 }
 
 .aecode-logo {
-  height: 22px;
+  height: 25px;
 }
 
 .button {
