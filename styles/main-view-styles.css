@@ -134,6 +134,10 @@
   }
 }
 
+.social-media-container-mobile {
+  display: none;
+}
+
 .footer-container {
   width: 100%;
   margin-top: 30px;
