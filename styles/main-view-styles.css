@@ -121,10 +121,53 @@
   background: white;
   box-shadow: -12px 1px 40.7px 1px rgba(0, 0, 0, 0.25);
 
-  img {
-    width: 100%;
-    height: auto;
-    margin-inline: auto;
+  .coming-soon-media {
+    position: relative;
+
+    .count-down-container {
+      width: 100%;
+      height: 101px;
+      position: absolute;
+      bottom: 0;
+
+      .count-down-content {
+        width: 284px;
+        height: 76px;
+        padding: 10px 17px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+        background: var(--Blanco, #fff);
+        color: #381187;
+        font-family: "ruberoid-semibold";
+
+        .count-down-item {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .count-down-number {
+          font-size: 25px;
+        }
+
+        .count-down-text {
+          font-size: 8px;
+        }
+
+        img {
+          width: 1px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-inline: auto;
+    }
   }
 
   .coming-soon-video {

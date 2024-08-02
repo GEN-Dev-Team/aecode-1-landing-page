@@ -38,7 +38,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Onest:wght@500&family=Plus+Jakarta+Sans:wght@200&family=Quicksand:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/main-view-styles.css" />
+    <link rel="stylesheet" href="/styles/main-view-styles.css?v=20240731" />
 
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -67,6 +67,26 @@
     <!--Ícono de navegador-->
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/x-icon" />
     <link rel="icon" href="Imagenes/logoNavegador.png" type="image/png" />
+
+    <script>
+      // Función para eliminar todas las cookies
+      function deleteAllCookies() {
+        const cookies = document.cookie.split(";");
+
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i];
+          const eqPos = cookie.indexOf("=");
+          const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+          document.cookie =
+            name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        }
+      }
+
+      // Eliminar todas las cookies al cargar la página
+      window.onload = deleteAllCookies;
+    </script>
+
+    <script src="scripts/count-down.js" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -90,12 +110,12 @@
     </header>
 
     <div class="main-container-video">
-      <video
+      <!-- <video
         autoplay
         muted
         loop
         src="/Imagenes/backgrounds/first-view-bg.mp4"
-      ></video>
+      ></video> -->
     </div>
 
     <div class="main-container">
@@ -105,8 +125,33 @@
               src="/Imagenes/VIDEO_FINAL_CON_AUDIO.mp4"
               class="coming-soon-video"
             ></iframe> -->
+          <div class="coming-soon-media">
+            <img src="/Imagenes/main-view/main-view-img.svg" alt="" />
 
-          <img src="/Imagenes/main-view/main-view-img.svg" alt="" />
+            <div class="count-down-container">
+              <div class="count-down-content">
+                <div class="count-down-item">
+                  <span id="days" class="count-down-number">0</span>
+                  <span class="count-down-text">Dias</span>
+                </div>
+                <img src="/Imagenes/main-view/date-separator.svg" alt="" />
+                <div class="count-down-item">
+                  <span id="hours" class="count-down-number">0</span>
+                  <span class="count-down-text">Horas</span>
+                </div>
+                <img src="/Imagenes/main-view/date-separator.svg" alt="" />
+                <div class="count-down-item">
+                  <span id="mins" class="count-down-number">0</span>
+                  <span class="count-down-text">Minutos</span>
+                </div>
+                <img src="/Imagenes/main-view/date-separator.svg" alt="" />
+                <div class="count-down-item">
+                  <span id="seconds" class="count-down-number">0</span>
+                  <span class="count-down-text">Segundos</span>
+                </div>
+              </div>
+            </div>
+          </div>
           <h1>PROXIMAMENTE...</h1>
           <h3>Ecosistema Digital 4.0</h3>
         </div>
