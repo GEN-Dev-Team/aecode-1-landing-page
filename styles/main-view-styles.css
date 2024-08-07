@@ -82,7 +82,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 682px;
+  height: 100vh;
   padding-top: 27px;
   margin-inline: auto;
 }
