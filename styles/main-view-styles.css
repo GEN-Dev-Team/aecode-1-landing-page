@@ -28,6 +28,7 @@
       flex-direction: row;
       align-items: center;
       gap: 47px;
+
       .header-title {
         display: none;
         color: #2a1d68;
@@ -45,7 +46,7 @@
     gap: 40px;
     align-items: center;
 
-    span {
+    .header-title {
       color: var(--Morado-4, #2a1d68);
       font-family: "Plus Jakarta Sans";
       font-size: 18px;
@@ -93,12 +94,12 @@
 
 .button {
   display: inline-flex;
-  height: 38px;
+  height: 39px;
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 6px;
+  border-radius: 42.5px;
   background: var(--Morado-3, #381187);
   box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
   color: var(--Blanco, #fff);
@@ -109,6 +110,69 @@
   line-height: 24px; /* 200% */
   border: none;
   text-decoration: none;
+}
+
+.shaman-button {
+  display: flex;
+  border: 1.2px solid #916dbf;
+  padding: 2px 0 2px;
+  gap: 17px;
+
+  .svg-container {
+    width: 34px;
+    height: 34px;
+    margin-inline-start: 2px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5ccde;
+    border: 1px solid white;
+    transition: transform 0.3s ease;
+
+    .shaman-button-img {
+      display: none;
+    }
+  }
+
+  .shaman-button-text {
+    margin-inline-end: 28px;
+    color: white;
+    font-family: "ruberoid-semibold";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &:hover {
+    border: 1.2px solid #eeedff;
+    background: var(--Gris-2, #eef3f8);
+    box-shadow: 0px 4px 4px 0px rgba(56, 17, 135, 0.4),
+      0px -2px 4.7px 0px rgba(0, 0, 0, 0.25) inset,
+      0px 7px 12px 2px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  &:hover .svg-container {
+    transform: translateX(120px);
+    background-color: #381187;
+    background: linear-gradient(to bottom, rgb(121, 99, 167), rgb(56, 17, 135));
+
+    .fire-svg {
+      display: none;
+    }
+
+    .shaman-button-img {
+      width: 28px;
+      height: 28px;
+      display: block;
+    }
+  }
+
+  &:hover .shaman-button-text {
+    transform: translateX(-25px);
+    color: #381187;
+  }
 }
 
 .coming-soon-container {
