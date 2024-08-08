@@ -117,6 +117,7 @@
   border: 1.2px solid #916dbf;
   padding: 2px 0 2px;
   gap: 17px;
+  z-index: 0;
 
   .svg-container {
     width: 34px;
@@ -128,7 +129,7 @@
     align-items: center;
     background-color: #c5ccde;
     border: 1px solid white;
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
 
     .shaman-button-img {
       display: none;
@@ -143,6 +144,8 @@
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
+    transition: transform 0.8s ease;
+    z-index: -1;
   }
 
   &:hover {
