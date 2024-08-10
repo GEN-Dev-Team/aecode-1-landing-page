@@ -13,6 +13,18 @@
   src: url(/Ruberoid/Ruberoid-Medium.otf) format("opentype");
 }
 
+/* Shared classes */
+
+.hover-button {
+  transition: transform 0.1s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Styles */
+
 .header-container {
   background-color: white;
   .header {
@@ -191,26 +203,33 @@
 
   .choose-your-path-button {
     display: flex;
-    width: 213px;
-    height: 38px;
+    width: 136px;
+    height: 31px;
     padding: 10px 20px;
-    margin-inline: auto;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-radius: 6px;
-    background: #381187;
-    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
-    color: #fff;
-    font-family: "ruberoid-semibold";
+    flex-shrink: 0;
+    border-radius: 22px;
+    color: var(--Blanco, #fff);
+    font-family: "Ruberoid-SemiBold";
     font-size: 12px;
     line-height: 24px;
     text-decoration: none;
     position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 30%;
     z-index: 2;
+  }
+
+  .button-1 {
+    background: var(--Azul-2, #203aa5);
+    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+    left: 19.5%;
+  }
+  .button-2 {
+    background: #5225af;
+    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+    right: 19.5%;
   }
 
   .coming-soon-media {
@@ -227,14 +246,33 @@
     margin-top: 38px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 32px;
+    justify-content: space-between;
     align-items: center;
 
-    .count-down-container {
-      width: 258px;
+    .coming-soon-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 48px;
-      padding: 10px 17px;
+      padding-inline: 9px;
+      border-radius: 6px;
+      box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+
+      span {
+        margin: 0;
+        color: #381187;
+        font-family: "ruberoid-medium";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 65.714% */
+      }
+    }
+
+    .count-down-container {
+      width: 220px;
+      height: 48px;
+      padding: 10px 12px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -287,7 +325,7 @@
     color: #381187;
     text-align: center;
     font-family: "ruberoid-medium";
-    font-size: 30px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 500;
     line-height: 23px; /* 65.714% */
@@ -408,9 +446,9 @@
     margin-inline-end: 6px;
     background-color: #585ef3;
     filter: drop-shadow(0px 4px 4px rgba(24, 27, 103, 0.44));
-    display: flex; /* Habilita el flexbox en el contenedor */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -498,6 +536,10 @@
       height: auto;
       margin-inline: auto;
       padding: 11px 11px 15px;
+
+      .choose-your-path-button {
+        bottom: 31%;
+      }
 
       /* h1 {
         font-size: 20px;
