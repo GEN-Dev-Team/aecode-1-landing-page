@@ -216,19 +216,18 @@
     font-size: 12px;
     line-height: 24px;
     text-decoration: none;
+    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
     position: absolute;
     bottom: 30%;
     z-index: 2;
   }
 
   .button-1 {
-    background: var(--Azul-2, #203aa5);
-    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+    background: #5225af;
     left: 19.5%;
   }
   .button-2 {
-    background: #5225af;
-    box-shadow: 2px 7px 8.5px 0px rgba(56, 17, 135, 0.5);
+    background: var(--Azul-2, #203aa5);
     right: 19.5%;
   }
 
