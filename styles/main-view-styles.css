@@ -491,6 +491,38 @@
       }
     }
 
+    .shaman-button {
+      display: none;
+    }
+
+    .shaman-button-mobile {
+      width: 161px;
+      height: 39px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding-inline-start: 2px;
+      background-color: #381187;
+      border-radius: 10px;
+      font-family: "ruberoid-semibold";
+      border-radius: 42.5px;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      align-items: center;
+
+      .svg-container-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+        background-color: #c5ccde;
+        border: 1px solid white;
+      }
+    }
+
     .header-buttons {
       width: 100%;
       display: flex;
@@ -521,9 +553,9 @@
     }
   }
 
-  .main-container-video video{
-     height: 100dvh;
-     width: auto;
+  .main-container-video video {
+    height: 100dvh;
+    width: auto;
   }
 
   .aecode-logo {
@@ -535,7 +567,6 @@
     height: 520px;
     flex-direction: column;
     padding-top: 0;
-
   }
 
   .coming-soon-container {
@@ -543,16 +574,14 @@
     height: auto;
     margin-inline: auto;
     padding: 11px 11px 15px;
-    .coming-soon-content{
+    .coming-soon-content {
       margin-top: 10px;
       flex-direction: column;
       gap: 10px;
-      .coming-soon-text{
-
-        span{
+      .coming-soon-text {
+        span {
           font-size: 17px;
         }
-
       }
     }
 
@@ -576,7 +605,7 @@
       bottom: 44%;
       z-index: 2;
     }
-  
+
     .button-1 {
       background: #5225af;
       left: 19.5%;
@@ -585,8 +614,6 @@
       background: var(--Azul-2, #203aa5);
       right: 19.5%;
     }
-
-
 
     h3 {
       margin-top: 15px;
@@ -613,6 +640,8 @@
     align-items: center;
 
     .sendbar-text {
+      gap: 5px;
+
       img {
         width: 35px;
       }
