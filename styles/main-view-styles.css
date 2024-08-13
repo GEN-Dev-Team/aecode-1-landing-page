@@ -486,7 +486,7 @@
         height: 18px;
         .header-title {
           display: block;
-          font-size: 14px;
+          font-size: 13px;
         }
       }
 
@@ -558,8 +558,8 @@
   }
 
   .main-container-video video {
-    height: 100dvh;
     width: auto;
+    height: 100%;
   }
 
   .aecode-logo {
