@@ -557,9 +557,11 @@
     }
   }
 
-  .main-container-video video {
-    width: auto;
-    height: 100%;
+  .main-container-video {
+    video {
+      height: 100dvh;
+      width: auto;
+    }
   }
 
   .aecode-logo {
