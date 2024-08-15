@@ -129,6 +129,7 @@
 }
 
 .shaman-button {
+  width: 160px;
   display: flex;
   border: 1.2px solid #916dbf;
   padding: 2px 0 2px;
@@ -162,6 +163,10 @@
     line-height: 24px;
     transition: transform 0.8s ease;
     z-index: -1;
+
+    .play {
+      display: none;
+    }
   }
 
   &:hover {
@@ -173,7 +178,7 @@
   }
 
   &:hover .svg-container {
-    transform: translateX(120px);
+    transform: translateX(105px);
     background-color: #381187;
     background: linear-gradient(to bottom, rgb(121, 99, 167), rgb(56, 17, 135));
 
@@ -191,6 +196,14 @@
   &:hover .shaman-button-text {
     transform: translateX(-25px);
     color: #381187;
+
+    .shaman {
+      display: none;
+    }
+
+    .play {
+      display: block;
+    }
   }
 }
 
