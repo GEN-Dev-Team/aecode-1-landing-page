@@ -470,7 +470,7 @@
 
 @media (max-width: 720px) {
   .main-container {
-    height: 100%;
+    height: 100dvh;
     padding: 59px 0 11px;
     background-image: url("/Imagenes/backgrounds/main-view-bg.webp");
     background-repeat: no-repeat;
