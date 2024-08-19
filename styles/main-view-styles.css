@@ -472,6 +472,9 @@
   .main-container {
     height: 100%;
     padding: 59px 0 11px;
+    background-image: url("/Imagenes/backgrounds/main-view-bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .background-video {
@@ -571,10 +574,7 @@
   }
 
   .main-container-video {
-    video {
-      height: 100dvh;
-      width: auto;
-    }
+    display: none;
   }
 
   .aecode-logo {
