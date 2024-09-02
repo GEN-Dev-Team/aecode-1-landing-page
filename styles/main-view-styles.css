@@ -472,7 +472,7 @@
   .main-container {
     height: 100dvh;
     padding: 59px 0 11px;
-    background-image: url("/Imagenes/backgrounds/main-view-bg.webp");
+    background-image: url("assets/images/backgrounds/main-view-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }

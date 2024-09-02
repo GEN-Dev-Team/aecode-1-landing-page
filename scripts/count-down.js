@@ -3,7 +3,7 @@ const hours = document.getElementById("hours");
 const mins = document.getElementById("mins");
 const seconds = document.getElementById("seconds");
 
-const newYear = "09/01/2024";
+const newYear = "10/01/2024";
 
 function countTimer() {
   const newYearDate = new Date(newYear);
